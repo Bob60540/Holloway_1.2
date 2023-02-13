@@ -1,1 +1,2215 @@
+<!DOCTYPE html>
+<html>
+ <style>
+body {background-color: rgb(240, 244, 246);}
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fcfcfd;
+}
+
+/*   Float the list items side by side    */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: rgb(66, 66, 70);
+    text-decoration: none;
+    color:azure
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: rgb(76, 76, 77);
+    text-decoration: none;
+    color: rgb(91, 116, 225);
+}
+
+/* Style the tab content 
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+*/
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 5px 5px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 200px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column3 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 200px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column4 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 315px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+ </style>
+
+ <body>
+
+ <p><center><h2>Collected Poems by Glenna Holloway</h2></center></p>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Title')">Poems by Title</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Filename')">Poems by Filename</a></li>
+</ul>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Never Far From Water')">Never Far From Water</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Long Way to Morning by Title')">Long Way to Morning by Title</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Long Way to Morning by TOC')">Long Way to Morning by TOC</a></li>
+</ul>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Articles')">Articles</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Baskets')">Baskets</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Haiku')">Haiku</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Loose')">Loose</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Misc')">Misc</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Religious')">Religious</a></li>  
+</ul>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Collections')">Collections</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Short Stories')">Short Stories</a></li>
+</ul>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Favorites')">Favorites</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'docx & pdf files')">docx & pdf files</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Notes')">Notes</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'noop')">|</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Versions')">Versions</a></li>
+
+</ul>
+
+
+
+<div id="Notes" class="tabcontent">
+  <h3><center>Notes - 01/15/2023</center></h3>
+  <h5>
+    <p>In the 2008-2009 time frame I had the good fortune to be asked by Glenna to help her with some computer issues she was having with her Tandy 1000 SX home computer system.  While the system was still operational it was painfully slow and cumbersome to operate.  I suggested that it was time to upgrade to a new laptop and she agreed however she never fully embraced her new Sony Vaio. 
+ 
+    <p>While she had scores of her poems published in various poetry collections she had never published a book of her own poems.  After numerous iterations we had a manuscript ready but were unable to find a publisher so settled on self publishing with PublishAmerica.  As with most self published books of poetry, "Never Far from Water" has gone largely unnoticed except by friends and colleagues.      
+
+    <p>Glenna had no living relatives at the time of her passing and had willed her estate to the care of Grace United Methodist Church where she had been a faithful member for many years.  Cleaning out the contents of her home was like a treasure hunt.  Her basement was partitioned into various project areas where she had furthered her interests in pottery, jewelry making, painting, woodworking and various other artistic endeavors.  Her poetry and writing workshop was on the second floor and was filled with books and magazines and scores of boxes containing folders and smaller boxes of printouts generated on her Tandy 1000 computer.  Under time constraints the goal became to attempt to keep at least one copy of every poem that she had written.  The bulk of that effort produced about twenty boxes filled with published books containing one or more of her poems.  These boxes are currently stored in the Grace Church Library.  The printed pages were neatly packed into several more boxes and taken to my home with the intent of somehow making them available for the world to appreciate. 
+
+    <p>While I envisioned a final collection with each poem precisely captured and indexed I quickly realized that the amount of time it would take to complete that effort was at least an order of magnitude greater than the time I had to spend on it.  Thus the task became merely to scan every page in the boxes and write a few lines of HTML that would allow any interested person with a computer to peruse Glenna's literary works. At this time (Holloway_1.0) about 80% of the pages have been scanned. What remains will require more careful sorting and preparation so I have chosen to pause that effort and focus on making an initial release.
+	
+	<p>Questions about the method and form of the release, ownership, copyright laws, the wishes of Glenna and other equally unknown or unknowable considerations constantly stalled the release.  
+	
+	<p>Some poems appear in multiple directories.  In some cases they are identical but upon closer examination there may be differences in a few lines.  Which version should be published?  Some poems, even to my eyes, are not remarkable.  Should they be included?  Some have been published in at least one book (Never Far From Water) and many in collections.  Some pages acknowledge these previous publications.  Copyright protection lasts for the life of the author plus an additional 70 years!  What are the implications of that?
+
+    <p>It appears, as is so often the case in life, the safest and easiest path is to DO NOTHING!
+	
+    <p>So, this is the first release of the folder named Holloway_1.0.  It is admittedly in rough form for which I apologize.  One professional friend of Glenna emphatically stated that Glenna would only want her best and final works published.  If I could pose that question to Glenna today, arguing that struggling poets could learn not only from her inspiring successes but also her mediocre failures, I believe that she would look off into the distance and nod in approval!
+
+    <p>If you receive the Holloway_1.0 folder on a flash drive you should copy the entire folder onto your desktop or some other location on your local disk drive and then double click on the file named index.html inside the folder.  The rest should be intuitive. 
+
+    <p>As you peruse the files please make a note of inconsistencies or errors you find in the links and I will try to incorporate necessary changes in the next release of Holloway_2.0.
+
+    <p>I do hope that you enjoy the wonderful gifts that Glenna has left to us!
+
+    <p>&emsp; Bob Schmitt</p>
+    <p>&emsp; Bob60540@gmail.com</p>
+  </h5>
+</div>
+
+<div id="Favorites" class="tabcontent" >
+ <h3><center>Favorites</center></h3>
+  <p>
+  <h3>
+  <p>Award Winning Poems
+  </h3>
+  <h5>
+  <p><a href="GH/GH_0580.pdf" target="_blank"> BEFORE A POET KNOWS WHAT SHE IS</a>
+  <p><a href="GH/GH_0135.pdf" target="_blank"> GIFT HORSE</a>
+  <p><a href="GH/ME_0169.pdf" target="_blank"> THE ROAD NOT FINISHED (An Evening's Chance Encounter)</a>
+  <p><a href="GH/GH_0049.pdf" target="_blank"> WHILE HE'S AWAY</a>
+  </h5>
+  <h3>
+  <p>Favorites
+  </h3>
+  <h5>
+  <p><a href="GH/GH_0224.pdf" target="_blank"> A HEX ON MY NEIGHBOR'S GREEN THUMB</a>
+  </h5>
+</div>
+
+<div id="Versions" class="tabcontent" >
+ <h3><center>Versions</center></h3>
+ <h5 style="background-color:#ccc; height:100px">
+  <p>
+  <p>01/15/2023 - Holloway_1.0: Initial Release
+  <p>01/20/2023 - Holloway_1.1: "Never Far From Water" removed due to potential copyright issues with PublishAmerica.  Visit the Grace Church library to check out a copy.  
+  <p>02/01/2023 - Holloway_1.2: Bundle released for inclusion on the Grace Church website at www.peopleofgrace.org.
+ </h5>
+</div>
+
+<div id="Title" class="tabcontent">
+  <h3><center>Poems by Title</center></h3>
+  <h5>
+    <p><a href="GH/GH_0506.pdf" target="_blank"> "LIKE A PANTHER IN THE GLOVE"</a>
+    <p><a href="GH/GH_0717.pdf" target="_blank"> "NOT OF THIS FOLD" -- Another look at John 10:16</a>
+    <p><a href="GH/GH_0499.pdf" target="_blank"> "WHEN EVERYTHING THAT TICKED HAS STOPPED"</a>
+    <p><a href="GH/GH_0157.pdf" target="_blank"> "WHEN EVERYTHING THAT TICKED HAS STOPPED" . . . Emily Dickinson</a>
+    <p><a href="GH/GH_0105.pdf" target="_blank"> (Calonyction aculeatum)</a>
+    <p><a href="GH/GH_0287.pdf" target="_blank">-01500 A.D., ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/ME_0805.pdf" target="_blank">-01500 A.D., ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/ME_0807.pdf" target="_blank">-01500 A.D., ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/ME_0809.pdf" target="_blank">-01500 A.D., ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/GH_0002.pdf" target="_blank">-01971, YOUNG PLACIDO DOMINGO AS HUON</a>
+    <p><a href="GH/GH_0146.pdf" target="_blank"> 7:15 REGULARS</a>
+    <p><a href="GH/ME_0477.pdf" target="_blank"> A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/ME_0483.pdf" target="_blank"> A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/ME_0489.pdf" target="_blank"> A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/GH_0710.pdf" target="_blank"> A BIRD FOR ALL SEASONS</a>
+    <p><a href="GH/GH_0163.pdf" target="_blank"> A BOWL OF BLUE BLOSSOMS</a>
+    <p><a href="GH/GH_0670.pdf" target="_blank"> A BOWL OF BLUE BLOSSOMS</a>
+    <p><a href="GH/GH_0776.pdf" target="_blank"> A BOWL OF BLUE BLOSSOMS</a>
+    <p><a href="GH/ME_0752.pdf" target="_blank"> A CRANE IS NOT</a>
+    <p><a href="GH/GH_0252.pdf" target="_blank"> A DAY AT DANADA</a>
+    <p><a href="GH/GH_0253.pdf" target="_blank"> A DAY AT DANADA</a>
+    <p><a href="GH/GH_0096.pdf" target="_blank"> A FRIEND LIKE YOU</a>
+    <p><a href="GH/GH_0924.pdf" target="_blank"> A GARDNER'S HEX ON A GREEN-THUMBED RIVAL</a>
+    <p><a href="GH/GH_0224.pdf" target="_blank"> A HEX ON MY NEIGHBOR'S GREEN THUMB</a>
+    <p><a href="GH/GH_0341.pdf" target="_blank"> A LETTER FROM A MAN OF MANY LETTERS</a>
+    <p><a href="GH/GH_0342.pdf" target="_blank"> A LETTER FROM A MAN OF MANY LETTERS</a>
+    <p><a href="GH/GH_0262.pdf" target="_blank"> A LONGING TO PRAISE</a>
+    <p><a href="GH/GH_0120.pdf" target="_blank"> A NOTE OF APPRECIATION</a>
+    <p><a href="GH/GH_0112.pdf" target="_blank"> A PARTY FOR THE PRODIGAL</a>
+    <p><a href="GH/GH_0756.pdf" target="_blank"> A QUIET AFTERNOON IN THE COUNTRY</a>
+    <p><a href="GH/GH_0172.pdf" target="_blank"> A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0191.pdf" target="_blank"> A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0192.pdf" target="_blank"> A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0296.pdf" target="_blank"> A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0578.pdf" target="_blank"> A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0851.pdf" target="_blank"> A RONDEL OF PRAISE FOR EASTERTIME</a>
+    <p><a href="GH/GH_0024.pdf" target="_blank"> A STARRING ROLE</a>
+    <p><a href="GH/GH_0233.pdf" target="_blank"> A STARRING ROLE</a>
+    <p><a href="GH/GH_0431.pdf" target="_blank"> A STARRING ROLE</a>
+    <p><a href="GH/GH_0594.pdf" target="_blank"> A STARRING ROLE</a>
+    <p><a href="GH/GH_0840.pdf" target="_blank"> A STARRING ROLE</a>
+    <p><a href="GH/GH_0852.pdf" target="_blank"> A STARRING ROLE</a>
+    <p><a href="GH/GH_0321.pdf" target="_blank"> A TALE OF TWO POETS</a>
+    <p><a href="GH/GH_0433.pdf" target="_blank"> A TIME SO FAIR</a>
+    <p><a href="GH/GH_0575.pdf" target="_blank"> ABORIGINAL LOVE SONG</a>
+    <p><a href="GH/GH_0839.pdf" target="_blank"> ABOUT MY NEIGHBOR, LORD</a>
+    <p><a href="GH/GH_0847.pdf" target="_blank"> ABOUT MY NEIGHBOR, LORD</a>
+    <p><a href="GH/GH_0921.pdf" target="_blank"> ABOUT MY NEIGHBOR, LORD</a>
+    <p><a href="GH/GH_0161.pdf" target="_blank"> ADDIE AT EIGHTY</a>
+    <p><a href="GH/GH_0298.pdf" target="_blank"> ADDIE AT EIGHTY</a>
+    <p><a href="GH/GH_0576.pdf" target="_blank"> ADDIE AT EIGHTY</a>
+    <p><a href="GH/GH_0916.pdf" target="_blank"> ADDIE AT EIGHTY</a>
+    <p><a href="GH/GH_0139.pdf" target="_blank"> ADOLESCENT ACUMEN</a>
+    <p><a href="GH/GH_0639.pdf" target="_blank"> AFRICAN SYNOPSIS, THE BAOBAB TREE (Baobab: "upside down tree" in Swahili)</a>
+    <p><a href="GH/GH_0640.pdf" target="_blank"> AFRICAN SYNOPSIS, THE BAOBAB TREE (Baobab: "upside down tree" in Swahili)</a>
+    <p><a href="GH/GH_0659.pdf" target="_blank"> AFTERNOON FAWN (Odocoileus virginianus)</a>
+    <p><a href="GH/GH_0816.pdf" target="_blank"> AFTERNOON IN THE COUNTRY</a>
+    <p><a href="GH/GH_0644.pdf" target="_blank"> AGENDA FOR THE PRAIRIE</a>
+    <p><a href="GH/GH_0679.pdf" target="_blank"> AIRBORNE AFTERTHOUGHTS</a>
+    <p><a href="GH/GH_0326.pdf" target="_blank"> ALMOST FORGOTTEN JOURNEY</a>
+    <p><a href="GH/ME_0013.pdf" target="_blank"> AN UNEARTHED SCROLL OF KHUFU</a>
+    <p><a href="GH/GH_0379.pdf" target="_blank"> ANCIENT WINDOWS</a>
+    <p><a href="GH/GH_0497.pdf" target="_blank"> AND I REMEMBERED DR. SCHWEITZER (A Memorial)</a>
+    <p><a href="GH/GH_0646.pdf" target="_blank"> AND STILL HE CARES</a>
+    <p><a href="GH/ME_0803.pdf" target="_blank"> ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/GH_0271.pdf" target="_blank"> ANTHROPOLOGY PROFESSOR SAYS DARWIN GOT IT WRONG  --caption, Chicago Tribune</a>
+    <p><a href="GH/GH_0383.pdf" target="_blank"> ANTHROPOLOGY PROFESSOR SAYS DARWIN GOT IT WRONG  --caption, Chicago Tribune</a>
+    <p><a href="GH/GH_0779.pdf" target="_blank"> ANTHROPOLOGY PROFESSOR SAYS DARWIN GOT IT WRONG  --caption, Chicago Tribune</a>
+    <p><a href="GH/GH_0195.pdf" target="_blank"> APOLOGIES TO CLEMENT MOORE ONLY</a>
+    <p><a href="GH/GH_0197.pdf" target="_blank"> APOLOGIES TO CLEMENT MOORE ONLY</a>
+    <p><a href="GH/GH_0179.pdf" target="_blank"> APPRECIATION</a>
+    <p><a href="GH/GH_0186.pdf" target="_blank"> APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0273.pdf" target="_blank"> APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0607.pdf" target="_blank"> APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0609.pdf" target="_blank"> APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0680.pdf" target="_blank"> APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0059.pdf" target="_blank"> AQUARIUM</a>
+    <p><a href="GH/ME_0931.pdf" target="_blank"> AROUND INUIT COOKFIRES (C. lupus tundrarum)</a>
+    <p><a href="GH/GH_0647.pdf" target="_blank"> ART IS</a>
+    <p><a href="GH/GH_0115.pdf" target="_blank"> ASSATEAGUE WILD</a>
+    <p><a href="GH/GH_0155.pdf" target="_blank"> ATREMIS IN THE SKYH ON DIAMOND POINT</a>
+    <p><a href="GH/GH_0052.pdf" target="_blank"> AUDIEORIUM</a>
+    <p><a href="GH/GH_0150.pdf" target="_blank"> AUDITORIUM</a>
+    <p><a href="GH/GH_0758.pdf" target="_blank"> AUDITORIUM</a>
+    <p><a href="GH/GH_0911.pdf" target="_blank"> AUDITORIUM</a>
+    <p><a href="GH/GH_0952.pdf" target="_blank"> AUGUSTEMBER</a>
+    <p><a href="GH/GH_0384.pdf" target="_blank"> AUTHOR'S IMPRINT</a>
+    <p><a href="GH/GH_0385.pdf" target="_blank"> AUTHOR'S IMPRINT</a>
+    <p><a href="GH/GH_0550.pdf" target="_blank"> AUTHOR'S IMPRINT</a>
+    <p><a href="GH/GH_0665.pdf" target="_blank"> AUTHOR'S IMPRINT</a>
+    <p><a href="GH/GH_0703.pdf" target="_blank"> AUTUM IS NOT A SEASON</a>
+    <p><a href="GH/GH_0878.pdf" target="_blank"> AUTUMN COINAGE</a>
+    <p><a href="GH/GH_0190.pdf" target="_blank"> AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0464.pdf" target="_blank"> AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0876.pdf" target="_blank"> AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0880.pdf" target="_blank"> AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0241.pdf" target="_blank"> AVONNA LEE'S MOUNTAIN</a>
+    <p><a href="GH/GH_0386.pdf" target="_blank"> AWAKENING</a>
+    <p><a href="GH/GH_0461.pdf" target="_blank"> BALLAD FOR A BAD QUEEN</a>
+    <p><a href="GH/GH_0079.pdf" target="_blank"> BALLADEERS BY NIGHT</a>
+    <p><a href="GH/GH_0140.pdf" target="_blank"> BALLADEERS BY NIGHT</a>
+    <p><a href="GH/GH_0572.pdf" target="_blank"> BALLADEERS BY NIGHT</a>
+    <p><a href="GH/GH_0164.pdf" target="_blank"> BAND PRACTICE</a>
+    <p><a href="GH/GH_0525.pdf" target="_blank"> BAND PRACTICE</a>
+    <p><a href="GH/GH_0682.pdf" target="_blank"> BANQUET</a>
+    <p><a href="GH/GH_0516.pdf" target="_blank"> BAOBAB TREE</a>
+    <p><a href="GH/GH_0913.pdf" target="_blank"> BATTLEFIELD</a>
+    <p><a href="GH/GH_0209.pdf" target="_blank"> BAUDELAIRE</a>
+    <p><a href="GH/GH_0662.pdf" target="_blank"> BEACON</a>
+    <p><a href="GH/GH_0736.pdf" target="_blank"> BEAR AND BEE HIVE BY NIGHT</a>
+    <p><a href="GH/GH_0692.pdf" target="_blank"> BEAR AND BEE HIVE BY NIGHT (Ursus americanus)</a>
+    <p><a href="GH/GH_0375.pdf" target="_blank"> BEAUTY IS (Japanese Tanka)</a>
+    <p><a href="GH/GH_0046.pdf" target="_blank"> BECAUSE OF YOU, LOVE, MUCH IS STILL TO BE</a>
+    <p><a href="GH/GH_0076.pdf" target="_blank"> BECAUSE OF YOU, LOVE, MUCH IS STILL TO BE</a>
+    <p><a href="GH/GH_0720.pdf" target="_blank"> BEE HIVE BY NIGHT</a>
+    <p><a href="GH/GH_0580.pdf" target="_blank"> BEFORE A POET KNOWS WHAT SHE IS</a>
+    <p><a href="GH/GH_0650.pdf" target="_blank"> BEFORE A POET KNOWS WHAT SHE IS</a>
+    <p><a href="GH/GH_0651.pdf" target="_blank"> BEFORE A POET KNOWS WHAT SHE IS</a>
+    <p><a href="GH/GH_0912.pdf" target="_blank"> BEFORE A POET KNOWS WHAT SHE IS</a>
+    <p><a href="GH/GH_0387.pdf" target="_blank"> BEGINNER'S PRAYER ON 89TH STREET</a>
+    <p><a href="GH/GH_0388.pdf" target="_blank"> BEGINNER'S PRAYER ON 89TH STREET</a>
+    <p><a href="GH/GH_0548.pdf" target="_blank"> BEGINNER'S PRAYER ON 89TH STREET</a>
+    <p><a href="GH/GH_0833.pdf" target="_blank"> BEGINNER'S PRAYER ON 89TH STREET</a>
+    <p><a href="GH/GH_0352.pdf" target="_blank"> BEHIND THE CURTAINS</a>
+    <p><a href="GH/GH_0546.pdf" target="_blank"> BEQUEST FROM AN ARTIST WHO DIED IN AUTUMN</a>
+    <p><a href="GH/GH_0604.pdf" target="_blank"> BEST OF SHOW, SEASONAL MURAL</a>
+    <p><a href="GH/GH_0915.pdf" target="_blank"> BEST OF SHOW:  LAKE MICHIGAN MURAL</a>
+    <p><a href="GH/GH_0914.pdf" target="_blank"> BIOGRAPHER FOR THE BELDAM</a>
+    <p><a href="GH/GH_0849.pdf" target="_blank"> BIOLOGY PROFESSOR SAYS DARWIN GOT IT WRONG --caption, Chicago Tribune</a>
+    <p><a href="GH/ME_0504.pdf" target="_blank"> BIRTHDAY AT THE STATE FAIR</a>
+    <p><a href="GH/GH_0138.pdf" target="_blank"> BIRTHSTONE</a>
+    <p><a href="GH/GH_0928.pdf" target="_blank"> BIRTHSTONE</a>
+    <p><a href="GH/GH_0039.pdf" target="_blank"> BODY LANGUAGE</a>
+    <p><a href="GH/GH_0255.pdf" target="_blank"> BRACKISH</a>
+    <p><a href="GH/GH_0207.pdf" target="_blank"> BRINE BITCH OFF THE BAHAMAS - Love Letters in Jon's Log</a>
+    <p><a href="GH/ME_0882.pdf" target="_blank"> BRINE BITCH OFF THE BAHAMAS, LOVE LETTERS IN JOH'S LOG</a>
+    <p><a href="GH/GH_0827.pdf" target="_blank"> BUTTERFLIES AND OTHER GOOD INTENTIONS</a>
+    <p><a href="GH/GH_0389.pdf" target="_blank"> BUTTERFLY GIRL</a>
+    <p><a href="GH/GH_0125.pdf" target="_blank"> CALLIGRAPHY BY NIGHT</a>
+    <p><a href="GH/GH_0555.pdf" target="_blank"> CAPE WALK</a>
+    <p><a href="GH/GH_0908.pdf" target="_blank"> CAPEWALK</a>
+    <p><a href="GH/GH_0909.pdf" target="_blank"> CAPEWALK</a>
+    <p><a href="GH/GH_0563.pdf" target="_blank"> CAPTURING THE CAT OF ONE COLOR (Felis concolor)</a>
+    <p><a href="GH/GH_0790.pdf" target="_blank"> CARIBBEAN LOG:  ROMANCING THE HUMPBACK WHALES</a>
+    <p><a href="GH/ME_0791.pdf" target="_blank"> CARIBBEAN LOG:  ROMANCING THE HUMPBACK WHALES -- A Rhyme Royal</a>
+    <p><a href="GH/GH_0782.pdf" target="_blank"> CAT-WALK</a>
+    <p><a href="GH/GH_0495.pdf" target="_blank"> CATWALK</a>
+    <p><a href="GH/GH_0390.pdf" target="_blank"> CHALLENGE</a>
+    <p><a href="GH/GH_0391.pdf" target="_blank"> CHALLENGE</a>
+    <p><a href="GH/GH_0100.pdf" target="_blank"> CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0118.pdf" target="_blank"> CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0184.pdf" target="_blank"> CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0392.pdf" target="_blank"> CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0393.pdf" target="_blank"> CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0544.pdf" target="_blank"> CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0668.pdf" target="_blank"> CHALLENGED POET</a>
+    <p><a href="GH/GH_0641.pdf" target="_blank"> CHANGING THE SUBJECT</a>
+    <p><a href="GH/GH_0727.pdf" target="_blank"> CHEETA IN A ZOOM LENS</a>
+    <p><a href="GH/GH_0676.pdf" target="_blank"> CHEETAH, MASTER OF FINE ARTS (Acinonyx jubatas)</a>
+    <p><a href="GH/GH_0643.pdf" target="_blank"> CHEETAH, MASTER OF FINE ARTS (Acinonyx jubatus)</a>
+    <p><a href="GH/GH_0349.pdf" target="_blank"> CHELSEANNA, LITTLE GIRL</a>
+    <p><a href="GH/GH_0350.pdf" target="_blank"> CHELSEANNA, LITTLE GIRL</a>
+    <p><a href="GH/GH_0351.pdf" target="_blank"> CHELSEANNA, MOTHER-BLIND</a>
+    <p><a href="GH/GH_0722.pdf" target="_blank"> CHICAGO SONNET</a>
+    <p><a href="GH/GH_0149.pdf" target="_blank"> CHICAGO WATERCOLOR SHOW</a>
+    <p><a href="GH/GH_0181.pdf" target="_blank"> CHICAGO:  FIRST LADY OF THE LAKE</a>
+    <p><a href="GH/GH_0246.pdf" target="_blank"> CHICAGO:  FIRST LADY OF THE LAKE</a>
+    <p><a href="GH/GH_0951.pdf" target="_blank"> CIRCLES AND CIRCLES OF SOUND</a>
+    <p><a href="GH/GH_0095.pdf" target="_blank"> COLOR-CODED</a>
+    <p><a href="GH/GH_0327.pdf" target="_blank"> COMING TO TERMS WITH HIGHT VOLTAGE</a>
+    <p><a href="GH/GH_0585.pdf" target="_blank"> COMPOUNDING THE MIDAS TOUCH</a>
+    <p><a href="GH/GH_0394.pdf" target="_blank"> CONTEMPLATING PLATO AND THE CARDINAL</a>
+    <p><a href="GH/GH_0077.pdf" target="_blank"> CONTROLLER</a>
+    <p><a href="GH/GH_0369.pdf" target="_blank"> COOKING UNDERCURRENT</a>
+    <p><a href="GH/GH_0740.pdf" target="_blank"> COSTAL COLLAGE</a>
+    <p><a href="GH/GH_0593.pdf" target="_blank"> COUNTERPOINT:  THE LOST CORDS</a>
+    <p><a href="GH/GH_0950.pdf" target="_blank"> COURTSHIP</a>
+    <p><a href="GH/ME_0946.pdf" target="_blank"> COVERT CABIN, UNMAPPED ROAD TO SUN-UP</a>
+    <p><a href="GH/ME_0948.pdf" target="_blank"> COVERT CABIN, UNMAPPED ROAD TO SUN-UP</a>
+    <p><a href="GH/GH_0218.pdf" target="_blank"> CRAMPED QUARTERS</a>
+    <p><a href="GH/GH_0136.pdf" target="_blank"> CRITIC'S REVIEW OF A LEADING ROLE</a>
+    <p><a href="GH/GH_0638.pdf" target="_blank"> CRITIC'S REVIEW OF THE LEADING ROLE</a>
+    <p><a href="GH/GH_0104.pdf" target="_blank"> CUCKOLD AND KING</a>
+    <p><a href="GH/GH_0395.pdf" target="_blank"> CUCKOLD AND KING</a>
+    <p><a href="GH/GH_0707.pdf" target="_blank"> CULTIVATING THE MIDAS TOUCH</a>
+    <p><a href="GH/GH_0396.pdf" target="_blank"> DARING</a>
+    <p><a href="GH/GH_0397.pdf" target="_blank"> DARING</a>
+    <p><a href="GH/GH_0783.pdf" target="_blank"> DARING</a>
+    <p><a href="GH/GH_0649.pdf" target="_blank"> DARK KINGDOM</a>
+    <p><a href="GH/GH_0398.pdf" target="_blank"> DAY LILIES</a>
+    <p><a href="GH/GH_0399.pdf" target="_blank"> DAY LILIES</a>
+    <p><a href="GH/GH_0860.pdf" target="_blank"> DAY LILIES</a>
+    <p><a href="GH/GH_0400.pdf" target="_blank"> DEATH:  A STARRING ROLE IN THE CELESTIAL SCENARIO</a>
+    <p><a href="GH/GH_0403.pdf" target="_blank"> DEATH:  A STARRING ROLE IN THE CELESTIAL SCENARIO</a>
+    <p><a href="GH/GH_0401.pdf" target="_blank"> DEATH:  A STARRINHG ROLE IN THE CELESTIAL SCENARIO</a>
+    <p><a href="GH/GH_0250.pdf" target="_blank"> DEATHVIEW</a>
+    <p><a href="GH/ME_0597.pdf" target="_blank"> DECEMBER DINNER, MANHATTAN ISLAND</a>
+    <p><a href="GH/ME_0674.pdf" target="_blank"> DECEMBER DINNER, MANHATTAN ISLAND</a>
+    <p><a href="GH/GH_0406.pdf" target="_blank"> DECODING-0101</a>
+    <p><a href="GH/GH_0407.pdf" target="_blank"> DECODING-0101</a>
+    <p><a href="GH/GH_0408.pdf" target="_blank"> DECODING-0101</a>
+    <p><a href="GH/GH_0545.pdf" target="_blank"> DECODING-0101</a>
+    <p><a href="GH/GH_0858.pdf" target="_blank"> DECODING-0101</a>
+    <p><a href="GH/GH_0862.pdf" target="_blank"> DECODING-0101</a>
+    <p><a href="GH/GH_0865.pdf" target="_blank"> DECODING-0101</a>
+    <p><a href="GH/GH_0866.pdf" target="_blank"> DECODING-0101</a>
+    <p><a href="GH/GH_0328.pdf" target="_blank"> DEEP SWAMP</a>
+    <p><a href="GH/GH_0329.pdf" target="_blank"> DEEP SWAMP</a>
+    <p><a href="GH/GH_0678.pdf" target="_blank"> DEEP SWAMP</a>
+    <p><a href="GH/GH_0859.pdf" target="_blank"> DEEP SWAMP</a>
+    <p><a href="GH/GH_0409.pdf" target="_blank"> DEFYING THE BREAKERS</a>
+    <p><a href="GH/ME_0893.pdf" target="_blank"> DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/GH_0574.pdf" target="_blank"> DESERT</a>
+    <p><a href="GH/ME_0683.pdf" target="_blank"> DESERT ODYSSEY,-01991 . . . AND STILL</a>
+    <p><a href="GH/GH_0294.pdf" target="_blank"> DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/GH_0301.pdf" target="_blank"> DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/GH_0303.pdf" target="_blank"> DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/ME_0868.pdf" target="_blank"> DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/GH_0299.pdf" target="_blank"> DESERT ODYSSEY, THEN AND NOW</a>
+    <p><a href="GH/ME_0123.pdf" target="_blank"> THE FORGIVEN & DISCOVERY IN THE FOREST</a>
+    <p><a href="GH/GH_0167.pdf" target="_blank"> DITHYRAMB IMPROMPTU</a>
+    <p><a href="GH/GH_0180.pdf" target="_blank"> DITHYRAMB IMPROMPTU</a>
+    <p><a href="GH/GH_0944.pdf" target="_blank"> DITHYRAMB IMPROMPTU</a>
+    <p><a href="GH/ME_0795.pdf" target="_blank"> DIVING WITH DOLPHINS AND DAVID</a>
+    <p><a href="GH/ME_0884.pdf" target="_blank"> DIVING WITH DOLPHINS AND DAVID</a>
+    <p><a href="GH/ME_0797.pdf" target="_blank"> DIVING WITH DOLPHINS AND DAVID (A Rhyme Royal)</a>
+    <p><a href="GH/ME_0886.pdf" target="_blank"> DIVING WITH DOLPHINS AND DAVID (A Rhyme Royal)</a>
+    <p><a href="GH/GH_0757.pdf" target="_blank"> DOLPHIN SCHOOL</a>
+    <p><a href="GH/GH_0063.pdf" target="_blank"> DON JUAN AS GOURMAND</a>
+    <p><a href="GH/GH_0527.pdf" target="_blank"> DON'T EVER COME WHEN I CALL</a>
+    <p><a href="GH/GH_0511.pdf" target="_blank"> DRAGON BOAT RIDE</a>
+    <p><a href="GH/GH_0942.pdf" target="_blank"> DRAGONBOAD RIDE</a>
+    <p><a href="GH/GH_0943.pdf" target="_blank"> DRAGONBOAD RIDE</a>
+    <p><a href="GH/GH_0510.pdf" target="_blank"> DRIED ARRANGEMENT</a>
+    <p><a href="GH/GH_0701.pdf" target="_blank"> DUET</a>
+    <p><a href="GH/ME_0906.pdf" target="_blank"> DYLAN</a>
+    <p><a href="GH/GH_0941.pdf" target="_blank"> EMBROIDERED IMAGE (Haliaeetus leucocephalus)</a>
+    <p><a href="GH/GH_0256.pdf" target="_blank"> EMILY / EMILY</a>
+    <p><a href="GH/GH_0226.pdf" target="_blank"> EMISSARY (Memo to Octavio Paz)</a>
+    <p><a href="GH/GH_0672.pdf" target="_blank"> EMISSARY (Memo to Octavio Paz)</a>
+    <p><a href="GH/GH_0083.pdf" target="_blank"> ENCOUNTER WITH CANIS LUPUS</a>
+    <p><a href="GH/GH_0940.pdf" target="_blank"> ENCOUNTER WITH CANIS LUPUS</a>
+    <p><a href="GH/GH_0205.pdf" target="_blank"> END OF AN ERA, LINGERING LOVERS OF BALEFUL BAY</a>
+    <p><a href="GH/ME_0600.pdf" target="_blank"> END OF AN ERA:  THE BALLAD OF BALEFUL BAY</a>
+    <p><a href="GH/GH_0689.pdf" target="_blank"> ENIGMA</a>
+    <p><a href="GH/GH_0693.pdf" target="_blank"> ENIGMA</a>
+    <p><a href="GH/GH_0694.pdf" target="_blank"> ENIGMA</a>
+    <p><a href="GH/GH_0229.pdf" target="_blank"> ENIGMA:  THE GEMINI THING</a>
+    <p><a href="GH/GH_0730.pdf" target="_blank"> EPILOGUE FOR THE OLD MAN</a>
+    <p><a href="GH/GH_0152.pdf" target="_blank"> EPISTEMOLOGY</a>
+    <p><a href="GH/GH_0307.pdf" target="_blank"> EPISTEMOLOGY</a>
+    <p><a href="GH/GH_0410.pdf" target="_blank"> ERINIA</a>
+    <p><a href="GH/GH_0834.pdf" target="_blank"> ERINIA</a>
+    <p><a href="GH/GH_0853.pdf" target="_blank"> ERINIA</a>
+    <p><a href="GH/GH_0861.pdf" target="_blank"> ERINIA</a>
+    <p><a href="GH/GH_0042.pdf" target="_blank"> ESTUARY SIDEPOOL</a>
+    <p><a href="GH/GH_0067.pdf" target="_blank"> EULOGY FOR AN ACTOR</a>
+    <p><a href="GH/GH_0145.pdf" target="_blank"> EULOGY FOR AN ACTOR</a>
+    <p><a href="GH/ME_0502.pdf" target="_blank"> EXORCISM</a>
+    <p><a href="GH/GH_0438.pdf" target="_blank"> FALLEN TOMBSTONE</a>
+    <p><a href="GH/GH_0020.pdf" target="_blank"> FALLING WEATHER</a>
+    <p><a href="GH/GH_0448.pdf" target="_blank"> FANTASY IN C# MINOR FOR TRUMPET AND ORCHESTRA</a>
+    <p><a href="GH/GH_0454.pdf" target="_blank"> FANTASY IN C# MINOR FOR TRUMPET AND ORCHESTRA</a>
+    <p><a href="GH/GH_0939.pdf" target="_blank"> FAR BELOW THE KEEL</a>
+    <p><a href="GH/GH_0667.pdf" target="_blank"> FAULT LINE</a>
+    <p><a href="GH/GH_0708.pdf" target="_blank"> FELINE OFFBEAT</a>
+    <p><a href="GH/GH_0050.pdf" target="_blank"> FEVER-0104</a>
+    <p><a href="GH/GH_0005.pdf" target="_blank"> FISCAL ADDRESS TO OURSELF</a>
+    <p><a href="GH/GH_0938.pdf" target="_blank"> FLIGHT</a>
+    <p><a href="GH/GH_0702.pdf" target="_blank"> FOR FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0716.pdf" target="_blank"> FOR FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0744.pdf" target="_blank"> FOR FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0551.pdf" target="_blank"> FOR HANNAH</a>
+    <p><a href="GH/GH_0937.pdf" target="_blank"> FOR JESSICA'S FIRST DIVE</a>
+    <p><a href="GH/GH_0771.pdf" target="_blank"> FOR SHAME</a>
+    <p><a href="GH/GH_0763.pdf" target="_blank"> FORGETTING IT</a>
+    <p><a href="GH/GH_0592.pdf" target="_blank"> FORTIETH ANNIVERSARY</a>
+    <p><a href="GH/GH_0072.pdf" target="_blank"> FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0724.pdf" target="_blank"> FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0732.pdf" target="_blank"> FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0526.pdf" target="_blank"> FOUR THOUGHTS IN TANKA</a>
+    <p><a href="GH/GH_0935.pdf" target="_blank"> FROM HELL TO HELL</a>
+    <p><a href="GH/GH_0567.pdf" target="_blank"> FROM THE BELL TOWER</a>
+    <p><a href="GH/GH_0308.pdf" target="_blank"> FRONT OFFICE DRAGON</a>
+    <p><a href="GH/GH_0128.pdf" target="_blank"> FURNITURE SHIPMENT FROM FORMOSA</a>
+    <p><a href="GH/GH_0514.pdf" target="_blank"> FURNITURE SHIPMENT FROM FORMOSA</a>
+    <p><a href="GH/GH_0411.pdf" target="_blank"> GARDEN KINDERGARTEN</a>
+    <p><a href="GH/GH_0822.pdf" target="_blank"> GARDEN KINDERGARTENH FOR MY DAUGHTER</a>
+    <p><a href="GH/GH_0210.pdf" target="_blank"> GATHERING OF VERBS FOR FINDER'S STEW</a>
+    <p><a href="GH/GH_0242.pdf" target="_blank"> GATHERING OF VERBS FOR FINDER'S STEW</a>
+    <p><a href="GH/GH_0135.pdf" target="_blank"> GIFT HORSE</a>
+    <p><a href="GH/GH_0126.pdf" target="_blank"> GLIMPSES</a>
+    <p><a href="GH/GH_0637.pdf" target="_blank"> GLIMPSES</a>
+    <p><a href="GH/GH_0415.pdf" target="_blank"> GOD'S ROCKER</a>
+    <p><a href="GH/GH_0835.pdf" target="_blank"> GOD'S ROCKER</a>
+    <p><a href="GH/GH_0864.pdf" target="_blank"> GOD'S ROCKER</a>
+    <p><a href="GH/GH_0215.pdf" target="_blank"> GUIDING HORN</a>
+    <p><a href="GH/GH_0435.pdf" target="_blank"> HAIKU FOR HUMANS</a>
+    <p><a href="GH/GH_0099.pdf" target="_blank"> HAIKU ON HUMANS</a>
+    <p><a href="GH/GH_0767.pdf" target="_blank"> HE</a>
+    <p><a href="GH/GH_0635.pdf" target="_blank"> HE ASKED:  WHY WASTE YOUR TIME CREATING POEMS?</a>
+    <p><a href="GH/GH_0636.pdf" target="_blank"> HE ASKED:  WHY WASTE YOUR TIME CREATING POEMS?</a>
+    <p><a href="GH/GH_0243.pdf" target="_blank"> HEARLDRY</a>
+    <p><a href="GH/ME_0787.pdf" target="_blank"> HEMBY AND THE HUMPBACK WHALES (Megaptera novaeangliae)</a>
+    <p><a href="GH/GH_0654.pdf" target="_blank"> HERALDRY</a>
+    <p><a href="GH/GH_0677.pdf" target="_blank"> HERALDRY</a>
+    <p><a href="GH/GH_0691.pdf" target="_blank"> HIGH PLAINS HURRICANE (Equus caballus, feral)</a>
+    <p><a href="GH/GH_0188.pdf" target="_blank"> HILTON HOLLINGSWORTH, III</a>
+    <p><a href="GH/GH_0239.pdf" target="_blank"> HIM I KNOW</a>
+    <p><a href="GH/GH_0240.pdf" target="_blank"> HIM WE KNOW</a>
+    <p><a href="GH/GH_0538.pdf" target="_blank"> HIM WE KNOW</a>
+    <p><a href="GH/GH_0652.pdf" target="_blank"> HOLDING HANDS BENEATH THE PALETTE</a>
+    <p><a href="GH/GH_0745.pdf" target="_blank"> HOPI GIRL GOING HOME, TOUCHING THE RIVER</a>
+    <p><a href="GH/GH_0141.pdf" target="_blank"> HOPI HOMECOMING</a>
+    <p><a href="GH/GH_0309.pdf" target="_blank"> HOPI HOMECOMING</a>
+    <p><a href="GH/GH_0439.pdf" target="_blank"> HOPI HOMECOMING</a>
+    <p><a href="GH/GH_0176.pdf" target="_blank"> HOW TO GET BY</a>
+    <p><a href="GH/GH_0762.pdf" target="_blank"> HURTS LIKE HELLY</a>
+    <p><a href="GH/GH_0230.pdf" target="_blank"> HYPERION NOW</a>
+    <p><a href="GH/GH_0467.pdf" target="_blank"> I THINK OF CLIFF</a>
+    <p><a href="GH/GH_0185.pdf" target="_blank"> I, IGNOTUM PER IGNOTIUS</a>
+    <p><a href="GH/ME_0528.pdf" target="_blank"> I, IGNOTUM PER IGNOTIUS</a>
+    <p><a href="GH/ME_0902.pdf" target="_blank"> I, IGNOTUM PER IGNOTIUS</a>
+    <p><a href="GH/ME_0904.pdf" target="_blank"> I, IGNOTUM PER IGNOTIUS</a>
+    <p><a href="GH/GH_0922.pdf" target="_blank"> I'LL POUR YOU A TEN</a>
+    <p><a href="GH/GH_0374.pdf" target="_blank"> IF THE SHOE FITS . . .  or PASS ANOTHER BUCK</a>
+    <p><a href="GH/GH_0245.pdf" target="_blank"> IMMORTAL MARINER (At the Art Institute of Chicago)</a>
+    <p><a href="GH/GH_0356.pdf" target="_blank"> IMMORTAL MARINER (At the Art Institute of Chicago)</a>
+    <p><a href="GH/GH_0759.pdf" target="_blank"> IMPEDING</a>
+    <p><a href="GH/GH_0725.pdf" target="_blank"> IN A ZOOM LENS</a>
+    <p><a href="GH/GH_0148.pdf" target="_blank"> IN DEFENSE OF MY POETRY</a>
+    <p><a href="GH/GH_0696.pdf" target="_blank"> INELUCTABLE</a>
+    <p><a href="GH/GH_0248.pdf" target="_blank"> INFLICTION</a>
+    <p><a href="GH/GH_0634.pdf" target="_blank"> INFRA</a>
+    <p><a href="GH/ME_0632.pdf" target="_blank"> INSIDE PASSAGE, GLACIER BAY</a>
+    <p><a href="GH/GH_0660.pdf" target="_blank"> INSIDE PASSAGE, GLACIER BAY (Remembering Crane, Woolf, Plath and Sexton)</a>
+    <p><a href="GH/GH_0739.pdf" target="_blank"> JEREMIAD FOR A BAD QUEEN</a>
+    <p><a href="GH/GH_0225.pdf" target="_blank"> JEREMIAD FOR A CRUEL QUEEN</a>
+    <p><a href="GH/GH_0272.pdf" target="_blank"> JOURNEYWOMAN (McNeil Sonnet)</a>
+    <p><a href="GH/GH_0071.pdf" target="_blank"> KING TUTANKHAMUN:</a>
+    <p><a href="GH/GH_0581.pdf" target="_blank"> KING TUTANKHAMUN:  ONCE THERE WAS A BOY WHO LOVED TO WHISTLE</a>
+    <p><a href="GH/GH_0092.pdf" target="_blank"> KNOWING OF LOVE</a>
+    <p><a href="GH/GH_0874.pdf" target="_blank"> LAKEFRONT PLAYERS HOST BAUDELAIRE BACKSTAGE</a>
+    <p><a href="GH/GH_0166.pdf" target="_blank"> LAST CARD DOWN</a>
+    <p><a href="GH/GH_0533.pdf" target="_blank"> LAST STANZA</a>
+    <p><a href="GH/GH_0813.pdf" target="_blank"> LEARNING IS A RED RING, MAYBE PLAID</a>
+    <p><a href="GH/GH_0817.pdf" target="_blank"> LEARNING IS A RED RING, MAYBE PLAID</a>
+    <p><a href="GH/GH_0552.pdf" target="_blank"> LEARNING YOUR OWN</a>
+    <p><a href="GH/GH_0084.pdf" target="_blank"> LEAVING HOME</a>
+    <p><a href="GH/GH_0174.pdf" target="_blank"> LEAVING HOME</a>
+    <p><a href="GH/GH_0274.pdf" target="_blank"> LEAVING HOME</a>
+    <p><a href="GH/GH_0579.pdf" target="_blank"> LEAVING HOME</a>
+    <p><a href="GH/ME_0508.pdf" target="_blank"> LEGACY FROM THE RESEARCH LABORATORY</a>
+    <p><a href="GH/GH_0097.pdf" target="_blank"> LEGACY OF DEAD POETS</a>
+    <p><a href="GH/GH_0117.pdf" target="_blank"> LEGACY OF DEAD POETS</a>
+    <p><a href="GH/GH_0695.pdf" target="_blank"> LEGACY OF DEAD POETS</a>
+    <p><a href="GH/GH_0022.pdf" target="_blank"> LEGACY OF PAST POETS</a>
+    <p><a href="GH/GH_0292.pdf" target="_blank"> LIFE IN THE CHOIR LOFT</a>
+    <p><a href="GH/GH_0131.pdf" target="_blank"> LILY OF THE FIELD</a>
+    <p><a href="GH/GH_0416.pdf" target="_blank"> LILY OF THE FIELD</a>
+    <p><a href="GH/GH_0856.pdf" target="_blank"> LILY OF THE FIELD</a>
+    <p><a href="GH/GH_0844.pdf" target="_blank"> LION ON A WHITE FIELD</a>
+    <p><a href="GH/GH_0845.pdf" target="_blank"> LION ON A WHITE FIELD</a>
+    <p><a href="GH/GH_0775.pdf" target="_blank"> LISTENING TO THE MOUNTAINS</a>
+    <p><a href="GH/GH_0618.pdf" target="_blank"> LITTLE GIRL GONE</a>
+    <p><a href="GH/GH_0823.pdf" target="_blank"> LITTLE GIRL GONE</a>
+    <p><a href="GH/GH_0919.pdf" target="_blank"> LONG TIME BACK</a>
+    <p><a href="GH/GH_0460.pdf" target="_blank"> LONG WAY TO MORNING</a>
+    <p><a href="GH/GH_0825.pdf" target="_blank"> LOOKING FOR</a>
+    <p><a href="GH/GH_0843.pdf" target="_blank"> LOOKING FOR</a>
+    <p><a href="GH/GH_0006.pdf" target="_blank"> LOST</a>
+    <p><a href="GH/GH_0060.pdf" target="_blank"> LOVERS AT RENE MAGRITTE'S RETROSPECTIVE</a>
+    <p><a href="GH/GH_0754.pdf" target="_blank"> MAGIC MONTHS</a>
+    <p><a href="GH/GH_0193.pdf" target="_blank"> MAINE FLOOR</a>
+    <p><a href="GH/GH_0564.pdf" target="_blank"> MAINE FLOOR</a>
+    <p><a href="GH/GH_0293.pdf" target="_blank"> MAJOR RHAPSODY IN C-SHARP MINOR</a>
+    <p><a href="GH/GH_0277.pdf" target="_blank"> MAJOR RHAPSODY IN F SHARP MINOR</a>
+    <p><a href="GH/GH_0663.pdf" target="_blank"> MAKING DAYBREAK SOFTER</a>
+    <p><a href="GH/GH_0132.pdf" target="_blank"> MAKING GOOD CONNECTIONS</a>
+    <p><a href="GH/GH_0774.pdf" target="_blank"> MAKING GOOD CONNECTIONS</a>
+    <p><a href="GH/GH_0711.pdf" target="_blank"> MAKING THE RIVER AN OLD MAN</a>
+    <p><a href="GH/GH_0681.pdf" target="_blank"> MASTER OF FINE ARTS</a>
+    <p><a href="GH/GH_0673.pdf" target="_blank"> MASTER POET DISMISSED AS MERE FABULIST</a>
+    <p><a href="GH/GH_0064.pdf" target="_blank"> MASTER'S DEGREE</a>
+    <p><a href="GH/GH_0721.pdf" target="_blank"> MATTAMUSKEET MURAL (Mason Sonnet)</a>
+    <p><a href="GH/GH_0376.pdf" target="_blank"> MEASURING STICK</a>
+    <p><a href="GH/GH_0781.pdf" target="_blank"> MELISSA</a>
+    <p><a href="GH/GH_0420.pdf" target="_blank"> MESSIAH</a>
+    <p><a href="GH/ME_0830.pdf" target="_blank"> MESSIAH</a>
+    <p><a href="GH/GH_0738.pdf" target="_blank"> MICROCOSM</a>
+    <p><a href="GH/GH_0573.pdf" target="_blank"> MIGRATION</a>
+    <p><a href="GH/GH_0310.pdf" target="_blank"> MILLENIA</a>
+    <p><a href="GH/GH_0103.pdf" target="_blank"> MISSIVE FROM A KNIGHT</a>
+    <p><a href="GH/GH_0290.pdf" target="_blank"> MIXED MEDIA</a>
+    <p><a href="GH/GH_0712.pdf" target="_blank"> MOD LIT-0101</a>
+    <p><a href="GH/GH_0828.pdf" target="_blank"> MOD LIT-0101</a>
+    <p><a href="GH/GH_0784.pdf" target="_blank"> MORE THAN A HAIKU</a>
+    <p><a href="GH/GH_0755.pdf" target="_blank"> MORE THAN MIRROR IMAGES</a>
+    <p><a href="GH/GH_0812.pdf" target="_blank"> MORE THAN MIRROR IMAGES</a>
+    <p><a href="GH/GH_0815.pdf" target="_blank"> MORE THAN MIRROR IMAGES</a>
+    <p><a href="GH/GH_0612.pdf" target="_blank"> MOTHER / DAUGHTER BANQUET</a>
+    <p><a href="GH/GH_0613.pdf" target="_blank"> MOTHER / DAUGHTER BANQUET</a>
+    <p><a href="GH/GH_0047.pdf" target="_blank"> MOTHER / DAUGHTER BANQUETS</a>
+    <p><a href="GH/GH_0116.pdf" target="_blank"> MOTHER / DAUGHTER BANQUETS</a>
+    <p><a href="GH/GH_0742.pdf" target="_blank"> MOTHERBLIND</a>
+    <p><a href="GH/GH_0043.pdf" target="_blank"> MOUNTAIN BEACONS</a>
+    <p><a href="GH/GH_0040.pdf" target="_blank"> MR. FOXE'S THEORY</a>
+    <p><a href="GH/GH_0777.pdf" target="_blank"> MY FATHER, THE CAPTAIN</a>
+    <p><a href="GH/GH_0877.pdf" target="_blank"> MY OWN SEPTEMBER SONG</a>
+    <p><a href="GH/GH_0311.pdf" target="_blank"> NARRATIVE IN WHITE</a>
+    <p><a href="GH/GH_0445.pdf" target="_blank"> NIGHT BREAK, COUNTY HOPITAL</a>
+    <p><a href="GH/GH_0121.pdf" target="_blank"> NIGHT OUT</a>
+    <p><a href="GH/GH_0168.pdf" target="_blank"> NO BREAK IN THE FORCAST</a>
+    <p><a href="GH/GH_0542.pdf" target="_blank"> NO ROAD SIGNS</a>
+    <p><a href="GH/GH_0037.pdf" target="_blank"> NO YANG, NO YIN</a>
+    <p><a href="GH/GH_0421.pdf" target="_blank"> NOT OF THIS FOLD - Another Take on John 10:16</a>
+    <p><a href="GH/GH_0697.pdf" target="_blank"> NOTHING LEFT TO SAY</a>
+    <p><a href="GH/GH_0437.pdf" target="_blank"> NOVEMBER SYNOPSIS</a>
+    <p><a href="GH/GH_0444.pdf" target="_blank"> OBSERVATIONS OF A TRAIN RIDER</a>
+    <p><a href="GH/GH_0080.pdf" target="_blank"> OCTOBER BEFORE SLEEP</a>
+    <p><a href="GH/GH_0566.pdf" target="_blank"> OCTOBER BEFORE SLEEP</a>
+    <p><a href="GH/GH_0875.pdf" target="_blank"> OCTOBER BEFORE SLEEP</a>
+    <p><a href="GH/GH_0201.pdf" target="_blank"> ODYSSEY</a>
+    <p><a href="GH/GH_0053.pdf" target="_blank"> OF THEE WE SING</a>
+    <p><a href="GH/GH_0583.pdf" target="_blank"> OLD ATHABASCAN WHIT, RED MAN WITH A WHITE CANE</a>
+    <p><a href="GH/GH_0629.pdf" target="_blank"> OLD HOME ABANDONED</a>
+    <p><a href="GH/GH_0074.pdf" target="_blank"> OLD OKIE WIND</a>
+    <p><a href="GH/GH_0159.pdf" target="_blank"> OLD TESTAMENT FROM JOHN</a>
+    <p><a href="GH/GH_0927.pdf" target="_blank"> OLD WIFES THE TALES COME FROM</a>
+    <p><a href="GH/GH_0531.pdf" target="_blank"> ON A FOGGY SHORE, TOGETHER</a>
+    <p><a href="GH/GH_0778.pdf" target="_blank"> ON A FOGGY SHORE, TOGETHER</a>
+    <p><a href="GH/GH_0143.pdf" target="_blank"> ON A MAUNDY THURSDAY IN MACAO</a>
+    <p><a>ON A WALKING / TALKING AFTERNOON - </a><a href="GH/GH_0001.pdf" target="_blank">scan</a><a> | </a><a href=GH/PD_0001.pdf target=_blank">pdf</a>
+    <p><a href="GH/GH_0614.pdf" target="_blank"> ON BECOMING EVE'S ONLY DAUGHTER</a>
+    <p><a href="GH/GH_0700.pdf" target="_blank"> ON BECOMING EVE'S ONLY DAUGHTER</a>
+    <p><a href="GH/GH_0520.pdf" target="_blank"> ON ENCOUNTERING</a>
+    <p><a href="GH/GH_0035.pdf" target="_blank"> ON ENTERING A STATISTICAL BIAS</a>
+    <p><a href="GH/GH_0036.pdf" target="_blank"> ON ENTERING A STATISTICAL BIAS</a>
+    <p><a href="GH/GH_0345.pdf" target="_blank"> ON OMAR, THE BELIEVER (A Ballad)</a>
+    <p><a href="GH/GH_0626.pdf" target="_blank"> ON THE EDGE</a>
+    <p><a href="GH/ME_0057.pdf" target="_blank"> ON THE WAY TO THE BROKEN BRIDGE</a>
+    <p><a href="GH/GH_0627.pdf" target="_blank"> ON THIS EDGE</a>
+    <p><a href="GH/GH_0521.pdf" target="_blank"> ONLY SAND</a>
+    <p><a href="GH/GH_0440.pdf" target="_blank"> ORIGAMI</a>
+    <p><a href="GH/GH_0019.pdf" target="_blank"> OTHERWHERE</a>
+    <p><a href="GH/GH_0422.pdf" target="_blank"> OVERTURE</a>
+    <p><a href="GH/GH_0534.pdf" target="_blank"> OVERTURE IN BEE FLAT</a>
+    <p><a href="GH/GH_0766.pdf" target="_blank"> OVERTURE IN BEE FLAT</a>
+    <p><a href="GH/GH_0658.pdf" target="_blank"> OVERTURE IN BEE FLAT (Steve's Song)</a>
+    <p><a href="GH/GH_0156.pdf" target="_blank"> OVERTURES</a>
+    <p><a href="GH/GH_0187.pdf" target="_blank"> PACIFIC PROLOGUE</a>
+    <p><a href="GH/GH_0346.pdf" target="_blank"> PARADOX OF OMAR, THE BELIEVER (A Ballad)</a>
+    <p><a href="GH/GH_0423.pdf" target="_blank"> PAULINA'S PLACE</a>
+    <p><a href="GH/GH_0216.pdf" target="_blank"> PHARISEE?  WHAT'S THAT</a>
+    <p><a href="GH/GH_0153.pdf" target="_blank"> PILGRIMAGE TO BLUE</a>
+    <p><a href="GH/GH_0761.pdf" target="_blank"> PITY THE POOR WRITER</a>
+    <p><a href="GH/GH_0728.pdf" target="_blank"> POET DISMISSED AS FABULIST (In Memory of Nemerov)</a>
+    <p><a href="GH/GH_0733.pdf" target="_blank"> POET DISMISSED ASFABULIST (In Memory of Nemerov)</a>
+    <p><a href="GH/GH_0119.pdf" target="_blank"> POETRY JUDGE</a>
+    <p><a href="GH/GH_0344.pdf" target="_blank"> POSTSCRIPT</a>
+    <p><a href="GH/GH_0091.pdf" target="_blank"> POTATO SECRETS</a>
+    <p><a href="GH/GH_0664.pdf" target="_blank"> POTATO SECRETS</a>
+    <p><a href="GH/GH_0826.pdf" target="_blank"> PRAYER FOR THE FOURTH DIMENSION</a>
+    <p><a href="GH/GH_0837.pdf" target="_blank"> PRAYER FOR THE FOURTH DIMENSION</a>
+    <p><a href="GH/GH_0270.pdf" target="_blank"> PRAYER LIST</a>
+    <p><a href="GH/GH_0426.pdf" target="_blank"> PRAYER LIST</a>
+    <p><a href="GH/GH_0780.pdf" target="_blank"> PRAYER LIST</a>
+    <p><a href="GH/GH_0656.pdf" target="_blank"> PRETENDIN'</a>
+    <p><a href="GH/GH_0537.pdf" target="_blank"> QUATRAIN OF SUMMER RICHES</a>
+    <p><a href="GH/GH_0283.pdf" target="_blank"> QUITTING</a>
+    <p><a href="GH/ME_0589.pdf" target="_blank"> QUITTING</a>
+    <p><a href="GH/GH_0625.pdf" target="_blank"> RAIDER'S REPERTORY</a>
+    <p><a href="GH/GH_0266.pdf" target="_blank"> RECLAMATION</a>
+    <p><a href="GH/GH_0547.pdf" target="_blank"> RECLAMATION</a>
+    <p><a href="GH/GH_0814.pdf" target="_blank"> RECLAMATION</a>
+    <p><a href="GH/GH_0824.pdf" target="_blank"> RECLAMATION</a>
+    <p><a href="GH/GH_0018.pdf" target="_blank"> RECONSIDERING HIS POEM ABOUT THE OLD BROADS</a>
+    <p><a href="GH/ME_0605.pdf" target="_blank"> RECORDINGS ON A WINTER'S DAY (Beethoven's sonata #3, A Major, Op. 69)</a>
+    <p><a href="GH/GH_0075.pdf" target="_blank"> REFLECTING ON THE LIGHT</a>
+    <p><a href="GH/GH_0523.pdf" target="_blank"> REFLECTIONS OF A SEASHORE WEEKEND TWENTY YEARS PAST</a>
+    <p><a href="GH/GH_0522.pdf" target="_blank"> REFLECTIONS OF A SEASHORE WEEKENG THIRTY YEARS PAST</a>
+    <p><a href="GH/GH_0838.pdf" target="_blank"> REMEMBERING ERINIA</a>
+    <p><a href="GH/GH_0034.pdf" target="_blank"> REMEMBERING SYLVIA PLATH,-01932—1963</a>
+    <p><a href="GH/GH_0068.pdf" target="_blank"> REMEMBERING TREBLINKA</a>
+    <p><a href="GH/GH_0427.pdf" target="_blank"> RENASCENCE</a>
+    <p><a href="GH/GH_0428.pdf" target="_blank"> RENASCENCE</a>
+    <p><a href="GH/GH_0429.pdf" target="_blank"> RENASCENCE</a>
+    <p><a href="GH/GH_0846.pdf" target="_blank"> RENASCENCE</a>
+    <p><a href="GH/GH_0857.pdf" target="_blank"> RENASCENCE</a>
+    <p><a href="GH/GH_0863.pdf" target="_blank"> RENASCENCE</a>
+    <p><a href="GH/GH_0258.pdf" target="_blank"> RENASCENCE AND RENASCENCE</a>
+    <p><a href="GH/GH_0263.pdf" target="_blank"> RENASCENCE AND RENASCENCE</a>
+    <p><a href="GH/GH_0264.pdf" target="_blank"> RENASCENCE AND RENASCENCE</a>
+    <p><a href="GH/GH_0556.pdf" target="_blank"> RENEWING AN OLD TESTAMENT</a>
+    <p><a href="GH/GH_0570.pdf" target="_blank"> RENEWING AN OLD TESTAMENT ACCORDING TO JOHN</a>
+    <p><a href="GH/GH_0045.pdf" target="_blank"> REPARATION</a>
+    <p><a href="GH/GH_0032.pdf" target="_blank"> REPERTOIRE</a>
+    <p><a href="GH/GH_0160.pdf" target="_blank"> REPERTOIRE</a>
+    <p><a href="GH/GH_0554.pdf" target="_blank"> REPERTOIRE</a>
+    <p><a href="GH/GH_0358.pdf" target="_blank"> RETURN OF THE REAPERS</a>
+    <p><a href="GH/GH_0259.pdf" target="_blank"> RHYMING THE REASON</a>
+    <p><a href="GH/GH_0267.pdf" target="_blank"> RHYMING THE REASON</a>
+    <p><a href="GH/GH_0543.pdf" target="_blank"> RHYMING THE REASON</a>
+    <p><a href="GH/GH_0765.pdf" target="_blank"> RIGHT ON</a>
+    <p><a href="GH/GH_0770.pdf" target="_blank"> RIGHT ON</a>
+    <p><a href="GH/GH_0923.pdf" target="_blank"> RIGHT ON</a>
+    <p><a href="GH/GH_0251.pdf" target="_blank"> RIVER MOTHER OF THE ALGONQUAIN</a>
+    <p><a href="GH/GH_0269.pdf" target="_blank"> ROAD SIGNS</a>
+    <p><a href="GH/GH_0033.pdf" target="_blank"> ROLE REVERSAL</a>
+    <p><a href="GH/ME_0799.pdf" target="_blank"> ROMANCING THE HUMPBACK WHALES</a>
+    <p><a href="GH/GH_0786.pdf" target="_blank"> ROMANCING THE HUMPBACK WHALES -- A Rhyme Royal</a>
+    <p><a href="GH/GH_0587.pdf" target="_blank"> ROMANCING THE RIVERSIDE</a>
+    <p><a href="GH/GH_0524.pdf" target="_blank"> RONDEAU FOR TRANSITION</a>
+    <p><a href="GH/GH_0532.pdf" target="_blank"> RONDEAU OF HELIOTROPES</a>
+    <p><a href="GH/GH_0260.pdf" target="_blank"> RONDEL FOR EASTER</a>
+    <p><a href="GH/GH_0540.pdf" target="_blank"> RONDEL IN PRAISE OF EASTERTIME</a>
+    <p><a href="GH/GH_0841.pdf" target="_blank"> RONDEL IN PRAISE OF EASTERTIME</a>
+    <p><a href="GH/GH_0446.pdf" target="_blank"> ROSES IN THE WOODS</a>
+    <p><a href="GH/GH_0719.pdf" target="_blank"> ROUNDS OF ENCHANTMENT</a>
+    <p><a href="GH/GH_0829.pdf" target="_blank"> ROUNDS OF ENCHANTMENT</a>
+    <p><a href="GH/GH_0517.pdf" target="_blank"> RUWENZORI!</a>
+    <p><a href="GH/GH_0355.pdf" target="_blank"> SAGANESQUE SONNET</a>
+    <p><a href="GH/GH_0354.pdf" target="_blank"> SAGANESQUE SONNETS</a>
+    <p><a href="GH/GH_0177.pdf" target="_blank"> SAGANESQUE SONNETS, Creation According to Carl</a>
+    <p><a href="GH/GH_0178.pdf" target="_blank"> SAGANESQUE SONNETS, TWO YEARS APART</a>
+    <p><a href="GH/GH_0078.pdf" target="_blank"> SANDSCAPE, SOUNDSCAPE</a>
+    <p><a href="GH/GH_0706.pdf" target="_blank"> SAPPHICS FOR CHARLES VICKERY - PAINTING THE CHRISTIAN RADICH</a>
+    <p><a href="GH/GH_0133.pdf" target="_blank"> SEARCHING FOR ROAD SIGNS</a>
+    <p><a href="GH/GH_0247.pdf" target="_blank"> SEARS TOWER</a>
+    <p><a href="GH/GH_0560.pdf" target="_blank"> SEASIDE SIMILE</a>
+    <p><a href="GH/GH_0655.pdf" target="_blank"> SEASIDE SIMILE</a>
+    <p><a href="GH/GH_0070.pdf" target="_blank"> SEASONAL MURALIST</a>
+    <p><a href="GH/GH_0087.pdf" target="_blank"> SECRET PIECES</a>
+    <p><a href="GH/GH_0249.pdf" target="_blank"> SECRET PIECES</a>
+    <p><a href="GH/GH_0854.pdf" target="_blank"> SEEING DARKLY FOR NOW</a>
+    <p><a href="GH/GH_0535.pdf" target="_blank"> SEEING DARKLY FOR NOW (1 CORINTHIANS 13:12)</a>
+    <p><a href="GH/GH_0855.pdf" target="_blank"> SEEING DARKLY FOR NOW (1 Corinthians 13:12)</a>
+    <p><a href="GH/GH_0031.pdf" target="_blank"> SEEKERS ON THE EDGE</a>
+    <p><a href="GH/GH_0741.pdf" target="_blank"> SEEKERS ON THE EDGE</a>
+    <p><a href="GH/GH_0357.pdf" target="_blank"> SEEKERS ON THE EDGE (Saganesque Sonnets)</a>
+    <p><a href="GH/GH_0039.pdf" target="_blank"> SEMANTICS</a>
+    <p><a href="GH/GH_0151.pdf" target="_blank"> SEMANTICS</a>
+    <p><a href="GH/GH_0030.pdf" target="_blank"> SEMINAR (FROM A STUDENT OF THE MASTER POET)</a>
+    <p><a href="GH/GH_0430.pdf" target="_blank"> SERPENT SEED</a>
+    <p><a href="GH/GH_0772.pdf" target="_blank"> SETTLING IN A NEW TOWN</a>
+    <p><a href="GH/GH_0029.pdf" target="_blank"> SHE</a>
+    <p><a href="GH/GH_0466.pdf" target="_blank"> SHE USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/GH_0208.pdf" target="_blank"> SHOWING CHICAGO TO BAUDELAIRE</a>
+    <p><a href="GH/GH_0312.pdf" target="_blank"> SHOWING CHICAGO TO BAUDELAIRE</a>
+    <p><a href="GH/GH_0101.pdf" target="_blank"> SIR SAM'S SOLO IN BEE FLAT</a>
+    <p><a href="GH/GH_0158.pdf" target="_blank"> SISTER ACT</a>
+    <p><a href="GH/GH_0561.pdf" target="_blank"> SISTER ACT</a>
+    <p><a href="GH/GH_0785.pdf" target="_blank"> SISTER ACT</a>
+    <p><a href="GH/GH_0764.pdf" target="_blank"> SLANT RHYME POLEMIC</a>
+    <p><a href="GH/GH_0723.pdf" target="_blank"> SLANT SONNET FOR THE BULL</a>
+    <p><a href="GH/GH_0735.pdf" target="_blank"> SLANT SONNET FOR THE BULL</a>
+    <p><a href="GH/GH_0028.pdf" target="_blank"> SNOW LIGHT</a>
+    <p><a href="GH/GH_0217.pdf" target="_blank"> SOMETIMES SELF NEEDS RESOULING</a>
+    <p><a href="GH/GH_0257.pdf" target="_blank"> SOMETIMES SELF NEEDS RESOULING</a>
+    <p><a href="GH/GH_0041.pdf" target="_blank"> SOUTHWEST DRY SPELL</a>
+    <p><a href="GH/GH_0316.pdf" target="_blank"> SOUTHWEST DRY SPELL</a>
+    <p><a href="GH/GH_0704.pdf" target="_blank"> SPIRIT FLIGHT</a>
+    <p><a href="GH/GH_0023.pdf" target="_blank"> SPOILSPORT</a>
+    <p><a href="GH/GH_0645.pdf" target="_blank"> SPOILSPORT</a>
+    <p><a href="GH/GH_0318.pdf" target="_blank"> SPOOL RIVER AFTERTHOUGHTS</a>
+    <p><a href="GH/GH_0154.pdf" target="_blank"> STAMP STANDARD TIME</a>
+    <p><a href="GH/GH_0319.pdf" target="_blank"> STAR SALESMAN</a>
+    <p><a href="GH/GH_0731.pdf" target="_blank"> STAR SALESMAN</a>
+    <p><a href="GH/GH_0093.pdf" target="_blank"> STATE PARK</a>
+    <p><a href="GH/GH_0054.pdf" target="_blank"> STATUS REPORT</a>
+    <p><a href="GH/GH_0203.pdf" target="_blank"> STAYING</a>
+    <p><a href="GH/GH_0127.pdf" target="_blank"> STEALERS KEEPERS -- For Monet</a>
+    <p><a href="GH/GH_0113.pdf" target="_blank"> STILL DISCOVERING THE WHEEL</a>
+    <p><a href="GH/GH_0173.pdf" target="_blank"> STILL DISCOVERING THE WHEEL</a>
+    <p><a href="GH/GH_0114.pdf" target="_blank"> STILL FLYING THE JUNEAU ICEFIELD</a>
+    <p><a href="GH/GH_0094.pdf" target="_blank"> STILL FLYING THE JUNEAU ICEFRIELD</a>
+    <p><a href="GH/GH_0086.pdf" target="_blank"> STILL REMEMBERING SYLVIA PLATH</a>
+    <p><a href="GH/GH_0051.pdf" target="_blank"> STOPPING IN THE DESERT ALONE</a>
+    <p><a href="GH/GH_0320.pdf" target="_blank"> STOPPING IN THE DESERT ALONE</a>
+    <p><a href="GH/GH_0147.pdf" target="_blank"> STUDYING JOHN CIARDI'S BRIDGE</a>
+    <p><a href="GH/GH_0536.pdf" target="_blank"> SUBJECT FOR SUBLIMATION</a>
+    <p><a href="GH/GH_0432.pdf" target="_blank"> SUBJECT TO SUBLIMATION</a>
+    <p><a href="GH/GH_0182.pdf" target="_blank"> SUDDEN TWIST</a>
+    <p><a href="GH/GH_0768.pdf" target="_blank"> SUGGESTIVE READING?</a>
+    <p><a href="GH/ME_0622.pdf" target="_blank"> SUMMER DAY,-01861</a>
+    <p><a href="GH/GH_0671.pdf" target="_blank"> SUMMER SIEGE</a>
+    <p><a href="GH/GH_0125.pdf" target="_blank"> SUNRISE IN ST. LOUIS</a>
+    <p><a href="GH/GH_0171.pdf" target="_blank"> SUPERSTITION STANLEY AND THE LOST DUTCHMAN MINE</a>
+    <p><a href="GH/GH_0175.pdf" target="_blank"> SUPERSTITION STANLEY AND THE LOST DUTCHMAN MINE</a>
+    <p><a href="GH/GH_0621.pdf" target="_blank"> SWAMP STANDARD TIME</a>
+    <p><a href="GH/GH_0056.pdf" target="_blank"> SWAMPSCAPE / ESCAPE</a>
+    <p><a href="GH/GH_0496.pdf" target="_blank"> SYLVIA PLATH,-01932 ---01963</a>
+    <p><a href="GH/GH_0881.pdf" target="_blank"> SYNOPSIS</a>
+    <p><a href="GH/GH_0026.pdf" target="_blank"> TABLE SETTING</a>
+    <p><a href="GH/GH_0610.pdf" target="_blank"> TABLE SETTING</a>
+    <p><a href="GH/GH_0611.pdf" target="_blank"> TABLE SETTING</a>
+    <p><a href="GH/GH_0027.pdf" target="_blank"> TAKING A FRIEND TO MARISSA'S STUDIO</a>
+    <p><a href="GH/GH_0254.pdf" target="_blank"> TAKING THE CALL</a>
+    <p><a href="GH/GH_0595.pdf" target="_blank"> TESTAMENT</a>
+    <p><a href="GH/GH_0620.pdf" target="_blank"> TEXTURE TRIP</a>
+    <p><a href="GH/GH_0081.pdf" target="_blank"> THANKS TO YOU, LOVE, MUCH IS STILL TO BE</a>
+    <p><a href="GH/GH_0648.pdf" target="_blank"> THE AMULET</a>
+    <p><a href="GH/GH_0832.pdf" target="_blank"> THE AMULET</a>
+    <p><a href="GH/GH_0222.pdf" target="_blank"> THE ANSWER IS NOT IN THE BOOK</a>
+    <p><a href="GH/GH_0380.pdf" target="_blank"> THE ANSWERED</a>
+    <p><a href="GH/GH_0381.pdf" target="_blank"> THE ANSWERED</a>
+    <p><a href="GH/GH_0917.pdf" target="_blank"> THE ANSWERED</a>
+    <p><a href="GH/GH_0690.pdf" target="_blank"> THE ANSWERING (A Sequel to Browning's "Evelyn Hope")</a>
+    <p><a href="GH/GH_0382.pdf" target="_blank"> THE ANSWERING, A Sequel to Browning's "Evelyn Hope"</a>
+    <p><a href="GH/GH_0657.pdf" target="_blank"> THE ARBITER</a>
+    <p><a href="GH/GH_0867.pdf" target="_blank"> THE ARBITER</a>
+    <p><a href="GH/GH_0134.pdf" target="_blank"> THE ARTISAN</a>
+    <p><a href="GH/GH_0714.pdf" target="_blank"> THE BEEKEEPER SPEAKS OF LOVE (after Howard Nemerov)</a>
+    <p><a href="GH/GH_0729.pdf" target="_blank"> THE BEEKEEPERS SPEAK OF LOVE</a>
+    <p><a href="GH/GH_0202.pdf" target="_blank"> THE BEHOLDER'S EYE</a>
+    <p><a href="GH/GH_0934.pdf" target="_blank"> THE BEHOLDER'S EYE</a>
+    <p><a href="GH/GH_0518.pdf" target="_blank"> THE BEST THING MY FATHER DID WAS LIE</a>
+    <p><a href="GH/GH_0769.pdf" target="_blank"> THE BOTTOM LINE AT THE A-1 SESTINA STAR STUDIO</a>
+    <p><a href="GH/GH_0370.pdf" target="_blank"> THE CLUMSY CONSUMER REPORT</a>
+    <p><a href="GH/GH_0371.pdf" target="_blank"> THE CLUMSY CONSUMER REPORT</a>
+    <p><a href="GH/GH_0541.pdf" target="_blank"> THE CRAFTSMAN</a>
+    <p><a href="GH/GH_0021.pdf" target="_blank"> THE CRAVING</a>
+    <p><a href="GH/GH_0945.pdf" target="_blank"> THE DISPOSSESSED (Equus caballus, feral)</a>
+    <p><a href="GH/GH_0920.pdf" target="_blank"> THE ENABLER</a>
+    <p><a href="GH/GH_0144.pdf" target="_blank"> THE END OF FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0515.pdf" target="_blank"> THE ENLIGHTENED ONE</a>
+    <p><a href="GH/GH_0661.pdf" target="_blank"> THE EXHIBITIONIST</a>
+    <p><a href="GH/GH_0194.pdf" target="_blank"> THE EXHIBITIONISTS</a>
+    <p><a href="GH/GH_0559.pdf" target="_blank"> THE FAR SIDE OF FALL</a>
+    <p><a href="GH/ME_0123.pdf" target="_blank"> THE FORGIVEN & DISCOVERY IN THE FOREST</a>
+    <p><a href="GH/GH_0436.pdf" target="_blank"> THE FORGIVEN</a>
+    <p><a href="GH/GH_0936.pdf" target="_blank"> THE FOUR R'S -- Rosemary, Robin, Rachel and Rue</a>
+    <p><a href="GH/GH_0412.pdf" target="_blank"> THE GARDEN WE CAN'T FORGET</a>
+    <p><a href="GH/GH_0413.pdf" target="_blank"> THE GATHERINGS</a>
+    <p><a href="GH/GH_0204.pdf" target="_blank"> THE GO-BETWEEN</a>
+    <p><a href="GH/GH_0265.pdf" target="_blank"> THE GO-BETWEEN</a>
+    <p><a href="GH/GH_0414.pdf" target="_blank"> THE GO-BETWEEN</a>
+    <p><a href="GH/GH_0221.pdf" target="_blank"> THE GO-BETWEEN (Petrarchian Sonnet for the First J. N.)</a>
+    <p><a href="GH/GH_0214.pdf" target="_blank"> THE GRANDAM'S ADOPTED GRANDSON</a>
+    <p><a href="GH/GH_0715.pdf" target="_blank"> THE GULLS OF MARCO</a>
+    <p><a href="GH/GH_0734.pdf" target="_blank"> THE GULLS OF WINTER</a>
+    <p><a href="GH/GH_0044.pdf" target="_blank"> THE HUNGER MOON</a>
+    <p><a href="GH/GH_0082.pdf" target="_blank"> THE HUNGER MOON</a>
+    <p><a href="GH/GH_0286.pdf" target="_blank"> THE HUNGER MOON</a>
+    <p><a href="GH/GH_0073.pdf" target="_blank"> THE HURRICANE HUNTERS</a>
+    <p><a href="GH/GH_0111.pdf" target="_blank"> THE HURRICANE HUNTERS</a>
+    <p><a href="GH/GH_0227.pdf" target="_blank"> THE IGNIS FATUUS</a>
+    <p><a href="GH/GH_0291.pdf" target="_blank"> THE IGNIS FATUUS</a>
+    <p><a href="GH/GH_0291.pdf" target="_blank"> THE IGNIS FATUUS</a>
+    <p><a href="GH/GH_0235.pdf" target="_blank"> THE INTERLOPER</a>
+    <p><a href="GH/GH_0630.pdf" target="_blank"> THE INTERLOPER</a>
+    <p><a href="GH/GH_0631.pdf" target="_blank"> THE INTERLOPER</a>
+    <p><a href="GH/GH_0003.pdf" target="_blank"> THE INTERLOPER (EICHHORNIA CRASSIPES)</a>
+    <p><a href="GH/GH_0004.pdf" target="_blank"> THE IRIS LOVERS</a>
+    <p><a href="GH/GH_0669.pdf" target="_blank"> THE IRIS LOVERS</a>
+    <p><a href="GH/GH_0698.pdf" target="_blank"> THE IRIS LOVERS</a>
+    <p><a href="GH/GH_0558.pdf" target="_blank"> THE LONG HALL</a>
+    <p><a href="GH/GH_0417.pdf" target="_blank"> THE LONG LONG FALL</a>
+    <p><a href="GH/GH_0418.pdf" target="_blank"> THE MASTER CRAFTSMAN</a>
+    <p><a href="GH/GH_0842.pdf" target="_blank"> THE MASTER CRAFTSMAN</a>
+    <p><a href="GH/GH_0165.pdf" target="_blank"> THE MASTER SILVERSMITH</a>
+    <p><a href="GH/GH_0261.pdf" target="_blank"> THE MASTER SILVERSMITH</a>
+    <p><a href="GH/GH_0419.pdf" target="_blank"> THE MASTER SILVERSMITH</a>
+    <p><a href="GH/GH_0065.pdf" target="_blank"> THE MIDNIGHT LOOP</a>
+    <p><a href="GH/GH_0709.pdf" target="_blank"> THE MISER'S TIME OF YEAR (to a 19th century madrigal)</a>
+
+    <p><a href="GH/ME_0280.pdf" target="_blank"> THE NAMINGS</a>
+    <p><a href="GH/GH_0718.pdf" target="_blank"> THE OLD MAN NEEDS AN EPITAPH</a>
+    <p><a href="GH/GH_0653.pdf" target="_blank"> THE OTHER COLON</a>
+    <p><a href="GH/GH_0102.pdf" target="_blank"> THE POWER TO PRAISE</a>
+    <p><a href="GH/GH_0268.pdf" target="_blank"> THE POWER TO PRAISE</a>
+    <p><a href="GH/GH_0425.pdf" target="_blank"> THE POWER TO PRAISE</a>
+    <p><a href="GH/GH_0568.pdf" target="_blank"> THE ROAD ALREADY TAKEN</a>
+    <p><a href="GH/ME_0108.pdf" target="_blank"> THE ROAD NOT FINISHED (An Evening's Chance Encounter)</a>
+    <p><a href="GH/ME_0169.pdf" target="_blank"> THE ROAD NOT FINISHED (An Evening's Chance Encounter)</a>
+    <p><a href="GH/GH_0501.pdf" target="_blank"> THE SOCIETY BLURB SAID "TYCOON ENTERTAINS JR. EXEC & SOUTHERN BRIDE"</a>
+    <p><a href="GH/GH_0569.pdf" target="_blank"> THE SOCIETY BLURB SAYS:  TYCOON ENTERTAINS JR. EXEC & SOUTHERN BRIDE</a>
+    <p><a href="GH/GH_0512.pdf" target="_blank"> THE SOUND OF SUMMER IS</a>
+    <p><a href="GH/GH_0513.pdf" target="_blank"> THE SOUND OF SUMMER IS</a>
+    <p><a href="GH/GH_0615.pdf" target="_blank"> THE SOUNDS OF FRIENDSHIP</a>
+    <p><a href="GH/GH_0025.pdf" target="_blank"> THE SPECIALIST</a>
+    <p><a href="GH/GH_0317.pdf" target="_blank"> THE SPECIALIST</a>
+    <p><a href="GH/GH_0624.pdf" target="_blank"> THE SPIRAL GALAXY</a>
+    <p><a href="GH/GH_0055.pdf" target="_blank"> THE SUITOR</a>
+    <p><a href="GH/GH_0122.pdf" target="_blank"> THE TETRARCH AFTER MIDNIGHT</a>
+    <p><a href="GH/GH_0322.pdf" target="_blank"> THE TETRARCH AFTER MIDNIGHT</a>
+    <p><a href="GH/ME_0900.pdf" target="_blank"> THE TETRARCH AFTER MIDNIGHT</a>
+    <p><a href="GH/GH_0337.pdf" target="_blank"> THE TRIHEDRONESS</a>
+    <p><a href="GH/GH_0017.pdf" target="_blank"> THE TRUTH OF POEMS</a>
+    <p><a href="GH/GH_0130.pdf" target="_blank"> THE UNLIKELY HOST</a>
+    <p><a href="GH/GH_0347.pdf" target="_blank"> THE VARIABLE CONSTANT</a>
+    <p><a href="GH/GH_0353.pdf" target="_blank"> THE VARIABLE CONSTANT</a>
+    <p><a href="GH/GH_0713.pdf" target="_blank"> THE VISITORS</a>
+    <p><a href="GH/GH_0565.pdf" target="_blank"> THE WHEELWRIGHT For Duane Niatum of the Klallam</a>
+    <p><a href="GH/GH_0366.pdf" target="_blank"> THE WILD LOVER</a>
+    <p><a href="GH/GH_0586.pdf" target="_blank"> THE WILDERNESS WAY</a>
+    <p><a href="GH/GH_0275.pdf" target="_blank"> THE WILDLING (Felis concolor)</a>
+    <p><a href="GH/GH_0062.pdf" target="_blank"> THE WINNERS</a>
+    <p><a href="GH/GH_0098.pdf" target="_blank"> THE WINNERS</a>
+    <p><a href="GH/GH_0591.pdf" target="_blank"> THE WINNERS</a>
+    <p><a href="GH/GH_0642.pdf" target="_blank"> THE WINNERS</a>
+    <p><a href="GH/GH_0372.pdf" target="_blank"> THERAPY</a>
+    <p><a href="GH/GH_0069.pdf" target="_blank"> THERE WAS A WOMAN WHO USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/GH_0584.pdf" target="_blank"> THERE WAS A WOMAN WHO USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/GH_0596.pdf" target="_blank"> THERE WAS A WOMAN WHO USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/GH_0199.pdf" target="_blank"> THINGS YOU SHOULD KNOW IF I SAY YES</a>
+    <p><a href="GH/ME_0896.pdf" target="_blank"> THINGS YOU SHOULD KNOW IF I SAY YES</a>
+    <p><a href="GH/GH_0628.pdf" target="_blank"> THIS NEW ENGLAND, THIS EDGE</a>
+    <p><a href="GH/GH_0925.pdf" target="_blank"> THOSE SENSUOUS WRITERS SHOULD BE ASHAMED</a>
+    <p><a href="GH/GH_0324.pdf" target="_blank"> THREE GENERATIONS AFTER</a>
+    <p><a href="GH/GH_0325.pdf" target="_blank"> THREE GENERATIONS AFTER</a>
+    <p><a href="GH/ME_0746.pdf" target="_blank"> TIDEPOOL MICROCOSM</a>
+    <p><a href="GH/GH_0910.pdf" target="_blank"> TIGER, TIGER (Felis tigris)</a>
+    <p><a href="GH/GH_0737.pdf" target="_blank"> TIMES THREE</a>
+    <p><a href="GH/GH_0743.pdf" target="_blank"> TIMES THREE</a>
+    <p><a href="GH/GH_0333.pdf" target="_blank"> TO AN ORB WEAVER (Argiope aurantia)</a>
+    <p><a href="GH/GH_0334.pdf" target="_blank"> TO AN ORB WEAVER (Argiope aurantia)</a>
+    <p><a href="GH/GH_0330.pdf" target="_blank"> TO AN ORB WEAVER (Argiope urantia)</a>
+    <p><a href="GH/GH_0219.pdf" target="_blank"> TO GERARD MANLEY HOPKINS AND OTHER SIRES</a>
+    <p><a href="GH/GH_0331.pdf" target="_blank"> TO HIM WHO PROPOSED WITH SHAKESPEARE'S SONNETS</a>
+    <p><a href="GH/GH_0332.pdf" target="_blank"> TO KILL  A CROW</a>
+    <p><a href="GH/GH_0038.pdf" target="_blank"> TO KILL A CROW</a>
+    <p><a href="GH/GH_0162.pdf" target="_blank"> TO KILL A CROW</a>
+    <p><a href="GH/GH_0340.pdf" target="_blank"> TO MEASURE TOMORROW</a>
+    <p><a href="GH/GH_0090.pdf" target="_blank"> TO PEGASUS</a>
+    <p><a href="GH/GH_0359.pdf" target="_blank"> TO PLATO WITH THANKS</a>
+    <p><a href="GH/GH_0016.pdf" target="_blank"> TO THE MASTER POET FROM HIS STUDENT</a>
+    <p><a href="GH/GH_0110.pdf" target="_blank"> TO THE MASTER POET FROM HIS STUDENT</a>
+    <p><a href="GH/GH_0926.pdf" target="_blank"> TO THE MASTER POET FROM HIS STUDENT</a>
+    <p><a href="GH/GH_0048.pdf" target="_blank"> TO THE MUSE OF LYRIC POETRY WHEREVER YOU ARE</a>
+    <p><a href="GH/GH_0335.pdf" target="_blank"> TO THOSE DOCTORS AND OTHERS IT MAY CONCERN</a>
+    <p><a href="GH/GH_0619.pdf" target="_blank"> TO WHOM IT MAY CONCERN</a>
+    <p><a href="GH/GH_0705.pdf" target="_blank"> TOGETHER ON THIS FOGGY SHORE (for Karen & Ron)</a>
+    <p><a href="GH/GH_0549.pdf" target="_blank"> TOO MANY ROAD SIGNS</a>
+    <p><a href="GH/ME_0468.pdf" target="_blank"> TORERO</a>
+    <p><a href="GH/ME_0473.pdf" target="_blank"> TORERO</a>
+    <p><a href="GH/ME_0871.pdf" target="_blank"> TORERO</a>
+    <p><a href="GH/GH_0888.pdf" target="_blank"> TORERO</a>
+    <p><a href="GH/GH_0836.pdf" target="_blank"> TRAPEZE ACT</a>
+    <p><a href="GH/GH_0918.pdf" target="_blank"> TRAPEZE ACT</a>
+    <p><a href="GH/GH_0498.pdf" target="_blank"> TRIHEDRONESS</a>
+    <p><a href="GH/GH_0211.pdf" target="_blank"> TRUE NORTH FOR THE TYRO</a>
+    <p><a href="GH/ME_0929.pdf" target="_blank"> TRUE NORTH FOR THE TYRO</a>
+    <p><a href="GH/GH_0577.pdf" target="_blank"> TRUMPET MAN</a>
+    <p><a href="GH/GH_0232.pdf" target="_blank"> TRUMPET MAN SOLO</a>
+    <p><a href="GH/GH_0015.pdf" target="_blank"> TRYING TO GET HOME</a>
+    <p><a href="GH/GH_0228.pdf" target="_blank"> TRYING TO IGNORE THE METAPHOR (While Writing a French Rondeau)</a>
+    <p><a href="GH/GH_0085.pdf" target="_blank"> TRYING TO IGNORE THE METAPHORS</a>
+    <p><a href="GH/ME_0106.pdf" target="_blank"> TRYING TO OUTRUN THE PROPHECY</a>
+    <p><a href="GH/GH_0507.pdf" target="_blank"> UBRAN UNDER</a>
+    <p><a href="GH/GH_0557.pdf" target="_blank"> UNIVERSAL KINGDOM</a>
+    <p><a href="GH/ME_0011.pdf" target="_blank"> UPSTART IN A STETSON</a>
+    <p><a href="GH/GH_0338.pdf" target="_blank"> UPSTART IN A STETSON</a>
+    <p><a href="GH/GH_0553.pdf" target="_blank"> VANISHING POINT</a>
+    <p><a href="GH/GH_0608.pdf" target="_blank"> VERNAL EQUINOX, HIGHWAY-0101</a>
+    <p><a href="GH/GH_0360.pdf" target="_blank"> VIEWING MAGRITTE'S "THE LOVERS"</a>
+    <p><a href="GH/GH_0434.pdf" target="_blank"> VIEWPOINT IN HAIKU</a>
+    <p><a href="GH/GH_0666.pdf" target="_blank"> VILIAINOUS VILIANELLE (Macavity vs. Catwoman)</a>
+    <p><a href="GH/GH_0726.pdf" target="_blank"> VILLANELLE FOR THE VILLAIN (Lugosi, Son of Macavity)</a>
+    <p><a href="GH/GH_0361.pdf" target="_blank"> VILLANELLE IN VIRIDESCENT GRAY</a>
+    <p><a href="GH/GH_0008.pdf" target="_blank"> VILLANELLE IN VIRIDESCENT GRAYS</a>
+    <p><a href="GH/GH_0811.pdf" target="_blank"> VISIT IN THE COUNTRY</a>
+    <p><a href="GH/GH_0362.pdf" target="_blank"> VOICES</a>
+    <p><a href="GH/GH_0061.pdf" target="_blank"> VOYEUR</a>
+    <p><a href="GH/GH_0010.pdf" target="_blank"> WAITING ROOM</a>
+    <p><a href="GH/GH_0142.pdf" target="_blank"> WAITING ROOM</a>
+    <p><a href="GH/GH_0009.pdf" target="_blank"> WALKING TO MORNING</a>
+    <p><a href="GH/GH_0562.pdf" target="_blank"> WALKING TO WAKEN after Richard Wilbur's "Walking to Sleep"</a>
+    <p><a href="GH/GH_0363.pdf" target="_blank"> WALKING TO WAKING (after Richard Wilbur's "Walking to Sleep.")</a>
+    <p><a href="GH/GH_0616.pdf" target="_blank"> WARM BEADS</a>
+    <p><a href="GH/GH_0699.pdf" target="_blank"> WARM BEADS</a>
+    <p><a href="GH/GH_0571.pdf" target="_blank"> WATCHING THE MUSIC</a>
+    <p><a href="GH/GH_0364.pdf" target="_blank"> WATERCOLOR WEEKENDS</a>
+    <p><a href="GH/GH_0617.pdf" target="_blank"> WEST SIDE WINDOW</a>
+    <p><a href="GH/GH_0365.pdf" target="_blank"> WHAT IT WILL TAKE</a>
+    <p><a href="GH/GH_0007.pdf" target="_blank"> WHAT MAY BE FOUND</a>
+    <p><a href="GH/GH_0773.pdf" target="_blank"> WHAT?!</a>
+    <p><a href="GH/GH_0582.pdf" target="_blank"> WHEN CALLAS LAST SANG</a>
+    <p><a href="GH/GH_0850.pdf" target="_blank"> WHERE THE BLEND BEGINS</a>
+    <p><a href="GH/GH_0586.pdf" target="_blank"> WHERE WOULD METAPHOR BE WITHOUT CATS?</a>
+    <p><a href="GH/GH_0049.pdf" target="_blank"> WHILE HE'S AWAY</a>
+    <p><a href="GH/GH_0189.pdf" target="_blank"> WHO NEEDS EDEN?</a>
+    <p><a href="GH/GH_0343.pdf" target="_blank"> WHO NEEDS EDEN?</a>
+    <p><a href="GH/GH_0465.pdf" target="_blank"> WHO NEEDS EDEN?</a>
+    <p><a href="GH/GH_0089.pdf" target="_blank"> WILTON'S LIVING WILL</a>
+    <p><a href="GH/GH_0760.pdf" target="_blank"> WINGING IT</a>
+    <p><a href="GH/ME_0818.pdf" target="_blank"> WINGING IT</a>
+    <p><a href="GH/ME_0820.pdf" target="_blank"> WINGING IT</a>
+    <p><a href="GH/GH_0892.pdf" target="_blank"> WINGING IT</a>
+    <p><a href="GH/GH_0088.pdf" target="_blank"> WINGS</a>
+    <p><a href="GH/GH_0879.pdf" target="_blank"> WINTER INHERENT</a>
+    <p><a href="GH/GH_0367.pdf" target="_blank"> WINTER OVERTURES</a>
+    <p><a href="GH/GH_0368.pdf" target="_blank"> WINTER OVERTURES</a>
+    <p><a href="GH/GH_0848.pdf" target="_blank"> WITNESS</a>
+    <p><a href="GH/GH_0183.pdf" target="_blank"> WITNESS IN THE PINES</a>
+    <p><a href="GH/GH_0198.pdf" target="_blank"> WOMAN BEHOLD YOUR SON</a>
+    <p><a href="GH/GH_0234.pdf" target="_blank"> WOMAN BELOW</a>
+    <p><a href="GH/GH_0539.pdf" target="_blank"> WORKING ON IT</a>
+    <p><a href="GH/GH_0244.pdf" target="_blank"> YELLOWKNIFE OUTPOST, ALASKA</a>
+	</h5>
+</div>
+
+<div id="Filename" class="tabcontent">
+  <h3><center>Poems by Filename</center></h3>
+  <h5>
+    <p><a href="GH/GH_0001.pdf" target="_blank"> GH_0001.pdf - ON A WALKING / TALKING AFTERNOON</a>
+    <p><a href="GH/GH_0002.pdf" target="_blank"> GH_0002.pdf --01971, YOUNG PLACIDO DOMINGO AS HUON</a>
+    <p><a href="GH/GH_0003.pdf" target="_blank"> GH_0003.pdf - THE INTERLOPER (EICHHORNIA CRASSIPES)</a>
+    <p><a href="GH/GH_0004.pdf" target="_blank"> GH_0004.pdf - THE IRIS LOVERS</a>
+    <p><a href="GH/GH_0005.pdf" target="_blank"> GH_0005.pdf - FISCAL ADDRESS TO OURSELF</a>
+    <p><a href="GH/GH_0006.pdf" target="_blank"> GH_0006.pdf - LOST</a>
+    <p><a href="GH/GH_0007.pdf" target="_blank"> GH_0007.pdf - WHAT MAY BE FOUND</a>
+    <p><a href="GH/GH_0008.pdf" target="_blank"> GH_0008.pdf - VILLANELLE IN VIRIDESCENT GRAYS</a>
+    <p><a href="GH/GH_0009.pdf" target="_blank"> GH_0009.pdf - WALKING TO MORNING</a>
+    <p><a href="GH/GH_0010.pdf" target="_blank"> GH_0010.pdf - WAITING ROOM</a>
+    <p><a href="GH/ME_0011.pdf" target="_blank"> ME_0011.pdf - UPSTART IN A STETSON</a>
+    <p><a href="GH/ME_0013.pdf" target="_blank"> ME_0013.pdf - AN UNEARTHED SCROLL OF KHUFU</a>
+    <p><a href="GH/GH_0015.pdf" target="_blank"> GH_0015.pdf - TRYING TO GET HOME</a>
+    <p><a href="GH/GH_0016.pdf" target="_blank"> GH_0016.pdf - TO THE MASTER POET FROM HIS STUDENT</a>
+    <p><a href="GH/GH_0017.pdf" target="_blank"> GH_0017.pdf - THE TRUTH OF POEMS</a>
+    <p><a href="GH/GH_0018.pdf" target="_blank"> GH_0018.pdf - RECONSIDERING HIS POEM ABOUT THE OLD BROADS</a>
+    <p><a href="GH/GH_0019.pdf" target="_blank"> GH_0019.pdf - OTHERWHERE</a>
+    <p><a href="GH/GH_0020.pdf" target="_blank"> GH_0020.pdf - FALLING WEATHER</a>
+    <p><a href="GH/GH_0021.pdf" target="_blank"> GH_0021.pdf - THE CRAVING</a>
+    <p><a href="GH/GH_0022.pdf" target="_blank"> GH_0022.pdf - LEGACY OF PAST POETS</a>
+    <p><a href="GH/GH_0023.pdf" target="_blank"> GH_0023.pdf - SPOILSPORT</a>
+    <p><a href="GH/GH_0024.pdf" target="_blank"> GH_0024.pdf - A STARRING ROLE</a>
+    <p><a href="GH/GH_0025.pdf" target="_blank"> GH_0025.pdf - THE SPECIALIST</a>
+    <p><a href="GH/GH_0026.pdf" target="_blank"> GH_0026.pdf - TABLE SETTING</a>
+    <p><a href="GH/GH_0027.pdf" target="_blank"> GH_0027.pdf - TAKING A FRIEND TO MARISSA'S STUDIO</a>
+    <p><a href="GH/GH_0028.pdf" target="_blank"> GH_0028.pdf - SNOW LIGHT</a>
+    <p><a href="GH/GH_0029.pdf" target="_blank"> GH_0029.pdf - SHE</a>
+    <p><a href="GH/GH_0030.pdf" target="_blank"> GH_0030.pdf - SEMINAR (FROM A STUDENT OF THE MASTER POET)</a>
+    <p><a href="GH/GH_0031.pdf" target="_blank"> GH_0031.pdf - SEEKERS ON THE EDGE</a>
+    <p><a href="GH/GH_0032.pdf" target="_blank"> GH_0032.pdf - REPERTOIRE</a>
+    <p><a href="GH/GH_0033.pdf" target="_blank"> GH_0033.pdf - ROLE REVERSAL</a>
+    <p><a href="GH/GH_0034.pdf" target="_blank"> GH_0034.pdf - REMEMBERING SYLVIA PLATH,-01932—1963</a>
+    <p><a href="GH/GH_0035.pdf" target="_blank"> GH_0035.pdf - ON ENTERING A STATISTICAL BIAS</a>
+    <p><a href="GH/GH_0036.pdf" target="_blank"> GH_0036.pdf - ON ENTERING A STATISTICAL BIAS</a>
+    <p><a href="GH/GH_0037.pdf" target="_blank"> GH_0037.pdf - NO YANG, NO YIN</a>
+    <p><a href="GH/GH_0038.pdf" target="_blank"> GH_0038.pdf - TO KILL A CROW</a>
+    <p><a href="GH/GH_0039.pdf" target="_blank"> GH_0039.pdf - BODY LANGUAGE</a>
+    <p><a href="GH/GH_0039.pdf" target="_blank"> GH_0039.pdf - SEMANTICS</a>
+    <p><a href="GH/GH_0040.pdf" target="_blank"> GH_0040.pdf - MR. FOXE'S THEORY</a>
+    <p><a href="GH/GH_0041.pdf" target="_blank"> GH_0041.pdf - SOUTHWEST DRY SPELL</a>
+    <p><a href="GH/GH_0042.pdf" target="_blank"> GH_0042.pdf - ESTUARY SIDEPOOL</a>
+    <p><a href="GH/GH_0043.pdf" target="_blank"> GH_0043.pdf - MOUNTAIN BEACONS</a>
+    <p><a href="GH/GH_0044.pdf" target="_blank"> GH_0044.pdf - THE HUNGER MOON</a>
+    <p><a href="GH/GH_0045.pdf" target="_blank"> GH_0045.pdf - REPARATION</a>
+    <p><a href="GH/GH_0046.pdf" target="_blank"> GH_0046.pdf - BECAUSE OF YOU, LOVE, MUCH IS STILL TO BE</a>
+    <p><a href="GH/GH_0047.pdf" target="_blank"> GH_0047.pdf - MOTHER / DAUGHTER BANQUETS</a>
+    <p><a href="GH/GH_0048.pdf" target="_blank"> GH_0048.pdf - TO THE MUSE OF LYRIC POETRY WHEREVER YOU ARE</a>
+    <p><a href="GH/GH_0049.pdf" target="_blank"> GH_0049.pdf - WHILE HE'S AWAY</a>
+    <p><a href="GH/GH_0050.pdf" target="_blank"> GH_0050.pdf - FEVER-0104</a>
+    <p><a href="GH/GH_0051.pdf" target="_blank"> GH_0051.pdf - STOPPING IN THE DESERT ALONE</a>
+    <p><a href="GH/GH_0052.pdf" target="_blank"> GH_0052.pdf - AUDITORIUM</a>
+    <p><a href="GH/GH_0053.pdf" target="_blank"> GH_0053.pdf - OF THEE WE SING</a>
+    <p><a href="GH/GH_0054.pdf" target="_blank"> GH_0054.pdf - STATUS REPORT</a>
+    <p><a href="GH/GH_0055.pdf" target="_blank"> GH_0055.pdf - THE SUITOR</a>
+    <p><a href="GH/GH_0056.pdf" target="_blank"> GH_0056.pdf - SWAMPSCAPE / ESCAPE</a>
+    <p><a href="GH/ME_0057.pdf" target="_blank"> ME_0057.pdf - ON THE WAY TO THE BROKEN BRIDGE</a>
+    <p><a href="GH/GH_0059.pdf" target="_blank"> GH_0059.pdf - AQUARIUM</a>
+    <p><a href="GH/GH_0060.pdf" target="_blank"> GH_0060.pdf - LOVERS AT RENE MAGRITTE'S RETROSPECTIVE</a>
+    <p><a href="GH/GH_0061.pdf" target="_blank"> GH_0061.pdf - VOYEUR</a>
+    <p><a href="GH/GH_0062.pdf" target="_blank"> GH_0062.pdf - THE WINNERS</a>
+    <p><a href="GH/GH_0063.pdf" target="_blank"> GH_0063.pdf - DON JUAN AS GOURMAND</a>
+    <p><a href="GH/GH_0064.pdf" target="_blank"> GH_0064.pdf - MASTER'S DEGREE</a>
+    <p><a href="GH/GH_0065.pdf" target="_blank"> GH_0065.pdf - THE MIDNIGHT LOOP</a>
+    <p><a href="GH/GH_0067.pdf" target="_blank"> GH_0067.pdf - EULOGY FOR AN ACTOR</a>
+    <p><a href="GH/GH_0068.pdf" target="_blank"> GH_0068.pdf - REMEMBERING TREBLINKA</a>
+    <p><a href="GH/GH_0069.pdf" target="_blank"> GH_0069.pdf - THERE WAS A WOMAN WHO USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/GH_0070.pdf" target="_blank"> GH_0070.pdf - SEASONAL MURALIST</a>
+    <p><a href="GH/GH_0071.pdf" target="_blank"> GH_0071.pdf - KING TUTANKHAMUN:</a>
+    <p><a href="GH/GH_0072.pdf" target="_blank"> GH_0072.pdf - FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0073.pdf" target="_blank"> GH_0073.pdf - THE HURRICANE HUNTERS</a>
+    <p><a href="GH/GH_0074.pdf" target="_blank"> GH_0074.pdf - OLD OKIE WIND</a>
+    <p><a href="GH/GH_0075.pdf" target="_blank"> GH_0075.pdf - REFLECTING ON THE LIGHT</a>
+    <p><a href="GH/GH_0076.pdf" target="_blank"> GH_0076.pdf - BECAUSE OF YOU, LOVE, MUCH IS STILL TO BE</a>
+    <p><a href="GH/GH_0077.pdf" target="_blank"> GH_0077.pdf - CONTROLLER</a>
+    <p><a href="GH/GH_0078.pdf" target="_blank"> GH_0078.pdf - SANDSCAPE, SOUNDSCAPE</a>
+    <p><a href="GH/GH_0079.pdf" target="_blank"> GH_0079.pdf - BALLADEERS BY NIGHT</a>
+    <p><a href="GH/GH_0080.pdf" target="_blank"> GH_0080.pdf - OCTOBER BEFORE SLEEP</a>
+    <p><a href="GH/GH_0081.pdf" target="_blank"> GH_0081.pdf - THANKS TO YOU, LOVE, MUCH IS STILL TO BE</a>
+    <p><a href="GH/GH_0082.pdf" target="_blank"> GH_0082.pdf - THE HUNGER MOON</a>
+    <p><a href="GH/GH_0083.pdf" target="_blank"> GH_0083.pdf - ENCOUNTER WITH CANIS LUPUS</a>
+    <p><a href="GH/GH_0084.pdf" target="_blank"> GH_0084.pdf - LEAVING HOME</a>
+    <p><a href="GH/GH_0085.pdf" target="_blank"> GH_0085.pdf - TRYING TO IGNORE THE METAPHORS</a>
+    <p><a href="GH/GH_0086.pdf" target="_blank"> GH_0086.pdf - STILL REMEMBERING SYLVIA PLATH</a>
+    <p><a href="GH/GH_0087.pdf" target="_blank"> GH_0087.pdf - SECRET PIECES</a>
+    <p><a href="GH/GH_0088.pdf" target="_blank"> GH_0088.pdf - WINGS</a>
+    <p><a href="GH/GH_0089.pdf" target="_blank"> GH_0089.pdf - WILTON'S LIVING WILL</a>
+    <p><a href="GH/GH_0090.pdf" target="_blank"> GH_0090.pdf - TO PEGASUS</a>
+    <p><a href="GH/GH_0091.pdf" target="_blank"> GH_0091.pdf - POTATO SECRETS</a>
+    <p><a href="GH/GH_0092.pdf" target="_blank"> GH_0092.pdf - KNOWING OF LOVE</a>
+    <p><a href="GH/GH_0093.pdf" target="_blank"> GH_0093.pdf - STATE PARK</a>
+    <p><a href="GH/GH_0094.pdf" target="_blank"> GH_0094.pdf - STILL FLYING THE JUNEAU ICEFRIELD</a>
+    <p><a href="GH/GH_0095.pdf" target="_blank"> GH_0095.pdf - COLOR-CODED</a>
+    <p><a href="GH/GH_0096.pdf" target="_blank"> GH_0096.pdf - A FRIEND LIKE YOU</a>
+    <p><a href="GH/GH_0097.pdf" target="_blank"> GH_0097.pdf - LEGACY OF DEAD POETS</a>
+    <p><a href="GH/GH_0098.pdf" target="_blank"> GH_0098.pdf - THE WINNERS</a>
+    <p><a href="GH/GH_0099.pdf" target="_blank"> GH_0099.pdf - HAIKU ON HUMANS</a>
+    <p><a href="GH/GH_0100.pdf" target="_blank"> GH_0100.pdf - CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0101.pdf" target="_blank"> GH_0101.pdf - SIR SAM'S SOLO IN BEE FLAT</a>
+    <p><a href="GH/GH_0102.pdf" target="_blank"> GH_0102.pdf - THE POWER TO PRAISE</a>
+    <p><a href="GH/GH_0103.pdf" target="_blank"> GH_0103.pdf - MISSIVE FROM A KNIGHT</a>
+    <p><a href="GH/GH_0104.pdf" target="_blank"> GH_0104.pdf - CUCKOLD AND KING</a>
+    <p><a href="GH/GH_0105.pdf" target="_blank"> GH_0105.pdf - (Calonyction aculeatum)</a>
+    <p><a href="GH/ME_0106.pdf" target="_blank"> ME_0106.pdf - TRYING TO OUTRUN THE PROPHECY</a>
+    <p><a href="GH/GH_0108.pdf" target="_blank"> GH_0108.pdf - THE ROAD NOT FINISHED (An Evening's Chance Encounter)</a>
+    <p><a href="GH/GH_0110.pdf" target="_blank"> GH_0110.pdf - TO THE MASTER POET FROM HIS STUDENT</a>
+    <p><a href="GH/GH_0111.pdf" target="_blank"> GH_0111.pdf - THE HURRICANE HUNTERS</a>
+    <p><a href="GH/GH_0112.pdf" target="_blank"> GH_0112.pdf - A PARTY FOR THE PRODIGAL</a>
+    <p><a href="GH/GH_0113.pdf" target="_blank"> GH_0113.pdf - STILL DISCOVERING THE WHEEL</a>
+    <p><a href="GH/GH_0114.pdf" target="_blank"> GH_0114.pdf - STILL FLYING THE JUNEAU ICEFIELD</a>
+    <p><a href="GH/GH_0115.pdf" target="_blank"> GH_0115.pdf - ASSATEAGUE WILD</a>
+    <p><a href="GH/GH_0116.pdf" target="_blank"> GH_0116.pdf - MOTHER / DAUGHTER BANQUETS</a>
+    <p><a href="GH/GH_0117.pdf" target="_blank"> GH_0117.pdf - LEGACY OF DEAD POETS</a>
+    <p><a href="GH/GH_0118.pdf" target="_blank"> GH_0118.pdf - CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0119.pdf" target="_blank"> GH_0119.pdf - POETRY JUDGE</a>
+    <p><a href="GH/GH_0120.pdf" target="_blank"> GH_0120.pdf - A NOTE OF APPRECIATION</a>
+    <p><a href="GH/GH_0121.pdf" target="_blank"> GH_0121.pdf - NIGHT OUT</a>
+    <p><a href="GH/GH_0122.pdf" target="_blank"> GH_0122.pdf - THE TETRARCH AFTER MIDNIGHT</a>
+    <p><a href="GH/ME_0123.pdf" target="_blank"> ME_0123.pdf - THE FORGIVEN & DISCOVERY IN THE FOREST</a>
+    <p><a href="GH/GH_0125.pdf" target="_blank"> GH_0125.pdf - CALLIGRAPHY BY NIGHT</a>
+    <p><a href="GH/GH_0125.pdf" target="_blank"> GH_0125.pdf - SUNRISE IN ST. LOUIS</a>
+    <p><a href="GH/GH_0126.pdf" target="_blank"> GH_0126.pdf - GLIMPSES</a>
+    <p><a href="GH/GH_0127.pdf" target="_blank"> GH_0127.pdf - STEALERS KEEPERS -- For Monet</a>
+    <p><a href="GH/GH_0128.pdf" target="_blank"> GH_0128.pdf - FURNITURE SHIPMENT FROM FORMOSA</a>
+    <p><a href="GH/GH_0130.pdf" target="_blank"> GH_0130.pdf - THE UNLIKELY HOST</a>
+    <p><a href="GH/GH_0131.pdf" target="_blank"> GH_0131.pdf - LILY OF THE FIELD</a>
+    <p><a href="GH/GH_0132.pdf" target="_blank"> GH_0132.pdf - MAKING GOOD CONNECTIONS</a>
+    <p><a href="GH/GH_0133.pdf" target="_blank"> GH_0133.pdf - SEARCHING FOR ROAD SIGNS</a>
+    <p><a href="GH/GH_0134.pdf" target="_blank"> GH_0134.pdf - THE ARTISAN</a>
+    <p><a href="GH/GH_0135.pdf" target="_blank"> GH_0135.pdf - GIFT HORSE</a>
+    <p><a href="GH/GH_0136.pdf" target="_blank"> GH_0136.pdf - CRITIC'S REVIEW OF A LEADING ROLE</a>
+    <p><a href="GH/GH_0138.pdf" target="_blank"> GH_0138.pdf - BIRTHSTONE</a>
+    <p><a href="GH/GH_0139.pdf" target="_blank"> GH_0139.pdf - ADOLESCENT ACUMEN</a>
+    <p><a href="GH/GH_0140.pdf" target="_blank"> GH_0140.pdf - BALLADEERS BY NIGHT</a>
+    <p><a href="GH/GH_0141.pdf" target="_blank"> GH_0141.pdf - HOPI HOMECOMING</a>
+    <p><a href="GH/GH_0142.pdf" target="_blank"> GH_0142.pdf - WAITING ROOM</a>
+    <p><a href="GH/GH_0143.pdf" target="_blank"> GH_0143.pdf - ON A MAUNDY THURSDAY IN MACAO</a>
+    <p><a href="GH/GH_0144.pdf" target="_blank"> GH_0144.pdf - THE END OF FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0145.pdf" target="_blank"> GH_0145.pdf - EULOGY FOR AN ACTOR</a>
+    <p><a href="GH/GH_0146.pdf" target="_blank"> GH_0146.pdf - 7:15 REGULARS</a>
+    <p><a href="GH/GH_0147.pdf" target="_blank"> GH_0147.pdf - STUDYING JOHN CIARDI'S BRIDGE</a>
+    <p><a href="GH/GH_0148.pdf" target="_blank"> GH_0148.pdf - IN DEFENSE OF MY POETRY</a>
+    <p><a href="GH/GH_0149.pdf" target="_blank"> GH_0149.pdf - CHICAGO WATERCOLOR SHOW</a>
+    <p><a href="GH/GH_0150.pdf" target="_blank"> GH_0150.pdf - AUDITORIUM</a>
+    <p><a href="GH/GH_0151.pdf" target="_blank"> GH_0151.pdf - SEMANTICS</a>
+    <p><a href="GH/GH_0152.pdf" target="_blank"> GH_0152.pdf - EPISTEMOLOGY</a>
+    <p><a href="GH/GH_0153.pdf" target="_blank"> GH_0153.pdf - PILGRIMAGE TO BLUE</a>
+    <p><a href="GH/GH_0154.pdf" target="_blank"> GH_0154.pdf - STAMP STANDARD TIME</a>
+    <p><a href="GH/GH_0155.pdf" target="_blank"> GH_0155.pdf - ATREMIS IN THE SKYH ON DIAMOND POINT</a>
+    <p><a href="GH/GH_0156.pdf" target="_blank"> GH_0156.pdf - OVERTURES</a>
+    <p><a href="GH/GH_0157.pdf" target="_blank"> GH_0157.pdf - "WHEN EVERYTHING THAT TICKED HAS STOPPED" . . . Emily Dickinson</a>
+    <p><a href="GH/GH_0158.pdf" target="_blank"> GH_0158.pdf - SISTER ACT</a>
+    <p><a href="GH/GH_0159.pdf" target="_blank"> GH_0159.pdf - OLD TESTAMENT FROM JOHN</a>
+    <p><a href="GH/GH_0160.pdf" target="_blank"> GH_0160.pdf - REPERTOIRE</a>
+    <p><a href="GH/GH_0161.pdf" target="_blank"> GH_0161.pdf - ADDIE AT EIGHTY</a>
+    <p><a href="GH/GH_0162.pdf" target="_blank"> GH_0162.pdf - TO KILL A CROW</a>
+    <p><a href="GH/GH_0163.pdf" target="_blank"> GH_0163.pdf - A BOWL OF BLUE BLOSSOMS</a>
+    <p><a href="GH/GH_0164.pdf" target="_blank"> GH_0164.pdf - BAND PRACTICE</a>
+    <p><a href="GH/GH_0165.pdf" target="_blank"> GH_0165.pdf - THE MASTER SILVERSMITH</a>
+    <p><a href="GH/GH_0166.pdf" target="_blank"> GH_0166.pdf - LAST CARD DOWN</a>
+    <p><a href="GH/GH_0167.pdf" target="_blank"> GH_0167.pdf - DITHYRAMB IMPROMPTU</a>
+    <p><a href="GH/GH_0168.pdf" target="_blank"> GH_0168.pdf - NO BREAK IN THE FORCAST</a>
+    <p><a href="GH/ME_0169.pdf" target="_blank"> ME_0169.pdf - THE ROAD NOT FINISHED (An Evening's Chance Encounter)</a>
+    <p><a href="GH/GH_0171.pdf" target="_blank"> GH_0171.pdf - SUPERSTITION STANLEY AND THE LOST DUTCHMAN MINE</a>
+    <p><a href="GH/GH_0172.pdf" target="_blank"> GH_0172.pdf - A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0173.pdf" target="_blank"> GH_0173.pdf - STILL DISCOVERING THE WHEEL</a>
+    <p><a href="GH/GH_0174.pdf" target="_blank"> GH_0174.pdf - LEAVING HOME</a>
+    <p><a href="GH/GH_0175.pdf" target="_blank"> GH_0175.pdf - SUPERSTITION STANLEY AND THE LOST DUTCHMAN MINE</a>
+    <p><a href="GH/GH_0176.pdf" target="_blank"> GH_0176.pdf - HOW TO GET BY</a>
+    <p><a href="GH/GH_0177.pdf" target="_blank"> GH_0177.pdf - SAGANESQUE SONNETS, Creation According to Carl</a>
+    <p><a href="GH/GH_0178.pdf" target="_blank"> GH_0178.pdf - SAGANESQUE SONNETS, TWO YEARS APART</a>
+    <p><a href="GH/GH_0179.pdf" target="_blank"> GH_0179.pdf - APPRECIATION</a>
+    <p><a href="GH/GH_0180.pdf" target="_blank"> GH_0180.pdf - DITHYRAMB IMPROMPTU</a>
+    <p><a href="GH/GH_0181.pdf" target="_blank"> GH_0181.pdf - CHICAGO:  FIRST LADY OF THE LAKE</a>
+    <p><a href="GH/GH_0182.pdf" target="_blank"> GH_0182.pdf - SUDDEN TWIST</a>
+    <p><a href="GH/GH_0183.pdf" target="_blank"> GH_0183.pdf - WITNESS IN THE PINES</a>
+    <p><a href="GH/GH_0184.pdf" target="_blank"> GH_0184.pdf - CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0185.pdf" target="_blank"> GH_0185.pdf - I, IGNOTUM PER IGNOTIUS</a>
+    <p><a href="GH/GH_0186.pdf" target="_blank"> GH_0186.pdf - APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0187.pdf" target="_blank"> GH_0187.pdf - PACIFIC PROLOGUE</a>
+    <p><a href="GH/GH_0188.pdf" target="_blank"> GH_0188.pdf - HILTON HOLLINGSWORTH, III</a>
+    <p><a href="GH/GH_0189.pdf" target="_blank"> GH_0189.pdf - WHO NEEDS EDEN?</a>
+    <p><a href="GH/GH_0190.pdf" target="_blank"> GH_0190.pdf - AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0191.pdf" target="_blank"> GH_0191.pdf - A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0192.pdf" target="_blank"> GH_0192.pdf - A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0193.pdf" target="_blank"> GH_0193.pdf - MAINE FLOOR</a>
+    <p><a href="GH/GH_0194.pdf" target="_blank"> GH_0194.pdf - THE EXHIBITIONISTS</a>
+    <p><a href="GH/GH_0195.pdf" target="_blank"> GH_0195.pdf - APOLOGIES TO CLEMENT MOORE ONLY</a>
+    <p><a href="GH/GH_0197.pdf" target="_blank"> GH_0197.pdf - APOLOGIES TO CLEMENT MOORE ONLY</a>
+    <p><a href="GH/GH_0198.pdf" target="_blank"> GH_0198.pdf - WOMAN BEHOLD YOUR SON</a>
+    <p><a href="GH/GH_0199.pdf" target="_blank"> GH_0199.pdf - THINGS YOU SHOULD KNOW IF I SAY YES</a>
+    <p><a href="GH/GH_0201.pdf" target="_blank"> GH_0201.pdf - ODYSSEY</a>
+    <p><a href="GH/GH_0202.pdf" target="_blank"> GH_0202.pdf - THE BEHOLDER'S EYE</a>
+    <p><a href="GH/GH_0203.pdf" target="_blank"> GH_0203.pdf - STAYING</a>
+    <p><a href="GH/GH_0204.pdf" target="_blank"> GH_0204.pdf - THE GO-BETWEEN</a>
+    <p><a href="GH/GH_0205.pdf" target="_blank"> GH_0205.pdf - END OF AN ERA, LINGERING LOVERS OF BALEFUL BAY</a>
+    <p><a href="GH/GH_0207.pdf" target="_blank"> GH_0207.pdf - BRINE BITCH OFF THE BAHAMAS - Love Letters in Jon's Log</a>
+    <p><a href="GH/GH_0208.pdf" target="_blank"> GH_0208.pdf - SHOWING CHICAGO TO BAUDELAIRE</a>
+    <p><a href="GH/GH_0209.pdf" target="_blank"> GH_0209.pdf - BAUDELAIRE</a>
+    <p><a href="GH/GH_0210.pdf" target="_blank"> GH_0210.pdf - GATHERING OF VERBS FOR FINDER'S STEW</a>
+    <p><a href="GH/GH_0211.pdf" target="_blank"> GH_0211.pdf - TRUE NORTH FOR THE TYRO</a>
+    <p><a href="GH/GH_0214.pdf" target="_blank"> GH_0214.pdf - THE GRANDAM'S ADOPTED GRANDSON</a>
+    <p><a href="GH/GH_0215.pdf" target="_blank"> GH_0215.pdf - GUIDING HORN</a>
+    <p><a href="GH/GH_0216.pdf" target="_blank"> GH_0216.pdf - PHARISEE?  WHAT'S THAT</a>
+    <p><a href="GH/GH_0217.pdf" target="_blank"> GH_0217.pdf - SOMETIMES SELF NEEDS RESOULING</a>
+    <p><a href="GH/GH_0218.pdf" target="_blank"> GH_0218.pdf - CRAMPED QUARTERS</a>
+    <p><a href="GH/GH_0219.pdf" target="_blank"> GH_0219.pdf - TO GERARD MANLEY HOPKINS AND OTHER SIRES</a>
+    <p><a href="GH/GH_0221.pdf" target="_blank"> GH_0221.pdf - THE GO-BETWEEN (Petrarchian Sonnet for the First J. N.)</a>
+    <p><a href="GH/GH_0222.pdf" target="_blank"> GH_0222.pdf - THE ANSWER IS NOT IN THE BOOK</a>
+    <p><a href="GH/GH_0224.pdf" target="_blank"> GH_0224.pdf - A HEX ON MY NEIGHBOR'S GREEN THUMB</a>
+    <p><a href="GH/GH_0225.pdf" target="_blank"> GH_0225.pdf - JEREMIAD FOR A CRUEL QUEEN</a>
+    <p><a href="GH/GH_0226.pdf" target="_blank"> GH_0226.pdf - EMISSARY (Memo to Octavio Paz)</a>
+    <p><a href="GH/GH_0227.pdf" target="_blank"> GH_0227.pdf - THE IGNIS FATUUS</a>
+    <p><a href="GH/GH_0228.pdf" target="_blank"> GH_0228.pdf - TRYING TO IGNORE THE METAPHOR (While Writing a French Rondeau)</a>
+    <p><a href="GH/GH_0229.pdf" target="_blank"> GH_0229.pdf - ENIGMA:  THE GEMINI THING</a>
+    <p><a href="GH/GH_0230.pdf" target="_blank"> GH_0230.pdf - HYPERION NOW</a>
+    <p><a href="GH/GH_0232.pdf" target="_blank"> GH_0232.pdf - TRUMPET MAN SOLO</a>
+    <p><a href="GH/GH_0233.pdf" target="_blank"> GH_0233.pdf - A STARRING ROLE</a>
+    <p><a href="GH/GH_0234.pdf" target="_blank"> GH_0234.pdf - WOMAN BELOW</a>
+    <p><a href="GH/GH_0235.pdf" target="_blank"> GH_0235.pdf - THE INTERLOPER</a>
+    <p><a href="GH/GH_0239.pdf" target="_blank"> GH_0239.pdf - HIM I KNOW</a>
+    <p><a href="GH/GH_0240.pdf" target="_blank"> GH_0240.pdf - HIM WE KNOW</a>
+    <p><a href="GH/GH_0241.pdf" target="_blank"> GH_0241.pdf - AVONNA LEE'S MOUNTAIN</a>
+    <p><a href="GH/GH_0242.pdf" target="_blank"> GH_0242.pdf - GATHERING OF VERBS FOR FINDER'S STEW</a>
+    <p><a href="GH/GH_0243.pdf" target="_blank"> GH_0243.pdf - HEARLDRY</a>
+    <p><a href="GH/GH_0244.pdf" target="_blank"> GH_0244.pdf - YELLOWKNIFE OUTPOST, ALASKA</a>
+    <p><a href="GH/GH_0245.pdf" target="_blank"> GH_0245.pdf - IMMORTAL MARINER (At the Art Institute of Chicago)</a>
+    <p><a href="GH/GH_0246.pdf" target="_blank"> GH_0246.pdf - CHICAGO:  FIRST LADY OF THE LAKE</a>
+    <p><a href="GH/GH_0247.pdf" target="_blank"> GH_0247.pdf - SEARS TOWER</a>
+    <p><a href="GH/GH_0248.pdf" target="_blank"> GH_0248.pdf - INFLICTION</a>
+    <p><a href="GH/GH_0249.pdf" target="_blank"> GH_0249.pdf - SECRET PIECES</a>
+    <p><a href="GH/GH_0250.pdf" target="_blank"> GH_0250.pdf - DEATHVIEW</a>
+    <p><a href="GH/GH_0251.pdf" target="_blank"> GH_0251.pdf - RIVER MOTHER OF THE ALGONQUAIN</a>
+    <p><a href="GH/GH_0252.pdf" target="_blank"> GH_0252.pdf - A DAY AT DANADA</a>
+    <p><a href="GH/GH_0253.pdf" target="_blank"> GH_0253.pdf - A DAY AT DANADA</a>
+    <p><a href="GH/GH_0254.pdf" target="_blank"> GH_0254.pdf - TAKING THE CALL</a>
+    <p><a href="GH/GH_0255.pdf" target="_blank"> GH_0255.pdf - BRACKISH</a>
+    <p><a href="GH/GH_0256.pdf" target="_blank"> GH_0256.pdf - EMILY / EMILY</a>
+    <p><a href="GH/GH_0257.pdf" target="_blank"> GH_0257.pdf - SOMETIMES SELF NEEDS RESOULING</a>
+    <p><a href="GH/GH_0258.pdf" target="_blank"> GH_0258.pdf - RENASCENCE AND RENASCENCE</a>
+    <p><a href="GH/GH_0259.pdf" target="_blank"> GH_0259.pdf - RHYMING THE REASON</a>
+    <p><a href="GH/GH_0260.pdf" target="_blank"> GH_0260.pdf - RONDEL FOR EASTER</a>
+    <p><a href="GH/GH_0261.pdf" target="_blank"> GH_0261.pdf - THE MASTER SILVERSMITH</a>
+    <p><a href="GH/GH_0262.pdf" target="_blank"> GH_0262.pdf - A LONGING TO PRAISE</a>
+    <p><a href="GH/GH_0263.pdf" target="_blank"> GH_0263.pdf - RENASCENCE AND RENASCENCE</a>
+    <p><a href="GH/GH_0264.pdf" target="_blank"> GH_0264.pdf - RENASCENCE AND RENASCENCE</a>
+    <p><a href="GH/GH_0265.pdf" target="_blank"> GH_0265.pdf - THE GO-BETWEEN</a>
+    <p><a href="GH/GH_0266.pdf" target="_blank"> GH_0266.pdf - RECLAMATION</a>
+    <p><a href="GH/GH_0267.pdf" target="_blank"> GH_0267.pdf - RHYMING THE REASON</a>
+    <p><a href="GH/GH_0268.pdf" target="_blank"> GH_0268.pdf - THE POWER TO PRAISE</a>
+    <p><a href="GH/GH_0269.pdf" target="_blank"> GH_0269.pdf - ROAD SIGNS</a>
+    <p><a href="GH/GH_0270.pdf" target="_blank"> GH_0270.pdf - PRAYER LIST</a>
+    <p><a href="GH/GH_0271.pdf" target="_blank"> GH_0271.pdf - ANTHROPOLOGY PROFESSOR SAYS DARWIN GOT IT WRONG  --caption, Chicago Tribune</a>
+    <p><a href="GH/GH_0272.pdf" target="_blank"> GH_0272.pdf - JOURNEYWOMAN (McNeil Sonnet)</a>
+    <p><a href="GH/GH_0273.pdf" target="_blank"> GH_0273.pdf - APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0274.pdf" target="_blank"> GH_0274.pdf - LEAVING HOME</a>
+    <p><a href="GH/GH_0275.pdf" target="_blank"> GH_0275.pdf - THE WILDLING (Felis concolor)</a>
+    <p><a href="GH/GH_0277.pdf" target="_blank"> GH_0277.pdf - MAJOR RHAPSODY IN F SHARP MINOR</a>
+    <p><a href="GH/ME_0280.pdf" target="_blank"> ME_0280.pdf - THE NAMINGS</a>
+    <p><a href="GH/GH_0283.pdf" target="_blank"> GH_0283.pdf - QUITTING</a>
+    <p><a href="GH/GH_0286.pdf" target="_blank"> GH_0286.pdf - THE HUNGER MOON</a>
+    <p><a href="GH/GH_0287.pdf" target="_blank"> GH_0287.pdf --01500 A.D., ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/GH_0290.pdf" target="_blank"> GH_0290.pdf - MIXED MEDIA</a>
+    <p><a href="GH/GH_0291.pdf" target="_blank"> GH_0291.pdf - THE IGNIS FATUUS</a>
+    <p><a href="GH/GH_0291.pdf" target="_blank"> GH_0291.pdf - THE IGNIS FATUUS</a>
+    <p><a href="GH/GH_0292.pdf" target="_blank"> GH_0292.pdf - LIFE IN THE CHOIR LOFT</a>
+    <p><a href="GH/GH_0293.pdf" target="_blank"> GH_0293.pdf - MAJOR RHAPSODY IN C-SHARP MINOR</a>
+    <p><a href="GH/GH_0294.pdf" target="_blank"> GH_0294.pdf - DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/GH_0296.pdf" target="_blank"> GH_0296.pdf - A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0298.pdf" target="_blank"> GH_0298.pdf - ADDIE AT EIGHTY</a>
+    <p><a href="GH/GH_0299.pdf" target="_blank"> GH_0299.pdf - DESERT ODYSSEY, THEN AND NOW</a>
+    <p><a href="GH/GH_0301.pdf" target="_blank"> GH_0301.pdf - DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/GH_0303.pdf" target="_blank"> GH_0303.pdf - DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/GH_0307.pdf" target="_blank"> GH_0307.pdf - EPISTEMOLOGY</a>
+    <p><a href="GH/GH_0308.pdf" target="_blank"> GH_0308.pdf - FRONT OFFICE DRAGON</a>
+    <p><a href="GH/GH_0309.pdf" target="_blank"> GH_0309.pdf - HOPI HOMECOMING</a>
+    <p><a href="GH/GH_0310.pdf" target="_blank"> GH_0310.pdf - MILLENIA</a>
+    <p><a href="GH/GH_0311.pdf" target="_blank"> GH_0311.pdf - NARRATIVE IN WHITE</a>
+    <p><a href="GH/GH_0312.pdf" target="_blank"> GH_0312.pdf - SHOWING CHICAGO TO BAUDELAIRE</a>
+    <p><a href="GH/GH_0316.pdf" target="_blank"> GH_0316.pdf - SOUTHWEST DRY SPELL</a>
+    <p><a href="GH/GH_0317.pdf" target="_blank"> GH_0317.pdf - THE SPECIALIST</a>
+    <p><a href="GH/GH_0318.pdf" target="_blank"> GH_0318.pdf - SPOOL RIVER AFTERTHOUGHTS</a>
+    <p><a href="GH/GH_0319.pdf" target="_blank"> GH_0319.pdf - STAR SALESMAN</a>
+    <p><a href="GH/GH_0320.pdf" target="_blank"> GH_0320.pdf - STOPPING IN THE DESERT ALONE</a>
+    <p><a href="GH/GH_0321.pdf" target="_blank"> GH_0321.pdf - A TALE OF TWO POETS</a>
+    <p><a href="GH/GH_0322.pdf" target="_blank"> GH_0322.pdf - THE TETRARCH AFTER MIDNIGHT</a>
+    <p><a href="GH/GH_0324.pdf" target="_blank"> GH_0324.pdf - THREE GENERATIONS AFTER</a>
+    <p><a href="GH/GH_0325.pdf" target="_blank"> GH_0325.pdf - THREE GENERATIONS AFTER</a>
+    <p><a href="GH/GH_0326.pdf" target="_blank"> GH_0326.pdf - ALMOST FORGOTTEN JOURNEY</a>
+    <p><a href="GH/GH_0327.pdf" target="_blank"> GH_0327.pdf - COMING TO TERMS WITH HIGHT VOLTAGE</a>
+    <p><a href="GH/GH_0328.pdf" target="_blank"> GH_0328.pdf - DEEP SWAMP</a>
+    <p><a href="GH/GH_0329.pdf" target="_blank"> GH_0329.pdf - DEEP SWAMP</a>
+    <p><a href="GH/GH_0330.pdf" target="_blank"> GH_0330.pdf - TO AN ORB WEAVER (Argiope urantia)</a>
+    <p><a href="GH/GH_0331.pdf" target="_blank"> GH_0331.pdf - TO HIM WHO PROPOSED WITH SHAKESPEARE'S SONNETS</a>
+    <p><a href="GH/GH_0332.pdf" target="_blank"> GH_0332.pdf - TO KILL  A CROW</a>
+    <p><a href="GH/GH_0333.pdf" target="_blank"> GH_0333.pdf - TO AN ORB WEAVER (Argiope aurantia)</a>
+    <p><a href="GH/GH_0334.pdf" target="_blank"> GH_0334.pdf - TO AN ORB WEAVER (Argiope aurantia)</a>
+    <p><a href="GH/GH_0335.pdf" target="_blank"> GH_0335.pdf - TO THOSE DOCTORS AND OTHERS IT MAY CONCERN</a>
+    <p><a href="GH/GH_0337.pdf" target="_blank"> GH_0337.pdf - THE TRIHEDRONESS</a>
+    <p><a href="GH/GH_0338.pdf" target="_blank"> GH_0338.pdf - UPSTART IN A STETSON</a>
+    <p><a href="GH/GH_0340.pdf" target="_blank"> GH_0340.pdf - TO MEASURE TOMORROW</a>
+    <p><a href="GH/GH_0341.pdf" target="_blank"> GH_0341.pdf - A LETTER FROM A MAN OF MANY LETTERS</a>
+    <p><a href="GH/GH_0342.pdf" target="_blank"> GH_0342.pdf - A LETTER FROM A MAN OF MANY LETTERS</a>
+    <p><a href="GH/GH_0343.pdf" target="_blank"> GH_0343.pdf - WHO NEEDS EDEN?</a>
+    <p><a href="GH/GH_0344.pdf" target="_blank"> GH_0344.pdf - POSTSCRIPT</a>
+    <p><a href="GH/GH_0345.pdf" target="_blank"> GH_0345.pdf - ON OMAR, THE BELIEVER (A Ballad)</a>
+    <p><a href="GH/GH_0346.pdf" target="_blank"> GH_0346.pdf - PARADOX OF OMAR, THE BELIEVER (A Ballad)</a>
+    <p><a href="GH/GH_0347.pdf" target="_blank"> GH_0347.pdf - THE VARIABLE CONSTANT</a>
+    <p><a href="GH/GH_0349.pdf" target="_blank"> GH_0349.pdf - CHELSEANNA, LITTLE GIRL</a>
+    <p><a href="GH/GH_0350.pdf" target="_blank"> GH_0350.pdf - CHELSEANNA, LITTLE GIRL</a>
+    <p><a href="GH/GH_0351.pdf" target="_blank"> GH_0351.pdf - CHELSEANNA, MOTHER-BLIND</a>
+    <p><a href="GH/GH_0352.pdf" target="_blank"> GH_0352.pdf - BEHIND THE CURTAINS</a>
+    <p><a href="GH/GH_0353.pdf" target="_blank"> GH_0353.pdf - THE VARIABLE CONSTANT</a>
+    <p><a href="GH/GH_0354.pdf" target="_blank"> GH_0354.pdf - SAGANESQUE SONNETS</a>
+    <p><a href="GH/GH_0355.pdf" target="_blank"> GH_0355.pdf - SAGANESQUE SONNET</a>
+    <p><a href="GH/GH_0356.pdf" target="_blank"> GH_0356.pdf - IMMORTAL MARINER (At the Art Institute of Chicago)</a>
+    <p><a href="GH/GH_0357.pdf" target="_blank"> GH_0357.pdf - SEEKERS ON THE EDGE (Saganesque Sonnets)</a>
+    <p><a href="GH/GH_0358.pdf" target="_blank"> GH_0358.pdf - RETURN OF THE REAPERS</a>
+    <p><a href="GH/GH_0359.pdf" target="_blank"> GH_0359.pdf - TO PLATO WITH THANKS</a>
+    <p><a href="GH/GH_0360.pdf" target="_blank"> GH_0360.pdf - VIEWING MAGRITTE'S "THE LOVERS"</a>
+    <p><a href="GH/GH_0361.pdf" target="_blank"> GH_0361.pdf - VILLANELLE IN VIRIDESCENT GRAY</a>
+    <p><a href="GH/GH_0362.pdf" target="_blank"> GH_0362.pdf - VOICES</a>
+    <p><a href="GH/GH_0363.pdf" target="_blank"> GH_0363.pdf - WALKING TO WAKING (after Richard Wilbur's "Walking to Sleep.")</a>
+    <p><a href="GH/GH_0364.pdf" target="_blank"> GH_0364.pdf - WATERCOLOR WEEKENDS</a>
+    <p><a href="GH/GH_0365.pdf" target="_blank"> GH_0365.pdf - WHAT IT WILL TAKE</a>
+    <p><a href="GH/GH_0366.pdf" target="_blank"> GH_0366.pdf - THE WILD LOVER</a>
+    <p><a href="GH/GH_0367.pdf" target="_blank"> GH_0367.pdf - WINTER OVERTURES</a>
+    <p><a href="GH/GH_0368.pdf" target="_blank"> GH_0368.pdf - WINTER OVERTURES</a>
+    <p><a href="GH/GH_0369.pdf" target="_blank"> GH_0369.pdf - COOKING UNDERCURRENT</a>
+    <p><a href="GH/GH_0370.pdf" target="_blank"> GH_0370.pdf - THE CLUMSY CONSUMER REPORT</a>
+    <p><a href="GH/GH_0371.pdf" target="_blank"> GH_0371.pdf - THE CLUMSY CONSUMER REPORT</a>
+    <p><a href="GH/GH_0372.pdf" target="_blank"> GH_0372.pdf - THERAPY</a>
+    <p><a href="GH/GH_0374.pdf" target="_blank"> GH_0374.pdf - IF THE SHOE FITS . . .  or PASS ANOTHER BUCK</a>
+    <p><a href="GH/GH_0375.pdf" target="_blank"> GH_0375.pdf - BEAUTY IS (Japanese Tanka)</a>
+    <p><a href="GH/GH_0376.pdf" target="_blank"> GH_0376.pdf - MEASURING STICK</a>
+    <p><a href="GH/GH_0379.pdf" target="_blank"> GH_0379.pdf - ANCIENT WINDOWS</a>
+    <p><a href="GH/GH_0380.pdf" target="_blank"> GH_0380.pdf - THE ANSWERED</a>
+    <p><a href="GH/GH_0381.pdf" target="_blank"> GH_0381.pdf - THE ANSWERED</a>
+    <p><a href="GH/GH_0382.pdf" target="_blank"> GH_0382.pdf - THE ANSWERING, A Sequel to Browning's "Evelyn Hope"</a>
+    <p><a href="GH/GH_0383.pdf" target="_blank"> GH_0383.pdf - ANTHROPOLOGY PROFESSOR SAYS DARWIN GOT IT WRONG  --caption, Chicago Tribune</a>
+    <p><a href="GH/GH_0384.pdf" target="_blank"> GH_0384.pdf - AUTHOR'S IMPRINT</a>
+    <p><a href="GH/GH_0385.pdf" target="_blank"> GH_0385.pdf - AUTHOR'S IMPRINT</a>
+    <p><a href="GH/GH_0386.pdf" target="_blank"> GH_0386.pdf - AWAKENING</a>
+    <p><a href="GH/GH_0387.pdf" target="_blank"> GH_0387.pdf - BEGINNER'S PRAYER ON 89TH STREET</a>
+    <p><a href="GH/GH_0388.pdf" target="_blank"> GH_0388.pdf - BEGINNER'S PRAYER ON 89TH STREET</a>
+    <p><a href="GH/GH_0389.pdf" target="_blank"> GH_0389.pdf - BUTTERFLY GIRL</a>
+    <p><a href="GH/GH_0390.pdf" target="_blank"> GH_0390.pdf - CHALLENGE</a>
+    <p><a href="GH/GH_0391.pdf" target="_blank"> GH_0391.pdf - CHALLENGE</a>
+    <p><a href="GH/GH_0392.pdf" target="_blank"> GH_0392.pdf - CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0393.pdf" target="_blank"> GH_0393.pdf - CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0394.pdf" target="_blank"> GH_0394.pdf - CONTEMPLATING PLATO AND THE CARDINAL</a>
+    <p><a href="GH/GH_0395.pdf" target="_blank"> GH_0395.pdf - CUCKOLD AND KING</a>
+    <p><a href="GH/GH_0396.pdf" target="_blank"> GH_0396.pdf - DARING</a>
+    <p><a href="GH/GH_0397.pdf" target="_blank"> GH_0397.pdf - DARING</a>
+    <p><a href="GH/GH_0398.pdf" target="_blank"> GH_0398.pdf - DAY LILIES</a>
+    <p><a href="GH/GH_0399.pdf" target="_blank"> GH_0399.pdf - DAY LILIES</a>
+    <p><a href="GH/GH_0400.pdf" target="_blank"> GH_0400.pdf - DEATH:  A STARRING ROLE IN THE CELESTIAL SCENARIO</a>
+    <p><a href="GH/GH_0401.pdf" target="_blank"> GH_0401.pdf - DEATH:  A STARRINHG ROLE IN THE CELESTIAL SCENARIO</a>
+    <p><a href="GH/GH_0403.pdf" target="_blank"> GH_0403.pdf - DEATH:  A STARRING ROLE IN THE CELESTIAL SCENARIO</a>
+    <p><a href="GH/GH_0406.pdf" target="_blank"> GH_0406.pdf - DECODING-0101</a>
+    <p><a href="GH/GH_0407.pdf" target="_blank"> GH_0407.pdf - DECODING-0101</a>
+    <p><a href="GH/GH_0408.pdf" target="_blank"> GH_0408.pdf - DECODING-0101</a>
+    <p><a href="GH/GH_0409.pdf" target="_blank"> GH_0409.pdf - DEFYING THE BREAKERS</a>
+    <p><a href="GH/GH_0410.pdf" target="_blank"> GH_0410.pdf - ERINIA</a>
+    <p><a href="GH/GH_0411.pdf" target="_blank"> GH_0411.pdf - GARDEN KINDERGARTEN</a>
+    <p><a href="GH/GH_0412.pdf" target="_blank"> GH_0412.pdf - THE GARDEN WE CAN'T FORGET</a>
+    <p><a href="GH/GH_0413.pdf" target="_blank"> GH_0413.pdf - THE GATHERINGS</a>
+    <p><a href="GH/GH_0414.pdf" target="_blank"> GH_0414.pdf - THE GO-BETWEEN</a>
+    <p><a href="GH/GH_0415.pdf" target="_blank"> GH_0415.pdf - GOD'S ROCKER</a>
+    <p><a href="GH/GH_0416.pdf" target="_blank"> GH_0416.pdf - LILY OF THE FIELD</a>
+    <p><a href="GH/GH_0417.pdf" target="_blank"> GH_0417.pdf - THE LONG LONG FALL</a>
+    <p><a href="GH/GH_0418.pdf" target="_blank"> GH_0418.pdf - THE MASTER CRAFTSMAN</a>
+    <p><a href="GH/GH_0419.pdf" target="_blank"> GH_0419.pdf - THE MASTER SILVERSMITH</a>
+    <p><a href="GH/GH_0420.pdf" target="_blank"> GH_0420.pdf - MESSIAH</a>
+    <p><a href="GH/GH_0421.pdf" target="_blank"> GH_0421.pdf - NOT OF THIS FOLD - Another Take on John 10:16</a>
+    <p><a href="GH/GH_0422.pdf" target="_blank"> GH_0422.pdf - OVERTURE</a>
+    <p><a href="GH/GH_0423.pdf" target="_blank"> GH_0423.pdf - PAULINA'S PLACE</a>
+    <p><a href="GH/GH_0425.pdf" target="_blank"> GH_0425.pdf - THE POWER TO PRAISE</a>
+    <p><a href="GH/GH_0426.pdf" target="_blank"> GH_0426.pdf - PRAYER LIST</a>
+    <p><a href="GH/GH_0427.pdf" target="_blank"> GH_0427.pdf - RENASCENCE</a>
+    <p><a href="GH/GH_0428.pdf" target="_blank"> GH_0428.pdf - RENASCENCE</a>
+    <p><a href="GH/GH_0429.pdf" target="_blank"> GH_0429.pdf - RENASCENCE</a>
+    <p><a href="GH/GH_0430.pdf" target="_blank"> GH_0430.pdf - SERPENT SEED</a>
+    <p><a href="GH/GH_0431.pdf" target="_blank"> GH_0431.pdf - A STARRING ROLE</a>
+    <p><a href="GH/GH_0432.pdf" target="_blank"> GH_0432.pdf - SUBJECT TO SUBLIMATION</a>
+    <p><a href="GH/GH_0433.pdf" target="_blank"> GH_0433.pdf - A TIME SO FAIR</a>
+    <p><a href="GH/GH_0434.pdf" target="_blank"> GH_0434.pdf - VIEWPOINT IN HAIKU</a>
+    <p><a href="GH/GH_0435.pdf" target="_blank"> GH_0435.pdf - HAIKU FOR HUMANS</a>
+    <p><a href="GH/GH_0436.pdf" target="_blank"> GH_0436.pdf - THE FORGIVEN</a>
+    <p><a href="GH/GH_0437.pdf" target="_blank"> GH_0437.pdf - NOVEMBER SYNOPSIS</a>
+    <p><a href="GH/GH_0438.pdf" target="_blank"> GH_0438.pdf - FALLEN TOMBSTONE</a>
+    <p><a href="GH/GH_0439.pdf" target="_blank"> GH_0439.pdf - HOPI HOMECOMING</a>
+    <p><a href="GH/GH_0440.pdf" target="_blank"> GH_0440.pdf - ORIGAMI</a>
+    <p><a href="GH/GH_0444.pdf" target="_blank"> GH_0444.pdf - OBSERVATIONS OF A TRAIN RIDER</a>
+    <p><a href="GH/GH_0445.pdf" target="_blank"> GH_0445.pdf - NIGHT BREAK, COUNTY HOPITAL</a>
+    <p><a href="GH/GH_0446.pdf" target="_blank"> GH_0446.pdf - ROSES IN THE WOODS</a>
+    <p><a href="GH/GH_0448.pdf" target="_blank"> GH_0448.pdf - FANTASY IN C# MINOR FOR TRUMPET AND ORCHESTRA</a>
+    <p><a href="GH/GH_0454.pdf" target="_blank"> GH_0454.pdf - FANTASY IN C# MINOR FOR TRUMPET AND ORCHESTRA</a>
+    <p><a href="GH/GH_0460.pdf" target="_blank"> GH_0460.pdf - LONG WAY TO MORNING</a>
+    <p><a href="GH/GH_0461.pdf" target="_blank"> GH_0461.pdf - BALLAD FOR A BAD QUEEN</a>
+    <p><a href="GH/GH_0464.pdf" target="_blank"> GH_0464.pdf - AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0465.pdf" target="_blank"> GH_0465.pdf - WHO NEEDS EDEN?</a>
+    <p><a href="GH/GH_0466.pdf" target="_blank"> GH_0466.pdf - SHE USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/GH_0467.pdf" target="_blank"> GH_0467.pdf - I THINK OF CLIFF</a>
+    <p><a href="GH/ME_0468.pdf" target="_blank"> ME_0468.pdf - TORERO</a>
+    <p><a href="GH/ME_0473.pdf" target="_blank"> ME_0473.pdf - TORERO</a>
+    <p><a href="GH/ME_0477.pdf" target="_blank"> ME_0477.pdf - A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/ME_0483.pdf" target="_blank"> ME_0483.pdf - A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/ME_0489.pdf" target="_blank"> ME_0489.pdf - A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/GH_0495.pdf" target="_blank"> GH_0495.pdf - CATWALK</a>
+    <p><a href="GH/GH_0496.pdf" target="_blank"> GH_0496.pdf - SYLVIA PLATH,-01932 ---01963</a>
+    <p><a href="GH/GH_0497.pdf" target="_blank"> GH_0497.pdf - AND I REMEMBERED DR. SCHWEITZER (A Memorial)</a>
+    <p><a href="GH/GH_0498.pdf" target="_blank"> GH_0498.pdf - TRIHEDRONESS</a>
+    <p><a href="GH/GH_0499.pdf" target="_blank"> GH_0499.pdf - "WHEN EVERYTHING THAT TICKED HAS STOPPED"</a>
+    <p><a href="GH/GH_0501.pdf" target="_blank"> GH_0501.pdf - THE SOCIETY BLURB SAID "TYCOON ENTERTAINS JR. EXEC & SOUTHERN BRIDE"</a>
+    <p><a href="GH/ME_0502.pdf" target="_blank"> ME_0502.pdf - EXORCISM</a>
+    <p><a href="GH/ME_0504.pdf" target="_blank"> ME_0504.pdf - BIRTHDAY AT THE STATE FAIR</a>
+    <p><a href="GH/GH_0506.pdf" target="_blank"> GH_0506.pdf - "LIKE A PANTHER IN THE GLOVE"</a>
+    <p><a href="GH/GH_0507.pdf" target="_blank"> GH_0507.pdf - UBRAN UNDER</a>
+    <p><a href="GH/ME_0508.pdf" target="_blank"> ME_0508.pdf - LEGACY FROM THE RESEARCH LABORATORY</a>
+    <p><a href="GH/GH_0510.pdf" target="_blank"> GH_0510.pdf - DRIED ARRANGEMENT</a>
+    <p><a href="GH/GH_0511.pdf" target="_blank"> GH_0511.pdf - DRAGON BOAT RIDE</a>
+    <p><a href="GH/GH_0512.pdf" target="_blank"> GH_0512.pdf - THE SOUND OF SUMMER IS</a>
+    <p><a href="GH/GH_0513.pdf" target="_blank"> GH_0513.pdf - THE SOUND OF SUMMER IS</a>
+    <p><a href="GH/GH_0514.pdf" target="_blank"> GH_0514.pdf - FURNITURE SHIPMENT FROM FORMOSA</a>
+    <p><a href="GH/GH_0515.pdf" target="_blank"> GH_0515.pdf - THE ENLIGHTENED ONE</a>
+    <p><a href="GH/GH_0516.pdf" target="_blank"> GH_0516.pdf - BAOBAB TREE</a>
+    <p><a href="GH/GH_0517.pdf" target="_blank"> GH_0517.pdf - RUWENZORI!</a>
+    <p><a href="GH/GH_0518.pdf" target="_blank"> GH_0518.pdf - THE BEST THING MY FATHER DID WAS LIE</a>
+    <p><a href="GH/GH_0520.pdf" target="_blank"> GH_0520.pdf - ON ENCOUNTERING</a>
+    <p><a href="GH/GH_0521.pdf" target="_blank"> GH_0521.pdf - ONLY SAND</a>
+    <p><a href="GH/GH_0522.pdf" target="_blank"> GH_0522.pdf - REFLECTIONS OF A SEASHORE WEEKENG THIRTY YEARS PAST</a>
+    <p><a href="GH/GH_0523.pdf" target="_blank"> GH_0523.pdf - REFLECTIONS OF A SEASHORE WEEKEND TWENTY YEARS PAST</a>
+    <p><a href="GH/GH_0524.pdf" target="_blank"> GH_0524.pdf - RONDEAU FOR TRANSITION</a>
+    <p><a href="GH/GH_0525.pdf" target="_blank"> GH_0525.pdf - BAND PRACTICE</a>
+    <p><a href="GH/GH_0526.pdf" target="_blank"> GH_0526.pdf - FOUR THOUGHTS IN TANKA</a>
+    <p><a href="GH/GH_0527.pdf" target="_blank"> GH_0527.pdf - DON'T EVER COME WHEN I CALL</a>
+    <p><a href="GH/ME_0528.pdf" target="_blank"> ME_0528.pdf - I, IGNOTUM PER IGNOTIUS</a>
+    <p><a href="GH/GH_0531.pdf" target="_blank"> GH_0531.pdf - ON A FOGGY SHORE, TOGETHER</a>
+    <p><a href="GH/GH_0532.pdf" target="_blank"> GH_0532.pdf - RONDEAU OF HELIOTROPES</a>
+    <p><a href="GH/GH_0533.pdf" target="_blank"> GH_0533.pdf - LAST STANZA</a>
+    <p><a href="GH/GH_0534.pdf" target="_blank"> GH_0534.pdf - OVERTURE IN BEE FLAT</a>
+    <p><a href="GH/GH_0535.pdf" target="_blank"> GH_0535.pdf - SEEING DARKLY FOR NOW (1 CORINTHIANS 13:12)</a>
+    <p><a href="GH/GH_0536.pdf" target="_blank"> GH_0536.pdf - SUBJECT FOR SUBLIMATION</a>
+    <p><a href="GH/GH_0537.pdf" target="_blank"> GH_0537.pdf - QUATRAIN OF SUMMER RICHES</a>
+    <p><a href="GH/GH_0538.pdf" target="_blank"> GH_0538.pdf - HIM WE KNOW</a>
+    <p><a href="GH/GH_0539.pdf" target="_blank"> GH_0539.pdf - WORKING ON IT</a>
+    <p><a href="GH/GH_0540.pdf" target="_blank"> GH_0540.pdf - RONDEL IN PRAISE OF EASTERTIME</a>
+    <p><a href="GH/GH_0541.pdf" target="_blank"> GH_0541.pdf - THE CRAFTSMAN</a>
+    <p><a href="GH/GH_0542.pdf" target="_blank"> GH_0542.pdf - NO ROAD SIGNS</a>
+    <p><a href="GH/GH_0543.pdf" target="_blank"> GH_0543.pdf - RHYMING THE REASON</a>
+    <p><a href="GH/GH_0544.pdf" target="_blank"> GH_0544.pdf - CHALLENGE FOR A SCIENTIST</a>
+    <p><a href="GH/GH_0545.pdf" target="_blank"> GH_0545.pdf - DECODING-0101</a>
+    <p><a href="GH/GH_0546.pdf" target="_blank"> GH_0546.pdf - BEQUEST FROM AN ARTIST WHO DIED IN AUTUMN</a>
+    <p><a href="GH/GH_0547.pdf" target="_blank"> GH_0547.pdf - RECLAMATION</a>
+    <p><a href="GH/GH_0548.pdf" target="_blank"> GH_0548.pdf - BEGINNER'S PRAYER ON 89TH STREET</a>
+    <p><a href="GH/GH_0549.pdf" target="_blank"> GH_0549.pdf - TOO MANY ROAD SIGNS</a>
+    <p><a href="GH/GH_0550.pdf" target="_blank"> GH_0550.pdf - AUTHOR'S IMPRINT</a>
+    <p><a href="GH/GH_0551.pdf" target="_blank"> GH_0551.pdf - FOR HANNAH</a>
+    <p><a href="GH/GH_0552.pdf" target="_blank"> GH_0552.pdf - LEARNING YOUR OWN</a>
+    <p><a href="GH/GH_0553.pdf" target="_blank"> GH_0553.pdf - VANISHING POINT</a>
+    <p><a href="GH/GH_0554.pdf" target="_blank"> GH_0554.pdf - REPERTOIRE</a>
+    <p><a href="GH/GH_0555.pdf" target="_blank"> GH_0555.pdf - CAPE WALK</a>
+    <p><a href="GH/GH_0556.pdf" target="_blank"> GH_0556.pdf - RENEWING AN OLD TESTAMENT</a>
+    <p><a href="GH/GH_0557.pdf" target="_blank"> GH_0557.pdf - UNIVERSAL KINGDOM</a>
+    <p><a href="GH/GH_0558.pdf" target="_blank"> GH_0558.pdf - THE LONG HALL</a>
+    <p><a href="GH/GH_0559.pdf" target="_blank"> GH_0559.pdf - THE FAR SIDE OF FALL</a>
+    <p><a href="GH/GH_0560.pdf" target="_blank"> GH_0560.pdf - SEASIDE SIMILE</a>
+    <p><a href="GH/GH_0561.pdf" target="_blank"> GH_0561.pdf - SISTER ACT</a>
+    <p><a href="GH/GH_0562.pdf" target="_blank"> GH_0562.pdf - WALKING TO WAKEN after Richard Wilbur's "Walking to Sleep"</a>
+    <p><a href="GH/GH_0563.pdf" target="_blank"> GH_0563.pdf - CAPTURING THE CAT OF ONE COLOR (Felis concolor)</a>
+    <p><a href="GH/GH_0564.pdf" target="_blank"> GH_0564.pdf - MAINE FLOOR</a>
+    <p><a href="GH/GH_0565.pdf" target="_blank"> GH_0565.pdf - THE WHEELWRIGHT For Duane Niatum of the Klallam</a>
+    <p><a href="GH/GH_0566.pdf" target="_blank"> GH_0566.pdf - OCTOBER BEFORE SLEEP</a>
+    <p><a href="GH/GH_0567.pdf" target="_blank"> GH_0567.pdf - FROM THE BELL TOWER</a>
+    <p><a href="GH/GH_0568.pdf" target="_blank"> GH_0568.pdf - THE ROAD ALREADY TAKEN</a>
+    <p><a href="GH/GH_0569.pdf" target="_blank"> GH_0569.pdf - THE SOCIETY BLURB SAYS:  TYCOON ENTERTAINS JR. EXEC & SOUTHERN BRIDE</a>
+    <p><a href="GH/GH_0570.pdf" target="_blank"> GH_0570.pdf - RENEWING AN OLD TESTAMENT ACCORDING TO JOHN</a>
+    <p><a href="GH/GH_0571.pdf" target="_blank"> GH_0571.pdf - WATCHING THE MUSIC</a>
+    <p><a href="GH/GH_0572.pdf" target="_blank"> GH_0572.pdf - BALLADEERS BY NIGHT</a>
+    <p><a href="GH/GH_0573.pdf" target="_blank"> GH_0573.pdf - MIGRATION</a>
+    <p><a href="GH/GH_0574.pdf" target="_blank"> GH_0574.pdf - DESERT</a>
+    <p><a href="GH/GH_0575.pdf" target="_blank"> GH_0575.pdf - ABORIGINAL LOVE SONG</a>
+    <p><a href="GH/GH_0576.pdf" target="_blank"> GH_0576.pdf - ADDIE AT EIGHTY</a>
+    <p><a href="GH/GH_0577.pdf" target="_blank"> GH_0577.pdf - TRUMPET MAN</a>
+    <p><a href="GH/GH_0578.pdf" target="_blank"> GH_0578.pdf - A REASON IN THE WORLD</a>
+    <p><a href="GH/GH_0579.pdf" target="_blank"> GH_0579.pdf - LEAVING HOME</a>
+    <p><a href="GH/GH_0580.pdf" target="_blank"> GH_0580.pdf - BEFORE A POET KNOWS WHAT SHE IS</a>
+    <p><a href="GH/GH_0581.pdf" target="_blank"> GH_0581.pdf - KING TUTANKHAMUN:  ONCE THERE WAS A BOY WHO LOVED TO WHISTLE</a>
+    <p><a href="GH/GH_0582.pdf" target="_blank"> GH_0582.pdf - WHEN CALLAS LAST SANG</a>
+    <p><a href="GH/GH_0583.pdf" target="_blank"> GH_0583.pdf - OLD ATHABASCAN WHIT, RED MAN WITH A WHITE CANE</a>
+    <p><a href="GH/GH_0584.pdf" target="_blank"> GH_0584.pdf - THERE WAS A WOMAN WHO USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/GH_0585.pdf" target="_blank"> GH_0585.pdf - COMPOUNDING THE MIDAS TOUCH</a>
+    <p><a href="GH/GH_0586.pdf" target="_blank"> GH_0586.pdf - WHERE WOULD METAPHOR BE WITHOUT CATS?</a>
+    <p><a href="GH/GH_0587.pdf" target="_blank"> GH_0587.pdf - ROMANCING THE RIVERSIDE</a>
+    <p><a href="GH/GH_0588.pdf" target="_blank"> GH_0588.pdf - THE WILDERNESS WAY</a>
+    <p><a href="GH/ME_0589.pdf" target="_blank"> ME_0589.pdf - QUITTING</a>
+    <p><a href="GH/GH_0591.pdf" target="_blank"> GH_0591.pdf - THE WINNERS</a>
+    <p><a href="GH/GH_0592.pdf" target="_blank"> GH_0592.pdf - FORTIETH ANNIVERSARY</a>
+    <p><a href="GH/GH_0593.pdf" target="_blank"> GH_0593.pdf - COUNTERPOINT:  THE LOST CORDS</a>
+    <p><a href="GH/GH_0594.pdf" target="_blank"> GH_0594.pdf - A STARRING ROLE</a>
+    <p><a href="GH/GH_0595.pdf" target="_blank"> GH_0595.pdf - TESTAMENT</a>
+    <p><a href="GH/GH_0596.pdf" target="_blank"> GH_0596.pdf - THERE WAS A WOMAN WHO USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/ME_0597.pdf" target="_blank"> ME_0597.pdf - DECEMBER DINNER, MANHATTAN ISLAND</a>
+    <p><a href="GH/ME_0600.pdf" target="_blank"> ME_0600.pdf - END OF AN ERA:  THE BALLAD OF BALEFUL BAY</a>
+    <p><a href="GH/GH_0604.pdf" target="_blank"> GH_0604.pdf - BEST OF SHOW, SEASONAL MURAL</a>
+    <p><a href="GH/ME_0605.pdf" target="_blank"> ME_0605.pdf - RECORDINGS ON A WINTER'S DAY (Beethoven's sonata #3, A Major, Op. 69)</a>
+    <p><a href="GH/GH_0607.pdf" target="_blank"> GH_0607.pdf - APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0608.pdf" target="_blank"> GH_0608.pdf - VERNAL EQUINOX, HIGHWAY-0101</a>
+    <p><a href="GH/GH_0609.pdf" target="_blank"> GH_0609.pdf - APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0610.pdf" target="_blank"> GH_0610.pdf - TABLE SETTING</a>
+    <p><a href="GH/GH_0611.pdf" target="_blank"> GH_0611.pdf - TABLE SETTING</a>
+    <p><a href="GH/GH_0612.pdf" target="_blank"> GH_0612.pdf - MOTHER / DAUGHTER BANQUET</a>
+    <p><a href="GH/GH_0613.pdf" target="_blank"> GH_0613.pdf - MOTHER / DAUGHTER BANQUET</a>
+    <p><a href="GH/GH_0614.pdf" target="_blank"> GH_0614.pdf - ON BECOMING EVE'S ONLY DAUGHTER</a>
+    <p><a href="GH/GH_0615.pdf" target="_blank"> GH_0615.pdf - THE SOUNDS OF FRIENDSHIP</a>
+    <p><a href="GH/GH_0616.pdf" target="_blank"> GH_0616.pdf - WARM BEADS</a>
+    <p><a href="GH/GH_0617.pdf" target="_blank"> GH_0617.pdf - WEST SIDE WINDOW</a>
+    <p><a href="GH/GH_0618.pdf" target="_blank"> GH_0618.pdf - LITTLE GIRL GONE</a>
+    <p><a href="GH/GH_0619.pdf" target="_blank"> GH_0619.pdf - TO WHOM IT MAY CONCERN</a>
+    <p><a href="GH/GH_0620.pdf" target="_blank"> GH_0620.pdf - TEXTURE TRIP</a>
+    <p><a href="GH/GH_0621.pdf" target="_blank"> GH_0621.pdf - SWAMP STANDARD TIME</a>
+    <p><a href="GH/ME_0622.pdf" target="_blank"> ME_0622.pdf - SUMMER DAY,-01861</a>
+    <p><a href="GH/GH_0624.pdf" target="_blank"> GH_0624.pdf - THE SPIRAL GALAXY</a>
+    <p><a href="GH/GH_0625.pdf" target="_blank"> GH_0625.pdf - RAIDER'S REPERTORY</a>
+    <p><a href="GH/GH_0626.pdf" target="_blank"> GH_0626.pdf - ON THE EDGE</a>
+    <p><a href="GH/GH_0627.pdf" target="_blank"> GH_0627.pdf - ON THIS EDGE</a>
+    <p><a href="GH/GH_0628.pdf" target="_blank"> GH_0628.pdf - THIS NEW ENGLAND, THIS EDGE</a>
+    <p><a href="GH/GH_0629.pdf" target="_blank"> GH_0629.pdf - OLD HOME ABANDONED</a>
+    <p><a href="GH/GH_0630.pdf" target="_blank"> GH_0630.pdf - THE INTERLOPER</a>
+    <p><a href="GH/GH_0631.pdf" target="_blank"> GH_0631.pdf - THE INTERLOPER</a>
+    <p><a href="GH/ME_0632.pdf" target="_blank"> ME_0632.pdf - INSIDE PASSAGE, GLACIER BAY</a>
+    <p><a href="GH/GH_0634.pdf" target="_blank"> GH_0634.pdf - INFRA</a>
+    <p><a href="GH/GH_0635.pdf" target="_blank"> GH_0635.pdf - HE ASKED:  WHY WASTE YOUR TIME CREATING POEMS?</a>
+    <p><a href="GH/GH_0636.pdf" target="_blank"> GH_0636.pdf - HE ASKED:  WHY WASTE YOUR TIME CREATING POEMS?</a>
+    <p><a href="GH/GH_0637.pdf" target="_blank"> GH_0637.pdf - GLIMPSES</a>
+    <p><a href="GH/GH_0638.pdf" target="_blank"> GH_0638.pdf - CRITIC'S REVIEW OF THE LEADING ROLE</a>
+    <p><a href="GH/GH_0639.pdf" target="_blank"> GH_0639.pdf - AFRICAN SYNOPSIS, THE BAOBAB TREE (Baobab: "upside down tree" in Swahili)</a>
+    <p><a href="GH/GH_0640.pdf" target="_blank"> GH_0640.pdf - AFRICAN SYNOPSIS, THE BAOBAB TREE (Baobab: "upside down tree" in Swahili)</a>
+    <p><a href="GH/GH_0641.pdf" target="_blank"> GH_0641.pdf - CHANGING THE SUBJECT</a>
+    <p><a href="GH/GH_0642.pdf" target="_blank"> GH_0642.pdf - THE WINNERS</a>
+    <p><a href="GH/GH_0643.pdf" target="_blank"> GH_0643.pdf - CHEETAH, MASTER OF FINE ARTS (Acinonyx jubatus)</a>
+    <p><a href="GH/GH_0644.pdf" target="_blank"> GH_0644.pdf - AGENDA FOR THE PRAIRIE</a>
+    <p><a href="GH/GH_0645.pdf" target="_blank"> GH_0645.pdf - SPOILSPORT</a>
+    <p><a href="GH/GH_0646.pdf" target="_blank"> GH_0646.pdf - AND STILL HE CARES</a>
+    <p><a href="GH/GH_0647.pdf" target="_blank"> GH_0647.pdf - ART IS</a>
+    <p><a href="GH/GH_0648.pdf" target="_blank"> GH_0648.pdf - THE AMULET</a>
+    <p><a href="GH/GH_0649.pdf" target="_blank"> GH_0649.pdf - DARK KINGDOM</a>
+    <p><a href="GH/GH_0650.pdf" target="_blank"> GH_0650.pdf - BEFORE A POET KNOWS WHAT SHE IS</a>
+    <p><a href="GH/GH_0651.pdf" target="_blank"> GH_0651.pdf - BEFORE A POET KNOWS WHAT SHE IS</a>
+    <p><a href="GH/GH_0652.pdf" target="_blank"> GH_0652.pdf - HOLDING HANDS BENEATH THE PALETTE</a>
+    <p><a href="GH/GH_0653.pdf" target="_blank"> GH_0653.pdf - THE OTHER COLON</a>
+    <p><a href="GH/GH_0654.pdf" target="_blank"> GH_0654.pdf - HERALDRY</a>
+    <p><a href="GH/GH_0655.pdf" target="_blank"> GH_0655.pdf - SEASIDE SIMILE</a>
+    <p><a href="GH/GH_0656.pdf" target="_blank"> GH_0656.pdf - PRETENDIN'</a>
+    <p><a href="GH/GH_0657.pdf" target="_blank"> GH_0657.pdf - THE ARBITER</a>
+    <p><a href="GH/GH_0658.pdf" target="_blank"> GH_0658.pdf - OVERTURE IN BEE FLAT (Steve's Song)</a>
+    <p><a href="GH/GH_0659.pdf" target="_blank"> GH_0659.pdf - AFTERNOON FAWN (Odocoileus virginianus)</a>
+    <p><a href="GH/GH_0660.pdf" target="_blank"> GH_0660.pdf - INSIDE PASSAGE, GLACIER BAY (Remembering Crane, Woolf, Plath and Sexton)</a>
+    <p><a href="GH/GH_0661.pdf" target="_blank"> GH_0661.pdf - THE EXHIBITIONIST</a>
+    <p><a href="GH/GH_0662.pdf" target="_blank"> GH_0662.pdf - BEACON</a>
+    <p><a href="GH/GH_0663.pdf" target="_blank"> GH_0663.pdf - MAKING DAYBREAK SOFTER</a>
+    <p><a href="GH/GH_0664.pdf" target="_blank"> GH_0664.pdf - POTATO SECRETS</a>
+    <p><a href="GH/GH_0665.pdf" target="_blank"> GH_0665.pdf - AUTHOR'S IMPRINT</a>
+    <p><a href="GH/GH_0666.pdf" target="_blank"> GH_0666.pdf - VILIAINOUS VILIANELLE (Macavity vs. Catwoman)</a>
+    <p><a href="GH/GH_0667.pdf" target="_blank"> GH_0667.pdf - FAULT LINE</a>
+    <p><a href="GH/GH_0668.pdf" target="_blank"> GH_0668.pdf - CHALLENGED POET</a>
+    <p><a href="GH/GH_0669.pdf" target="_blank"> GH_0669.pdf - THE IRIS LOVERS</a>
+    <p><a href="GH/GH_0670.pdf" target="_blank"> GH_0670.pdf - A BOWL OF BLUE BLOSSOMS</a>
+    <p><a href="GH/GH_0671.pdf" target="_blank"> GH_0671.pdf - SUMMER SIEGE</a>
+    <p><a href="GH/GH_0672.pdf" target="_blank"> GH_0672.pdf - EMISSARY (Memo to Octavio Paz)</a>
+    <p><a href="GH/GH_0673.pdf" target="_blank"> GH_0673.pdf - MASTER POET DISMISSED AS MERE FABULIST</a>
+    <p><a href="GH/ME_0674.pdf" target="_blank"> ME_0674.pdf - DECEMBER DINNER, MANHATTAN ISLAND</a>
+    <p><a href="GH/GH_0676.pdf" target="_blank"> GH_0676.pdf - CHEETAH, MASTER OF FINE ARTS (Acinonyx jubatas)</a>
+    <p><a href="GH/GH_0677.pdf" target="_blank"> GH_0677.pdf - HERALDRY</a>
+    <p><a href="GH/GH_0678.pdf" target="_blank"> GH_0678.pdf - DEEP SWAMP</a>
+    <p><a href="GH/GH_0679.pdf" target="_blank"> GH_0679.pdf - AIRBORNE AFTERTHOUGHTS</a>
+    <p><a href="GH/GH_0680.pdf" target="_blank"> GH_0680.pdf - APPRENTICE ARTIST</a>
+    <p><a href="GH/GH_0681.pdf" target="_blank"> GH_0681.pdf - MASTER OF FINE ARTS</a>
+    <p><a href="GH/GH_0682.pdf" target="_blank"> GH_0682.pdf - BANQUET</a>
+    <p><a href="GH/ME_0683.pdf" target="_blank"> ME_0683.pdf - DESERT ODYSSEY,-01991 . . . AND STILL</a>
+    <p><a href="GH/GH_0689.pdf" target="_blank"> GH_0689.pdf - ENIGMA</a>
+    <p><a href="GH/GH_0690.pdf" target="_blank"> GH_0690.pdf - THE ANSWERING (A Sequel to Browning's "Evelyn Hope")</a>
+    <p><a href="GH/GH_0691.pdf" target="_blank"> GH_0691.pdf - HIGH PLAINS HURRICANE (Equus caballus, feral)</a>
+    <p><a href="GH/GH_0692.pdf" target="_blank"> GH_0692.pdf - BEAR AND BEE HIVE BY NIGHT (Ursus americanus)</a>
+    <p><a href="GH/GH_0693.pdf" target="_blank"> GH_0693.pdf - ENIGMA</a>
+    <p><a href="GH/GH_0694.pdf" target="_blank"> GH_0694.pdf - ENIGMA</a>
+    <p><a href="GH/GH_0695.pdf" target="_blank"> GH_0695.pdf - LEGACY OF DEAD POETS</a>
+    <p><a href="GH/GH_0696.pdf" target="_blank"> GH_0696.pdf - INELUCTABLE</a>
+    <p><a href="GH/GH_0697.pdf" target="_blank"> GH_0697.pdf - NOTHING LEFT TO SAY</a>
+    <p><a href="GH/GH_0698.pdf" target="_blank"> GH_0698.pdf - THE IRIS LOVERS</a>
+    <p><a href="GH/GH_0699.pdf" target="_blank"> GH_0699.pdf - WARM BEADS</a>
+    <p><a href="GH/GH_0700.pdf" target="_blank"> GH_0700.pdf - ON BECOMING EVE'S ONLY DAUGHTER</a>
+    <p><a href="GH/GH_0701.pdf" target="_blank"> GH_0701.pdf - DUET</a>
+    <p><a href="GH/GH_0702.pdf" target="_blank"> GH_0702.pdf - FOR FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0703.pdf" target="_blank"> GH_0703.pdf - AUTUM IS NOT A SEASON</a>
+    <p><a href="GH/GH_0704.pdf" target="_blank"> GH_0704.pdf - SPIRIT FLIGHT</a>
+    <p><a href="GH/GH_0705.pdf" target="_blank"> GH_0705.pdf - TOGETHER ON THIS FOGGY SHORE (for Karen & Ron)</a>
+    <p><a href="GH/GH_0706.pdf" target="_blank"> GH_0706.pdf - SAPPHICS FOR CHARLES VICKERY - PAINTING THE CHRISTIAN RADICH</a>
+    <p><a href="GH/GH_0707.pdf" target="_blank"> GH_0707.pdf - CULTIVATING THE MIDAS TOUCH</a>
+    <p><a href="GH/GH_0708.pdf" target="_blank"> GH_0708.pdf - FELINE OFFBEAT</a>
+    <p><a href="GH/GH_0709.pdf" target="_blank"> GH_0709.pdf - THE MISER'S TIME OF YEAR (to a 19th century madrigal)</a>
+    <p><a href="GH/GH_0710.pdf" target="_blank"> GH_0710.pdf - A BIRD FOR ALL SEASONS</a>
+    <p><a href="GH/GH_0711.pdf" target="_blank"> GH_0711.pdf - MAKING THE RIVER AN OLD MAN</a>
+    <p><a href="GH/GH_0712.pdf" target="_blank"> GH_0712.pdf - MOD LIT-0101</a>
+    <p><a href="GH/GH_0713.pdf" target="_blank"> GH_0713.pdf - THE VISITORS</a>
+    <p><a href="GH/GH_0714.pdf" target="_blank"> GH_0714.pdf - THE BEEKEEPER SPEAKS OF LOVE (after Howard Nemerov)</a>
+    <p><a href="GH/GH_0715.pdf" target="_blank"> GH_0715.pdf - THE GULLS OF MARCO</a>
+    <p><a href="GH/GH_0716.pdf" target="_blank"> GH_0716.pdf - FOR FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0717.pdf" target="_blank"> GH_0717.pdf - "NOT OF THIS FOLD" -- Another look at John 10:16</a>
+    <p><a href="GH/GH_0718.pdf" target="_blank"> GH_0718.pdf - THE OLD MAN NEEDS AN EPITAPH</a>
+    <p><a href="GH/GH_0719.pdf" target="_blank"> GH_0719.pdf - ROUNDS OF ENCHANTMENT</a>
+    <p><a href="GH/GH_0720.pdf" target="_blank"> GH_0720.pdf - BEE HIVE BY NIGHT</a>
+    <p><a href="GH/GH_0721.pdf" target="_blank"> GH_0721.pdf - MATTAMUSKEET MURAL (Mason Sonnet)</a>
+    <p><a href="GH/GH_0722.pdf" target="_blank"> GH_0722.pdf - CHICAGO SONNET</a>
+    <p><a href="GH/GH_0723.pdf" target="_blank"> GH_0723.pdf - SLANT SONNET FOR THE BULL</a>
+    <p><a href="GH/GH_0724.pdf" target="_blank"> GH_0724.pdf - FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0725.pdf" target="_blank"> GH_0725.pdf - IN A ZOOM LENS</a>
+    <p><a href="GH/GH_0726.pdf" target="_blank"> GH_0726.pdf - VILLANELLE FOR THE VILLAIN (Lugosi, Son of Macavity)</a>
+    <p><a href="GH/GH_0727.pdf" target="_blank"> GH_0727.pdf - CHEETA IN A ZOOM LENS</a>
+    <p><a href="GH/GH_0728.pdf" target="_blank"> GH_0728.pdf - POET DISMISSED AS FABULIST (In Memory of Nemerov)</a>
+    <p><a href="GH/GH_0729.pdf" target="_blank"> GH_0729.pdf - THE BEEKEEPERS SPEAK OF LOVE</a>
+    <p><a href="GH/GH_0730.pdf" target="_blank"> GH_0730.pdf - EPILOGUE FOR THE OLD MAN</a>
+    <p><a href="GH/GH_0731.pdf" target="_blank"> GH_0731.pdf - STAR SALESMAN</a>
+    <p><a href="GH/GH_0732.pdf" target="_blank"> GH_0732.pdf - FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0733.pdf" target="_blank"> GH_0733.pdf - POET DISMISSED ASFABULIST (In Memory of Nemerov)</a>
+    <p><a href="GH/GH_0734.pdf" target="_blank"> GH_0734.pdf - THE GULLS OF WINTER</a>
+    <p><a href="GH/GH_0735.pdf" target="_blank"> GH_0735.pdf - SLANT SONNET FOR THE BULL</a>
+    <p><a href="GH/GH_0736.pdf" target="_blank"> GH_0736.pdf - BEAR AND BEE HIVE BY NIGHT</a>
+    <p><a href="GH/GH_0737.pdf" target="_blank"> GH_0737.pdf - TIMES THREE</a>
+    <p><a href="GH/GH_0738.pdf" target="_blank"> GH_0738.pdf - MICROCOSM</a>
+    <p><a href="GH/GH_0739.pdf" target="_blank"> GH_0739.pdf - JEREMIAD FOR A BAD QUEEN</a>
+    <p><a href="GH/GH_0740.pdf" target="_blank"> GH_0740.pdf - COSTAL COLLAGE</a>
+    <p><a href="GH/GH_0741.pdf" target="_blank"> GH_0741.pdf - SEEKERS ON THE EDGE</a>
+    <p><a href="GH/GH_0742.pdf" target="_blank"> GH_0742.pdf - MOTHERBLIND</a>
+    <p><a href="GH/GH_0743.pdf" target="_blank"> GH_0743.pdf - TIMES THREE</a>
+    <p><a href="GH/GH_0744.pdf" target="_blank"> GH_0744.pdf - FOR FORTY DAYS OF DROUGHT</a>
+    <p><a href="GH/GH_0745.pdf" target="_blank"> GH_0745.pdf - HOPI GIRL GOING HOME, TOUCHING THE RIVER</a>
+    <p><a href="GH/ME_0746.pdf" target="_blank"> ME_0746.pdf - TIDEPOOL MICROCOSM</a>
+    <p><a href="GH/ME_0752.pdf" target="_blank"> ME_0752.pdf - A CRANE IS NOT</a>
+    <p><a href="GH/GH_0754.pdf" target="_blank"> GH_0754.pdf - MAGIC MONTHS</a>
+    <p><a href="GH/GH_0755.pdf" target="_blank"> GH_0755.pdf - MORE THAN MIRROR IMAGES</a>
+    <p><a href="GH/GH_0756.pdf" target="_blank"> GH_0756.pdf - A QUIET AFTERNOON IN THE COUNTRY</a>
+    <p><a href="GH/GH_0757.pdf" target="_blank"> GH_0757.pdf - DOLPHIN SCHOOL</a>
+    <p><a href="GH/GH_0758.pdf" target="_blank"> GH_0758.pdf - AUDITORIUM</a>
+    <p><a href="GH/GH_0759.pdf" target="_blank"> GH_0759.pdf - IMPEDING</a>
+    <p><a href="GH/GH_0760.pdf" target="_blank"> GH_0760.pdf - WINGING IT</a>
+    <p><a href="GH/GH_0761.pdf" target="_blank"> GH_0761.pdf - PITY THE POOR WRITER</a>
+    <p><a href="GH/GH_0762.pdf" target="_blank"> GH_0762.pdf - HURTS LIKE HELLY</a>
+    <p><a href="GH/GH_0763.pdf" target="_blank"> GH_0763.pdf - FORGETTING IT</a>
+    <p><a href="GH/GH_0764.pdf" target="_blank"> GH_0764.pdf - SLANT RHYME POLEMIC</a>
+    <p><a href="GH/GH_0765.pdf" target="_blank"> GH_0765.pdf - RIGHT ON</a>
+    <p><a href="GH/GH_0766.pdf" target="_blank"> GH_0766.pdf - OVERTURE IN BEE FLAT</a>
+    <p><a href="GH/GH_0767.pdf" target="_blank"> GH_0767.pdf - HE</a>
+    <p><a href="GH/GH_0768.pdf" target="_blank"> GH_0768.pdf - SUGGESTIVE READING?</a>
+    <p><a href="GH/GH_0769.pdf" target="_blank"> GH_0769.pdf - THE BOTTOM LINE AT THE A-1 SESTINA STAR STUDIO</a>
+    <p><a href="GH/GH_0770.pdf" target="_blank"> GH_0770.pdf - RIGHT ON</a>
+    <p><a href="GH/GH_0771.pdf" target="_blank"> GH_0771.pdf - FOR SHAME</a>
+    <p><a href="GH/GH_0772.pdf" target="_blank"> GH_0772.pdf - SETTLING IN A NEW TOWN</a>
+    <p><a href="GH/GH_0773.pdf" target="_blank"> GH_0773.pdf - WHAT?!</a>
+    <p><a href="GH/GH_0774.pdf" target="_blank"> GH_0774.pdf - MAKING GOOD CONNECTIONS</a>
+    <p><a href="GH/GH_0775.pdf" target="_blank"> GH_0775.pdf - LISTENING TO THE MOUNTAINS</a>
+    <p><a href="GH/GH_0776.pdf" target="_blank"> GH_0776.pdf - A BOWL OF BLUE BLOSSOMS</a>
+    <p><a href="GH/GH_0777.pdf" target="_blank"> GH_0777.pdf - MY FATHER, THE CAPTAIN</a>
+    <p><a href="GH/GH_0778.pdf" target="_blank"> GH_0778.pdf - ON A FOGGY SHORE, TOGETHER</a>
+    <p><a href="GH/GH_0779.pdf" target="_blank"> GH_0779.pdf - ANTHROPOLOGY PROFESSOR SAYS DARWIN GOT IT WRONG  --caption, Chicago Tribune</a>
+    <p><a href="GH/GH_0780.pdf" target="_blank"> GH_0780.pdf - PRAYER LIST</a>
+    <p><a href="GH/GH_0781.pdf" target="_blank"> GH_0781.pdf - MELISSA</a>
+    <p><a href="GH/GH_0782.pdf" target="_blank"> GH_0782.pdf - CAT-WALK</a>
+    <p><a href="GH/GH_0783.pdf" target="_blank"> GH_0783.pdf - DARING</a>
+    <p><a href="GH/GH_0784.pdf" target="_blank"> GH_0784.pdf - MORE THAN A HAIKU</a>
+    <p><a href="GH/GH_0785.pdf" target="_blank"> GH_0785.pdf - SISTER ACT</a>
+    <p><a href="GH/GH_0786.pdf" target="_blank"> GH_0786.pdf - ROMANCING THE HUMPBACK WHALES -- A Rhyme Royal</a>
+    <p><a href="GH/ME_0787.pdf" target="_blank"> ME_0787.pdf - HEMBY AND THE HUMPBACK WHALES (Megaptera novaeangliae)</a>
+    <p><a href="GH/GH_0790.pdf" target="_blank"> GH_0790.pdf - CARIBBEAN LOG:  ROMANCING THE HUMPBACK WHALES</a>
+    <p><a href="GH/ME_0791.pdf" target="_blank"> ME_0791.pdf - CARIBBEAN LOG:  ROMANCING THE HUMPBACK WHALES -- A Rhyme Royal</a>
+    <p><a href="GH/ME_0795.pdf" target="_blank"> ME_0795.pdf - DIVING WITH DOLPHINS AND DAVID</a>
+    <p><a href="GH/ME_0797.pdf" target="_blank"> ME_0797.pdf - DIVING WITH DOLPHINS AND DAVID (A Rhyme Royal)</a>
+    <p><a href="GH/ME_0799.pdf" target="_blank"> ME_0799.pdf - ROMANCING THE HUMPBACK WHALES</a>
+    <p><a href="GH/ME_0803.pdf" target="_blank"> ME_0803.pdf - ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/ME_0805.pdf" target="_blank"> ME_0805.pdf --01500 A.D., ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/ME_0807.pdf" target="_blank"> ME_0807.pdf --01500 A.D., ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/ME_0809.pdf" target="_blank"> ME_0809.pdf --01500 A.D., ANOTHER ATLANTIC CROSSING</a>
+    <p><a href="GH/GH_0811.pdf" target="_blank"> GH_0811.pdf - VISIT IN THE COUNTRY</a>
+    <p><a href="GH/GH_0812.pdf" target="_blank"> GH_0812.pdf - MORE THAN MIRROR IMAGES</a>
+    <p><a href="GH/GH_0813.pdf" target="_blank"> GH_0813.pdf - LEARNING IS A RED RING, MAYBE PLAID</a>
+    <p><a href="GH/GH_0814.pdf" target="_blank"> GH_0814.pdf - RECLAMATION</a>
+    <p><a href="GH/GH_0815.pdf" target="_blank"> GH_0815.pdf - MORE THAN MIRROR IMAGES</a>
+    <p><a href="GH/GH_0816.pdf" target="_blank"> GH_0816.pdf - AFTERNOON IN THE COUNTRY</a>
+    <p><a href="GH/GH_0817.pdf" target="_blank"> GH_0817.pdf - LEARNING IS A RED RING, MAYBE PLAID</a>
+    <p><a href="GH/ME_0818.pdf" target="_blank"> ME_0818.pdf - WINGING IT</a>
+    <p><a href="GH/ME_0820.pdf" target="_blank"> ME_0820.pdf - WINGING IT</a>
+    <p><a href="GH/GH_0822.pdf" target="_blank"> GH_0822.pdf - GARDEN KINDERGARTENH FOR MY DAUGHTER</a>
+    <p><a href="GH/GH_0823.pdf" target="_blank"> GH_0823.pdf - LITTLE GIRL GONE</a>
+    <p><a href="GH/GH_0824.pdf" target="_blank"> GH_0824.pdf - RECLAMATION</a>
+    <p><a href="GH/GH_0825.pdf" target="_blank"> GH_0825.pdf - LOOKING FOR</a>
+    <p><a href="GH/GH_0826.pdf" target="_blank"> GH_0826.pdf - PRAYER FOR THE FOURTH DIMENSION</a>
+    <p><a href="GH/GH_0827.pdf" target="_blank"> GH_0827.pdf - BUTTERFLIES AND OTHER GOOD INTENTIONS</a>
+    <p><a href="GH/GH_0828.pdf" target="_blank"> GH_0828.pdf - MOD LIT-0101</a>
+    <p><a href="GH/GH_0829.pdf" target="_blank"> GH_0829.pdf - ROUNDS OF ENCHANTMENT</a>
+    <p><a href="GH/ME_0830.pdf" target="_blank"> ME_0830.pdf - MESSIAH</a>
+    <p><a href="GH/GH_0832.pdf" target="_blank"> GH_0832.pdf - THE AMULET</a>
+    <p><a href="GH/GH_0833.pdf" target="_blank"> GH_0833.pdf - BEGINNER'S PRAYER ON 89TH STREET</a>
+    <p><a href="GH/GH_0834.pdf" target="_blank"> GH_0834.pdf - ERINIA</a>
+    <p><a href="GH/GH_0835.pdf" target="_blank"> GH_0835.pdf - GOD'S ROCKER</a>
+    <p><a href="GH/GH_0836.pdf" target="_blank"> GH_0836.pdf - TRAPEZE ACT</a>
+    <p><a href="GH/GH_0837.pdf" target="_blank"> GH_0837.pdf - PRAYER FOR THE FOURTH DIMENSION</a>
+    <p><a href="GH/GH_0838.pdf" target="_blank"> GH_0838.pdf - REMEMBERING ERINIA</a>
+    <p><a href="GH/GH_0839.pdf" target="_blank"> GH_0839.pdf - ABOUT MY NEIGHBOR, LORD</a>
+    <p><a href="GH/GH_0840.pdf" target="_blank"> GH_0840.pdf - A STARRING ROLE</a>
+    <p><a href="GH/GH_0841.pdf" target="_blank"> GH_0841.pdf - RONDEL IN PRAISE OF EASTERTIME</a>
+    <p><a href="GH/GH_0842.pdf" target="_blank"> GH_0842.pdf - THE MASTER CRAFTSMAN</a>
+    <p><a href="GH/GH_0843.pdf" target="_blank"> GH_0843.pdf - LOOKING FOR</a>
+    <p><a href="GH/GH_0844.pdf" target="_blank"> GH_0844.pdf - LION ON A WHITE FIELD</a>
+    <p><a href="GH/GH_0845.pdf" target="_blank"> GH_0845.pdf - LION ON A WHITE FIELD</a>
+    <p><a href="GH/GH_0846.pdf" target="_blank"> GH_0846.pdf - RENASCENCE</a>
+    <p><a href="GH/GH_0847.pdf" target="_blank"> GH_0847.pdf - ABOUT MY NEIGHBOR, LORD</a>
+    <p><a href="GH/GH_0848.pdf" target="_blank"> GH_0848.pdf - WITNESS</a>
+    <p><a href="GH/GH_0849.pdf" target="_blank"> GH_0849.pdf - BIOLOGY PROFESSOR SAYS DARWIN GOT IT WRONG --caption, Chicago Tribune</a>
+    <p><a href="GH/GH_0850.pdf" target="_blank"> GH_0850.pdf - WHERE THE BLEND BEGINS</a>
+    <p><a href="GH/GH_0851.pdf" target="_blank"> GH_0851.pdf - A RONDEL OF PRAISE FOR EASTERTIME</a>
+    <p><a href="GH/GH_0852.pdf" target="_blank"> GH_0852.pdf - A STARRING ROLE</a>
+    <p><a href="GH/GH_0853.pdf" target="_blank"> GH_0853.pdf - ERINIA</a>
+    <p><a href="GH/GH_0854.pdf" target="_blank"> GH_0854.pdf - SEEING DARKLY FOR NOW</a>
+    <p><a href="GH/GH_0855.pdf" target="_blank"> GH_0855.pdf - SEEING DARKLY FOR NOW (1 Corinthians 13:12)</a>
+    <p><a href="GH/GH_0856.pdf" target="_blank"> GH_0856.pdf - LILY OF THE FIELD</a>
+    <p><a href="GH/GH_0857.pdf" target="_blank"> GH_0857.pdf - RENASCENCE</a>
+    <p><a href="GH/GH_0858.pdf" target="_blank"> GH_0858.pdf - DECODING-0101</a>
+    <p><a href="GH/GH_0859.pdf" target="_blank"> GH_0859.pdf - DEEP SWAMP</a>
+    <p><a href="GH/GH_0860.pdf" target="_blank"> GH_0860.pdf - DAY LILIES</a>
+    <p><a href="GH/GH_0861.pdf" target="_blank"> GH_0861.pdf - ERINIA</a>
+    <p><a href="GH/GH_0862.pdf" target="_blank"> GH_0862.pdf - DECODING-0101</a>
+    <p><a href="GH/GH_0863.pdf" target="_blank"> GH_0863.pdf - RENASCENCE</a>
+    <p><a href="GH/GH_0864.pdf" target="_blank"> GH_0864.pdf - GOD'S ROCKER</a>
+    <p><a href="GH/GH_0865.pdf" target="_blank"> GH_0865.pdf - DECODING-0101</a>
+    <p><a href="GH/GH_0866.pdf" target="_blank"> GH_0866.pdf - DECODING-0101</a>
+    <p><a href="GH/GH_0867.pdf" target="_blank"> GH_0867.pdf - THE ARBITER</a>
+    <p><a href="GH/ME_0868.pdf" target="_blank"> ME_0868.pdf - DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/ME_0871.pdf" target="_blank"> ME_0871.pdf - TORERO</a>
+    <p><a href="GH/GH_0874.pdf" target="_blank"> GH_0874.pdf - LAKEFRONT PLAYERS HOST BAUDELAIRE BACKSTAGE</a>
+    <p><a href="GH/GH_0875.pdf" target="_blank"> GH_0875.pdf - OCTOBER BEFORE SLEEP</a>
+    <p><a href="GH/GH_0876.pdf" target="_blank"> GH_0876.pdf - AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0877.pdf" target="_blank"> GH_0877.pdf - MY OWN SEPTEMBER SONG</a>
+    <p><a href="GH/GH_0878.pdf" target="_blank"> GH_0878.pdf - AUTUMN COINAGE</a>
+    <p><a href="GH/GH_0879.pdf" target="_blank"> GH_0879.pdf - WINTER INHERENT</a>
+    <p><a href="GH/GH_0880.pdf" target="_blank"> GH_0880.pdf - AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0881.pdf" target="_blank"> GH_0881.pdf - SYNOPSIS</a>
+    <p><a href="GH/ME_0882.pdf" target="_blank"> ME_0882.pdf - BRINE BITCH OFF THE BAHAMAS, LOVE LETTERS IN JOH'S LOG</a>
+    <p><a href="GH/ME_0884.pdf" target="_blank"> ME_0884.pdf - DIVING WITH DOLPHINS AND DAVID</a>
+    <p><a href="GH/ME_0886.pdf" target="_blank"> ME_0886.pdf - DIVING WITH DOLPHINS AND DAVID (A Rhyme Royal)</a>
+    <p><a href="GH/GH_0888.pdf" target="_blank"> GH_0888.pdf - TORERO</a>
+    <p><a href="GH/GH_0892.pdf" target="_blank"> GH_0892.pdf - WINGING IT</a>
+    <p><a href="GH/ME_0893.pdf" target="_blank"> ME_0893.pdf - DESERT ODYSSEY, FEBRUARY,-01991</a>
+    <p><a href="GH/ME_0896.pdf" target="_blank"> ME_0896.pdf - THINGS YOU SHOULD KNOW IF I SAY YES</a>
+    <p><a href="GH/ME_0900.pdf" target="_blank"> ME_0900.pdf - THE TETRARCH AFTER MIDNIGHT</a>
+    <p><a href="GH/ME_0902.pdf" target="_blank"> ME_0902.pdf - I, IGNOTUM PER IGNOTIUS</a>
+    <p><a href="GH/ME_0904.pdf" target="_blank"> ME_0904.pdf - I, IGNOTUM PER IGNOTIUS</a>
+    <p><a href="GH/ME_0906.pdf" target="_blank"> ME_0906.pdf - DYLAN</a>
+    <p><a href="GH/GH_0908.pdf" target="_blank"> GH_0908.pdf - CAPEWALK</a>
+    <p><a href="GH/GH_0909.pdf" target="_blank"> GH_0909.pdf - CAPEWALK</a>
+    <p><a href="GH/GH_0910.pdf" target="_blank"> GH_0910.pdf - TIGER, TIGER (Felis tigris)</a>
+    <p><a href="GH/GH_0911.pdf" target="_blank"> GH_0911.pdf - AUDITORIUM</a>
+    <p><a href="GH/GH_0912.pdf" target="_blank"> GH_0912.pdf - BEFORE A POET KNOWS WHAT SHE IS</a>
+    <p><a href="GH/GH_0913.pdf" target="_blank"> GH_0913.pdf - BATTLEFIELD</a>
+    <p><a href="GH/GH_0914.pdf" target="_blank"> GH_0914.pdf - BIOGRAPHER FOR THE BELDAM</a>
+    <p><a href="GH/GH_0915.pdf" target="_blank"> GH_0915.pdf - BEST OF SHOW:  LAKE MICHIGAN MURAL</a>
+    <p><a href="GH/GH_0916.pdf" target="_blank"> GH_0916.pdf - ADDIE AT EIGHTY</a>
+    <p><a href="GH/GH_0917.pdf" target="_blank"> GH_0917.pdf - THE ANSWERED</a>
+    <p><a href="GH/GH_0918.pdf" target="_blank"> GH_0918.pdf - TRAPEZE ACT</a>
+    <p><a href="GH/GH_0919.pdf" target="_blank"> GH_0919.pdf - LONG TIME BACK</a>
+    <p><a href="GH/GH_0920.pdf" target="_blank"> GH_0920.pdf - THE ENABLER</a>
+    <p><a href="GH/GH_0921.pdf" target="_blank"> GH_0921.pdf - ABOUT MY NEIGHBOR, LORD</a>
+    <p><a href="GH/GH_0922.pdf" target="_blank"> GH_0922.pdf - I'LL POUR YOU A TEN</a>
+    <p><a href="GH/GH_0923.pdf" target="_blank"> GH_0923.pdf - RIGHT ON</a>
+    <p><a href="GH/GH_0924.pdf" target="_blank"> GH_0924.pdf - A GARDNER'S HEX ON A GREEN-THUMBED RIVAL</a>
+    <p><a href="GH/GH_0925.pdf" target="_blank"> GH_0925.pdf - THOSE SENSUOUS WRITERS SHOULD BE ASHAMED</a>
+    <p><a href="GH/GH_0926.pdf" target="_blank"> GH_0926.pdf - TO THE MASTER POET FROM HIS STUDENT</a>
+    <p><a href="GH/GH_0927.pdf" target="_blank"> GH_0927.pdf - OLD WIFES THE TALES COME FROM</a>
+    <p><a href="GH/GH_0928.pdf" target="_blank"> GH_0928.pdf - BIRTHSTONE</a>
+    <p><a href="GH/ME_0929.pdf" target="_blank"> ME_0929.pdf - TRUE NORTH FOR THE TYRO</a>
+    <p><a href="GH/ME_0931.pdf" target="_blank"> ME_0931.pdf - AROUND INUIT COOKFIRES (C. lupus tundrarum)</a>
+    <p><a href="GH/GH_0934.pdf" target="_blank"> GH_0934.pdf - THE BEHOLDER'S EYE</a>
+    <p><a href="GH/GH_0935.pdf" target="_blank"> GH_0935.pdf - FROM HELL TO HELL</a>
+    <p><a href="GH/GH_0936.pdf" target="_blank"> GH_0936.pdf - THE FOUR R'S -- Rosemary, Robin, Rachel and Rue</a>
+    <p><a href="GH/GH_0937.pdf" target="_blank"> GH_0937.pdf - FOR JESSICA'S FIRST DIVE</a>
+    <p><a href="GH/GH_0938.pdf" target="_blank"> GH_0938.pdf - FLIGHT</a>
+    <p><a href="GH/GH_0939.pdf" target="_blank"> GH_0939.pdf - FAR BELOW THE KEEL</a>
+    <p><a href="GH/GH_0940.pdf" target="_blank"> GH_0940.pdf - ENCOUNTER WITH CANIS LUPUS</a>
+    <p><a href="GH/GH_0941.pdf" target="_blank"> GH_0941.pdf - EMBROIDERED IMAGE (Haliaeetus leucocephalus)</a>
+    <p><a href="GH/GH_0942.pdf" target="_blank"> GH_0942.pdf - DRAGONBOAD RIDE</a>
+    <p><a href="GH/GH_0943.pdf" target="_blank"> GH_0943.pdf - DRAGONBOAD RIDE</a>
+    <p><a href="GH/GH_0944.pdf" target="_blank"> GH_0944.pdf - DITHYRAMB IMPROMPTU</a>
+    <p><a href="GH/GH_0945.pdf" target="_blank"> GH_0945.pdf - THE DISPOSSESSED (Equus caballus, feral)</a>
+    <p><a href="GH/ME_0946.pdf" target="_blank"> ME_0946.pdf - COVERT CABIN, UNMAPPED ROAD TO SUN-UP</a>
+    <p><a href="GH/ME_0948.pdf" target="_blank"> ME_0948.pdf - COVERT CABIN, UNMAPPED ROAD TO SUN-UP</a>
+    <p><a href="GH/GH_0950.pdf" target="_blank"> GH_0950.pdf - COURTSHIP</a>
+    <p><a href="GH/GH_0951.pdf" target="_blank"> GH_0951.pdf - CIRCLES AND CIRCLES OF SOUND</a>
+    <p><a href="GH/GH_0952.pdf" target="_blank"> GH_0952.pdf - AUGUSTEMBER</a>
+  </h5>
+</div>
+
+<div id="Never Far From Water" class="tabcontent">
+<!--
+    <p><a href="GH/NeverFarFromWater.pdf" target=_blank"> Never Far From Water.pdf</a>
+	<p><a href="GH/NeverFarFromWater.doc" target=_blank"> Never Far From Water.doc</a>
+	-->
+  <h3><center>Never Far From Water</center></h3>
+  <h5>
+	<p>Contact Grace United Methodist Church for copies of "Never Far From Water"
+	<p><a href="GH/NeverFarFromWater_author.pdf" target=_blank"> Never Far From Water_author</a>
+  </h5>
+</div>
+
+<div id="Long Way to Morning by Title" class="tabcontent">
+ <h3><center>Long Way to Morning by Title</center></h3>
+  <h5>
+   <p><a href="GH/GH_0506.pdf" target=_blank">"LIKE A PANTHER IN THE GLOVE"</a>
+   <p><a href="GH/GH_0499.pdf" target=_blank">"WHEN EVERYTHING THAT TICKED HAS STOPPED"</a>
+   <p><a href="GH/GH_0157.pdf" target=_blank">"WHEN EVERYTHING THAT TICKED HAS STOPPED" . .. Emily Dickinson</a>
+   <p><a href="GH/ME_0477.pdf" target=_blank">A BALLAD FOR JASON AND MAUREEN</a>
+   <p><a href="GH/ME_0483.pdf" target=_blank">A BALLAD FOR JASON AND MAUREEN</a>
+   <p><a href="GH/ME_0489.pdf" target=_blank">A BALLAD FOR JASON AND MAUREEN</a>
+   <p><a href="GH/GH_0497.pdf" target=_blank">AND I REMEMBERED DR. SCHWEITZER (A Memorial)- GH_0497.pdf</a>
+   <p><a href="GH/GH_0190.pdf" target=_blank">AUTUMN IS NOT A SEASON</a>
+   <p><a href="GH/GH_0464.pdf" target=_blank">AUTUMN IS NOT A SEASON</a>
+   <p><a href="GH/GH_0876.pdf" target=_blank">AUTUMN IS NOT A SEASON</a>
+   <p><a href="GH/GH_0880.pdf" target=_blank">AUTUMN IS NOT A SEASON</a>
+   <p><a href="GH/ME_0461.pdf" target=_blank">BALLAD FOR A BAD QUEEN</a>
+   <p><a                                     >BALLAD FOR MY RIVAL</a>
+   <p><a href="GH/GH_0516.pdf" target=_blank">BAOBAB TREE</a>
+   <p><a href="GH/ME_0504.pdf" target=_blank">BIRTHDAY AT THE STATE FAIR</a>
+   <p><a href="GH/GH_0495.pdf" target=_blank">CATWALK</a>
+   <p><a href="GH/GH_0782.pdf" target=_blank">CAT-WALK</a>
+   <p><a                                     >COME, DREAM CHASER</a>
+   <p><a href="GH/GH_0511.pdf" target=_blank">DRAGON BOAT RIDE</a>
+   <p><a href="GH/GH_0942.pdf" target=_blank">DRAGONBOAD RIDE</a>
+   <p><a href="GH/GH_0943.pdf" target=_blank">DRAGONBOAD RIDE</a>
+   <p><a href="GH/GH_0510.pdf" target=_blank">DRIED ARRANGEMENT</a>
+   <p><a href="GH/ME_0502.pdf" target=_blank">EXORCISM</a>
+   <p><a href="GH/ME_0448.pdf" target=_blank">FANTASY IN C# MINOR FOR TRUMPET AND ORCHESTRA- ME_0448.pdf</a>
+   <p><a href="GH/ME_0454.pdf" target=_blank">FANTASY IN C# MINOR FOR TRUMPET AND ORCHESTRA- ME_0454.pdf</a>
+   <p><a href="GH/GH_0128.pdf" target=_blank">FURNITURE SHIPMENT FROM FORMOSA</a>
+   <p><a href="GH/GH_0129.pdf" target=_blank">FURNITURE SHIPMENT FROM FORMOSA</a>
+   <p><a href="GH/GH_0514.pdf" target=_blank">FURNITURE SHIPMENT FROM FORMOSA</a>
+   <p><a href="GH/GH_0467.pdf" target=_blank">I THINK OF CLIFF</a>
+   <p><a href="GH/ME_0508.pdf" target=_blank">LEGACY FROM THE RESEARCH LABORATORY</a>
+   <p><a href="GH/GH_0460.pdf" target=_blank">LONG WAY TO MORNING</a>
+   <p><a href="GH/GH_0445.pdf" target=_blank">NIGHT BREAK, COUNTY HOPITAL</a>
+   <p><a href="GH/GH_0444.pdf" target=_blank">OBSERVATIONS OF A TRAIN RIDER</a>
+   <p><a                                     >OF PAINTERS AND PAINTINGS</a>
+   <p><a href="GH/GH_0927.pdf" target=_blank">OLD WIFES THE TALES COME FROM</a>
+   <p><a href="GH/ME_0446.pdf" target=_blank">ROSES IN THE WOODS</a>
+   <p><a href="GH/GH_0517.pdf" target=_blank">RUWENZORI!</a>
+   <p><a href="GH/GH_0466.pdf" target=_blank">SHE USED TO GIVE ME FLOWERS</a>
+   <p><a                                     >SWAMP MAN</a>	"
+   <p><a href="GH/GH_0496.pdf" target=_blank">SYLVIA PLATH,-01932 ---01963</a>
+   <p><a href="GH/GH_0515.pdf" target=_blank">THE ENLIGHTENED ONE</a>
+   <p><a href="GH/GH_0227.pdf" target=_blank">THE IGNIS FATUUS</a>
+   <p><a href="GH/GH_0291.pdf" target=_blank">THE IGNIS FATUUS</a>
+   <p><a href="GH/GH_0235.pdf" target=_blank">THE INTERLOPER</a>
+   <p><a href="GH/GH_0630.pdf" target=_blank">THE INTERLOPER</a>
+   <p><a href="GH/GH_0631.pdf" target=_blank">THE INTERLOPER</a>
+   <p><a href="GH/GH_0003.pdf" target=_blank">THE INTERLOPER (EICHHORNIA CRASSIPES)</a>
+   <p><a href="GH/GH_0500.pdf" target=_blank">THE SOCIETY BLURB SAID "TYCOON ENTERTAINS JR.EXEC & SOUTHERN BRIDE"</a>
+   <p><a href="GH/GH_0501.pdf" target=_blank">THE SOCIETY BLURB SAID "TYCOON ENTERTAINS JR.EXEC & SOUTHERN BRIDE"</a>
+   <p><a href="GH/GH_0569.pdf" target=_blank">THE SOCIETY BLURB SAYS:  TYCOON ENTERTAINS JR. EXEC & SOUTHERN BRIDE</a>
+   <p><a href="GH/GH_0512.pdf" target=_blank">THE SOUND OF SUMMER IS</a>
+   <p><a href="GH/GH_0513.pdf" target=_blank">THE SOUND OF SUMMER IS</a>
+   <p><a href="GH/ME_0468.pdf" target=_blank">TORERO</a>
+   <p><a href="GH/ME_0473.pdf" target=_blank">TORERO</a>
+   <p><a href="GH/ME_0870.pdf" target=_blank">TORERO</a>
+   <p><a href="GH/ME_0888.pdf" target=_blank">TORERO</a>
+   <p><a href="GH/GH_0498.pdf" target=_blank">TRIHEDRONESS</a>
+   <p><a href="GH/GH_0507.pdf" target=_blank">UBRAN UNDER</a>
+   <p><a href="GH/GH_0189.pdf" target=_blank">WHO NEEDS EDEN?</a>
+   <p><a href="GH/GH_0343.pdf" target=_blank">WHO NEEDS EDEN?</a>
+   <p><a href="GH/GH_0465.pdf" target=_blank">WHO NEEDS EDEN?</a>
+  </h5>
+</div>
+
+<div id="Long Way to Morning by TOC" class="tabcontent">
+ <h3><center>Long Way to Morning by TOC</center></h3>
+  <h5>	
+	<p><a href="GH/GH_0443.pdf" target=_blank"> Long Way to Morning TOC</a>
+    <p><a href="GH/GH_0444.pdf" target=_blank"> OBSERVATIONS OF A TRAIN RIDER</a>
+    <p><a href="GH/GH_0445.pdf" target=_blank"> NIGHT BREAK, COUNTY HOPITAL</a>
+    <p><a href="GH/ME_0446.pdf" target=_blank"> ROSES IN THE WOODS</a>
+    <p><a href="GH/ME_0448.pdf" target=_blank"> FANTASY IN C# MINOR FOR TRUMPET AND ORCHESTRA</a>
+    <p><a href="GH/ME_0454.pdf" target=_blank"> FANTASY IN C# MINOR FOR TRUMPET AND ORCHESTRA</a>
+    <p><a href="GH/GH_0460.pdf" target=_blank"> LONG WAY TO MORNING</a>
+    <p><a href="GH/ME_0461.pdf" target=_blank"> BALLAD FOR A BAD QUEEN</a>
+    <p><a href="GH/GH_0235.pdf" target=_blank"> THE INTERLOPER</a>
+    <p><a href="GH/GH_0630.pdf" target=_blank"> THE INTERLOPER</a>
+    <p><a href="GH/GH_0631.pdf" target=_blank"> THE INTERLOPER</a>
+    <p><a href="GH/GH_0003.pdf" target=_blank"> THE INTERLOPER (EICHHORNIA CRASSIPES)</a>	
+    <p><a href="GH/GH_0190.pdf" target=_blank"> AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0464.pdf" target=_blank"> AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0876.pdf" target=_blank"> AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0880.pdf" target=_blank"> AUTUMN IS NOT A SEASON</a>
+    <p><a href="GH/GH_0227.pdf" target=_blank"> THE IGNIS FATUUS</a>
+    <p><a href="GH/GH_0291.pdf" target=_blank"> THE IGNIS FATUUS</a>
+    <p><a > COME, DREAM CHASER</a>
+    <p><a > SWAMP MAN</a>	
+    <p><a href="GH/GH_0189.pdf" target=_blank"> WHO NEEDS EDEN?</a>
+    <p><a href="GH/GH_0343.pdf" target=_blank"> WHO NEEDS EDEN?</a>
+    <p><a href="GH/GH_0465.pdf" target=_blank"> WHO NEEDS EDEN?</a>	
+    <p><a href="GH/GH_0466.pdf" target=_blank"> SHE USED TO GIVE ME FLOWERS</a>
+    <p><a href="GH/GH_0467.pdf" target=_blank"> I THINK OF CLIFF</a>
+    <p><a > BALLAD FOR MY RIVAL</a>
+    <p><a href="GH/ME_0468.pdf" target=_blank"> TORERO</a>
+    <p><a href="GH/ME_0473.pdf" target=_blank"> TORERO</a>
+    <p><a href="GH/ME_0870.pdf" target=_blank"> TORERO</a>
+    <p><a href="GH/ME_0888.pdf" target=_blank"> TORERO</a>
+    <p><a href="GH/ME_0477.pdf" target=_blank"> A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/ME_0483.pdf" target=_blank"> A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/ME_0489.pdf" target=_blank"> A BALLAD FOR JASON AND MAUREEN</a>
+    <p><a href="GH/GH_0495.pdf" target=_blank"> CATWALK</a>
+    <p><a href="GH/GH_0782.pdf" target=_blank"> CAT-WALK</a>
+    <p><a > OF PAINTERS AND PAINTINGS</a>
+    <p><a href="GH/GH_0496.pdf" target=_blank"> SYLVIA PLATH,-01932 ---01963</a>
+    <p><a href="GH/GH_0497.pdf" target=_blank"> AND I REMEMBERED DR. SCHWEITZER (A Memorial)</a>
+    <p><a href="GH/GH_0498.pdf" target=_blank"> TRIHEDRONESS</a>
+    <p><a href="GH/GH_0499.pdf" target=_blank"> "WHEN EVERYTHING THAT TICKED HAS STOPPED"</a>
+    <p><a href="GH/GH_0157.pdf" target=_blank"> "WHEN EVERYTHING THAT TICKED HAS STOPPED" . . . Emily Dickinson</a>
+    <p><a href="GH/GH_0500.pdf" target=_blank"> THE SOCIETY BLURB SAID "TYCOON ENTERTAINS JR. EXEC & SOUTHERN BRIDE"</a>
+    <p><a href="GH/GH_0501.pdf" target=_blank"> THE SOCIETY BLURB SAID "TYCOON ENTERTAINS JR. EXEC & SOUTHERN BRIDE"</a>
+    <p><a href="GH/GH_0569.pdf" target=_blank"> THE SOCIETY BLURB SAYS:  TYCOON ENTERTAINS JR. EXEC & SOUTHERN BRIDE</a>
+    <p><a href="GH/ME_0502.pdf" target=_blank"> EXORCISM</a>
+    <p><a href="GH/GH_0927.pdf" target=_blank"> OLD WIFES THE TALES COME FROM</a>
+    <p><a href="GH/ME_0504.pdf" target=_blank"> BIRTHDAY AT THE STATE FAIR</a>
+    <p><a href="GH/GH_0506.pdf" target=_blank"> "LIKE A PANTHER IN THE GLOVE"</a>
+    <p><a href="GH/GH_0507.pdf" target=_blank"> UBRAN UNDER</a>
+    <p><a href="GH/ME_0508.pdf" target=_blank"> LEGACY FROM THE RESEARCH LABORATORY</a>
+    <p><a href="GH/GH_0510.pdf" target=_blank"> DRIED ARRANGEMENT</a>
+    <p><a href="GH/GH_0511.pdf" target=_blank"> DRAGON BOAT RIDE</a>
+    <p><a href="GH/GH_0942.pdf" target=_blank"> DRAGONBOAD RIDE</a>
+    <p><a href="GH/GH_0943.pdf" target=_blank"> DRAGONBOAD RIDE</a>
+    <p><a href="GH/GH_0512.pdf" target=_blank"> THE SOUND OF SUMMER IS</a>
+    <p><a href="GH/GH_0513.pdf" target=_blank"> THE SOUND OF SUMMER IS</a>
+    <p><a href="GH/GH_0128.pdf" target=_blank"> FURNITURE SHIPMENT FROM FORMOSA</a>
+    <p><a href="GH/GH_0129.pdf" target=_blank"> FURNITURE SHIPMENT FROM FORMOSA</a>
+    <p><a href="GH/GH_0514.pdf" target=_blank"> FURNITURE SHIPMENT FROM FORMOSA</a>
+    <p><a href="GH/GH_0515.pdf" target=_blank"> THE ENLIGHTENED ONE</a>
+    <p><a href="GH/GH_0516.pdf" target=_blank"> BAOBAB TREE</a>
+    <p><a href="GH/GH_0517.pdf" target=_blank"> RUWENZORI!</a>
+  </h5>
+</div>
+
+<div id="Articles" class="tabcontent">
+ <h3><center>Articles</center></h3>
+ <h5>
+  <div class="row">
+   <div class="column2"; style="background-color:#aaa; height:185px">
+    <p><a>Filtering the Future - </a><a href="Articles/Filtering the Future.pdf" target=_blank">scan</a><a> | </a><a href="Articles/Filtering the Future.pdf" target=_blank">pdf</a>
+    <p><a>Life in the Choir Loft - </a><a href="Articles/Life in the Choir Loft.pdf" target=_blank"target=_blank">scan</a><a> | </a><a href="Baskets/Basket01-t.pdf" target=_blank">pdf</a>
+    <p><a>Locating Lotus Land - </a><a href="Articles/Locating Lotus Land.pdf" target=_blank"target=_blank">scan</a><a> | </a><a href="Baskets/Basket01-t.pdf" target=_blank">pdf</a>
+    <p><a>Ohios Best Kept Secrets - </a><a href="Articles/Ohios Best Kept Secrets.pdf" target=_blank"target=_blank">scan</a><a> | </a><a href="Baskets/Basket01-t.pdf" target=_blank">pdf</a>
+    <p><a>Saying - </a><a href="Articles/Saying.pdf" target=_blank"target=_blank">scan</a><a> | </a><a href="Baskets/Basket01-t.pdf" target=_blank">pdf</a>
+   </div>
+   <div class="column2" style="background-color:#ccc; height:185px">   
+     <p><a>Transparencies 1 - </a><a href="Articles/Transparencies 1.pdf" target=_blank">scan</a><a> | </a><a href="Articles/Transparencies 1.pdf" target=_blank">pdf</a>
+     <p><a>Transparencies 2 - </a><a href="Articles/Transparencies 2.pdf" target=_blank">scan</a><a> | </a><a href="Articles/Transparencies 2.pdf" target=_blank">pdf</a>
+     <p><a>Wake Up DuPage Wake Up America - </a><a href="Articles/Wake Up DuPage Wake Up America.pdf" target=_blank">scan</a><a> | </a><a href="Articles/Wake Up DuPage Wake Up America.pdf" target=_blank">pdf</a>
+     <p><a>Wings and a Prayer - </a><a href="Articles/Wings and a Prayer.pdf" target=_blank">scan</a><a> | </a><a href="Articles/Wings and a Prayer.pdf" target=_blank">pdf</a>
+     <p><a>Wright for the Twenty-first Century - </a><a href="Articles/Wright for the Twenty-first Century.pdf" target=_blank">scan</a><a> | </a><a href="Articles/Wright for the Twenty-first Century.pdf" target=_blank">pdf</a>
+   </div>
+  </div>
+ </h5>
+</div>
+
+<div id="Baskets" class="tabcontent">
+ <h3><center>Baskets in Baskets on Baskets</center></h3>
+ <h5>
+  <div class="row">
+   <div class="column4" style="background-color:#aaa;">
+    <center>
+     <p><a>Basket01 - </a><a href="Baskets/Basket01-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket01-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket02 - </a><a href="Baskets/Basket02-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket02-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket03 - </a><a href="Baskets/Basket03-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket03-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket04 - </a><a href="Baskets/Basket04-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket04-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket05 - </a><a href="Baskets/Basket05-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket05-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket06 - </a><a href="Baskets/Basket06-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket06-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket07 - </a><a href="Baskets/Basket07-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket07-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket08 - </a><a href="Baskets/Basket08-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket08-t.pdf" target=_blank">pdf</a>
+    </center>
+   </div>
+   
+   <div class="column4" style="background-color:#ccc;">
+    <center>
+     <p><a>Basket09 - </a><a href="Baskets/Basket09-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket09-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket10 - </a><a href="Baskets/Basket10-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket10-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket11 - </a><a href="Baskets/Basket11-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket11-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket12 - </a><a href="Baskets/Basket12-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket12-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket13 - </a><a href="Baskets/Basket13-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket13-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket14 - </a><a href="Baskets/Basket14-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket14-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket15 - </a><a href="Baskets/Basket15-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket15-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket16 - </a><a href="Baskets/Basket16-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket16-t.pdf" target=_blank">pdf</a>
+    </center>
+   </div>
+  
+   <div class="column4" style="background-color:#bbb;">
+    <center>
+     <p><a>Basket17 - </a><a href="Baskets/Basket17-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket17-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket18 - </a><a href="Baskets/Basket18-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket18-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket19 - </a><a href="Baskets/Basket19-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket19-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket20 - </a><a href="Baskets/Basket20-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket20-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket21 - </a><a href="Baskets/Basket21-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket21-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket22 - </a><a href="Baskets/Basket22-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket22-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket23 - </a><a href="Baskets/Basket23-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket23-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket24 - </a><a href="Baskets/Basket24-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket24-t.pdf" target=_blank">pdf</a>
+    </center>
+   </div>
+
+   <div class="column4" style="background-color:#ddd;">
+    <center>
+     <p><a>Basket25 - </a><a href="Baskets/Basket25-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket25-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket26 - </a><a href="Baskets/Basket26-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket26-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket27 - </a><a href="Baskets/Basket27-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket27-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket28 - </a><a href="Baskets/Basket28-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket28-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket29 - </a><a href="Baskets/Basket29-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket29-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket30 - </a><a href="Baskets/Basket30-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket30-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket31 - </a><a href="Baskets/Basket31-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket31-t.pdf" target=_blank">pdf</a>
+     <p><a>Basket32 - </a><a href="Baskets/Basket32-o.pdf" target=_blank">scan</a><a> | </a><a href="Baskets/Basket32-t.pdf" target=_blank">pdf</a>
+    </center>
+   </div>
+  </div>
+ </h5>
+</div>
+  
+<div id="Collections" class="tabcontent">
+ <h3><center>Collections</center></h3>
+ <h5>
+  <div class="row">
+   <div class="column2" style="background-color:#aaa; height:220px">
+    <p><a>Aquarius Alley - </a><a href="Collections/AquariusAlley-s.pdf" target=_blank">scan</a><a> | </a><a href="Collections/AquariusAlley.pdf" target=_blank">pdf</a>
+    <p><a>Close Focus 1 - </a><a href="Collections/CloseFocus1.pdf" target=_blank">scan</a><a> | </a><a href="Collections/CloseFocus1.pdf" target=_blank">pdf</a>
+    <p><a>Close Focus 2 - </a><a href="Collections/CloseFocus2.pdf" target=_blank">scan</a><a> | </a><a href="Collections/CloseFocus2.pdf" target=_blank">pdf</a>
+    <p><a>Long Way to Morning - </a><a href="Collections/LongWaytoMorning.pdf" target=_blank">scan</a><a> | </a><a href="Collections/LongWaytoMorning.pdf" target=_blank">pdf</a>
+    <p><a>Major Rhapsody - </a><a href="Collections/MajorRhapsody.pdf" target=_blank">scan</a><a> | </a><a href="Collections/MajorRhapsody.pdf" target=_blank">pdf</a>
+    <p><a>Never Far From Water - </a><a href="Collections/NeverFarFromWater.pdf" target=_blank">scan</a><a> | </a><a href="Collections/NeverFarFromWater.pdf" target=_blank">pdf</a>
+    <p><a>Panther in the Glove 1 - </a><a href="Collections/PantherintheGlove1.pdf" target=_blank">scan</a><a> | </a><a href="Collections/PantherintheGlove1.pdf" target=_blank">pdf</a>	 </div>
+   <div class="column2" style="background-color:#ddd; height:220px">	
+    <p><a>Panther in the Glove 2 - </a><a href="Collections/PantherintheGlove2.pdf" target=_blank">scan</a><a> | </a><a href="Collections/PantherintheGlove2.pdf" target=_blank">pdf</a>
+    <p><a>Panther in the Glove 3 - </a><a href="Collections/PantherintheGlove3.pdf" target=_blank">scan</a><a> | </a><a href="Collections/PantherintheGlove3.pdf" target=_blank">pdf</a>
+    <p><a>The Ignis Fatuus - Life Stories - </a><a href="Collections/TheIgnisFatuus-LifeStories.pdf" target=_blank">scan</a><a> | </a><a href="Collections/TheIgnisFatuus-LifeStories.pdf" target=_blank">pdf</a>
+    <p><a>The Ignis Fatuus - Twenty Poems - </a><a href="Collections/TheIgnisFatuus-TwentyPoems.pdf" target=_blank">scan</a><a> | </a><a href="Collections/TheIgnisFatuus-TwentyPoems.pdf" target=_blank">pdf</a>
+    <p><a>Warm Beads - </a><a href="Collections/WarmBeads.pdf" target=_blank">scan</a><a> | </a><a href="Collections/WarmBeads.pdf" target=_blank">pdf</a>
+    <p><a>Zoom Lens - </a><a href="Collections/ZoomLens.pdf" target=_blank">scan</a><a> | </a><a href="Collections/ZoomLens.pdf" target=_blank">pdf</a>
+   </div>
+  </div>
+ </h5>
+</div>
+
+<div id="Haiku" class="tabcontent">
+  <h3><center>Haiku</center></h3>
+  <h5>
+    <p><a href="Haiku/Haiku.pdf" target=_blank"> Haiku</a>
+    <p><a href="Haiku/Haiku & Short-Shorts.pdf" target=_blank"> Haiku & Short-Shorts</a>
+  </h5>
+</div>
+
+<div id="noop" class="tabcontent"></div>
+
+<div id="Loose" class="tabcontent">
+ <h3><center>Loose</center></h3>
+ <h5>
+  <center>
+   <div class="row">
+    <div class="column4" style="background-color:#aaa; height:90px">
+     <p><a href="Loose/Loose 01.pdf" target=_blank"> Loose 01</a>
+     <p><a href="Loose/Loose 02.pdf" target=_blank"> Loose 02</a>
+    </div>
+	<div class="column4" style="background-color:#ccc; height:90px">
+	 <p><a href="Loose/Loose 03.pdf" target=_blank"> Loose 03</a>
+     <p><a href="Loose/Loose 04.pdf" target=_blank"> Loose 04</a>
+    </div>
+    <div class="column4" style="background-color:#bbb; height:90px">
+     <p><a href="Loose/Loose 05.pdf" target=_blank"> Loose 05</a>
+     <p><a href="Loose/Loose 06.pdf" target=_blank"> Loose 06</a>
+    </div>
+  </center>
+ </h5>
+</div>
+
+<div id="Misc" class="tabcontent">
+ <h3><center>Miscellaneous</center></h3>
+ <h5>
+  <div class="row">
+   <div class="column3" style="background-color:#aaa; height:320px">
+    <p><a href="Misc/161200 Grace Notes.pdf" target=_blank"> 161200 Grace Notes</a>
+    <p><a href="Misc/910407 Chicago Tribune.pdf" target=_blank"> 910407 Chicago Tribune</a>
+    <p><a href="Misc/941226 Poetry with a punch.pdf" target=_blank"> 941226 Poetry with a punch</a>
+    <p><a href="Misc/950402 Chicago Tribune.pdf" target=_blank"> 950402 Chicago Tribune</a>
+    <p><a href="Misc/980000 Earthsong.pdf" target=_blank"> 980000 Earthsong</a>
+    <p><a href="Misc/Awards.pdf" target=_blank"> Awards</a>
+    <p><a href="Misc/Chicago Tribune Obit.pdf" target=_blank"> Chicago Tribune Obit</a>
+    <p><a href="Misc/DESERT ODYSSEY.pdf" target=_blank"> DESERT ODYSSEY</a>
+    <p><a href="Misc/Emery L. Campbell.pdf" target=_blank"> Emery L. Campbell</a>
+    <p><a href="Misc/Essay on Motherhood.pdf" target=_blank"> Essay on Motherhood</a>
+   </div>
+   
+   <div class="column3" style="background-color:#ccc; height:320px">
+    <p><a href="Misc/Greeting Cards.pdf" target=_blank"> Greeting Cards</a>
+    <p><a href="Misc/Group Crits.pdf" target=_blank"> Group Crits</a>
+    <p><a href="Misc/How to Get By.pdf" target=_blank"> How to Get By</a>
+    <p><a href="Misc/How to Get By - Free Verse.pdf" target=_blank"> How to Get By - Free Verse</a>
+    <p><a href="Misc/Humor.pdf" target=_blank"> Humor</a>
+    <p><a href="Misc/Ideals.pdf" target=_blank"> Ideals</a>
+    <p><a href="Misc/Illinois Arts Council Artists Fellowship.pdf" target=_blank"> IAC Artists Fellowship</a>
+    <p><a href="Misc/Journey to Blue.pdf" target=_blank"> Journey to Blue</a>
+    <p><a href="Misc/Orig 2.pdf" target=_blank"> Orig 2</a>
+    <p><a href="Misc/Pittsburgh Press.pdf" target=_blank"> Pittsburgh Press</a>
+   </div>
+   
+   <div class="column3" style="background-color:#bbb; height:320px">
+    <p><a href="Misc/Poets Club.pdf" target=_blank"> Poets Club</a>
+    <p><a href="Misc/Poets Club 2.pdf" target=_blank"> Poets Club 2</a>
+    <p><a href="Misc/Published or Winners.pdf" target=_blank"> Published or Winners</a>
+    <p><a href="Misc/Rejection.pdf" target=_blank"> Rejection</a>
+    <p><a href="Misc/The Love Gift.pdf" target=_blank"> The Love Gift</a>
+    <p><a href="Misc/The Scrimshaw Gene.pdf" target=_blank"> The Scrimshaw Gene</a>
+    <p><a href="Misc/The Second Prayer.pdf" target=_blank"> The Second Prayer</a>
+    <p><a href="Misc/Time Frame.pdf" target=_blank"> Time Frame</a>
+    <p><a href="Misc/Wright Bros.pdf" target=_blank"> Wright Bros</a>
+   </div>
+  </div>
+ </h5>
+</div>
+
+<div id="Religious" class="tabcontent">
+ <h3><center>Religious</center></h3>
+ <h5>
+  <p><a href="Religious/Religious.pdf" target=_blank"> Religious</a>
+ </h5>
+</div>
+
+<div id="Short Stories" class="tabcontent">
+ <h3><center>Short Stories</center></h3>
+ <h5>
+  <div class="row">
+   <div class="column2" style="background-color:#aaa; height:270px">
+    <p><a href="Short Stories/A Different Road to Sun-up.pdf" target=_blank">A Different Road to Sun-up</a>
+    <p><a href="Short Stories/A Teacher Remembers.pdf" target=_blank">A Teacher Remembers</a>
+    <p><a href="Short Stories/Denouement-Flying the Juneau Ice Field.pdf" target=_blank">Denouement: Flying the Juneau Ice Field</a>
+    <p><a href="Short Stories/Journey to Blue.pdf" target=_blank">Journey to Blue</a>
+    <p><a href="Short Stories/Love Gift.pdf" target=_blank">Love Gift</a>
+    <p><a href="Short Stories/No Easy Way Home.pdf" target=_blank">No Easy Way Home</a>
+    <p><a href="Short Stories/Rejection.pdf" target=_blank">Rejection</a>
+    <p><a href="Short Stories/Rolling Along with Mother.pdf" target=_blank">Rolling Along with Mother</a>
+   </div>
+   <div class="column2" style="background-color:#ccc; height:260px">  
+    <p><a href="Short Stories/Saying It.pdf" target=_blank">Saying It</a>
+    <p><a href="Short Stories/The Bird Tree.pdf" target=_blank">The Bird Tree</a>
+    <p><a href="Short Stories/The Mansfield Measure.pdf" target=_blank">The Mansfield Measure</a>
+    <p><a href="Short Stories/The Poetic Strata.pdf" target=_blank">The Poetic Strata</a>
+    <p><a href="Short Stories/The Word.pdf" target=_blank">The Word</a>
+    <p><a href="Short Stories/Torero.pdf" target=_blank">Torero</a>
+    <p><a href="Short Stories/Why Cant Something be Done about the Ding-a-ling Hucksters.pdf" target=_blank">Why Cant Something be Done . . .</a>
+    <p><a href="Short Stories/Winging It.pdf" target=_blank">Winging It</a>
+   </div>
+  </div>
+ </h5>
+</div>
+
+<div id="docx & pdf files" class="tabcontent">
+  <h3><center>docx & pdf files</center></h3>
+  <h5>
+    <p><a href="Docx/Poems_1.0.pdf" target=_blank"> Poems_1.0</a>
+  </h5>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+ </body>
+</html> 
 
